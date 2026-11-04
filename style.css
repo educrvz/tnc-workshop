@@ -111,3 +111,23 @@
 .roadmap-check{position:absolute;top:15px;right:14px;color:#2d6a4f;font-size:22px;font-weight:700;line-height:1}
 @media(max-width:600px){.roadmap{grid-template-columns:1fr}.roadmap-card{padding:20px}.roadmap-card li{font-size:10.5pt}}
 @media print{.roadmap-card{break-inside:avoid}.session-recap>h2{break-after:avoid}}
+
+/* Shared learning patterns: readable desktop width, explicit exercise handoffs. */
+body{max-width:1120px;padding-left:32px;padding-right:32px}
+.path{font-style:normal;font-weight:600;color:#243b53;background:#edf1f5;border:1px solid #d5dee6;border-radius:4px;padding:1px 5px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.interface-note{font-size:9.5pt;color:#666;margin-top:18px}
+.exercise-guide{border:1px solid #cfd9df;background:#f7fafc;border-radius:8px;padding:18px 20px;margin:20px 0 26px}
+.exercise-guide .callout-label{color:#344e63}
+.exercise-guide dl{margin:12px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px}
+.exercise-guide dl>div:last-child{grid-column:1/-1}
+.exercise-guide dt{font-size:9pt;font-weight:700;color:#344e63}
+.exercise-guide dd{margin:3px 0 0;font-size:10.5pt}
+.mental-model{padding:12px 0;border-top:1px solid #d4e7dc}
+.mental-model h3{margin:0 0 6px;font-size:12pt}.mental-model p{margin:6px 0}
+.optional-reference{background:#fafafa;border:1px solid #d5d5d5;border-radius:8px;padding:18px 20px;margin:26px 0}
+.optional-reference summary{color:#333}.optional-reference[open] summary{margin-bottom:20px}
+.source-setup code{overflow-wrap:anywhere}
+@media(max-width:600px){body{padding:0 18px}.exercise-guide{padding:16px}.exercise-guide dl{grid-template-columns:1fr}.optional-reference{padding:16px}.path{overflow-wrap:anywhere}}
+@media print{.exercise-guide,.mental-model{break-inside:avoid}.optional-reference{background:white}}
+
+.app-markers{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 16px}.app-marker{display:inline-flex;align-items:center;gap:7px;font-size:10pt;font-weight:600;color:#444}.app-symbol{display:inline-flex;align-items:center;justify-content:center;width:25px;height:25px;border-radius:5px;font-size:12px;color:white;font-weight:700}
