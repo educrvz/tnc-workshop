@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="noindex,nofollow" name="robots"/><link href="style.css" rel="stylesheet"/><script defer="" src="app.js"></script><title>Teams e IA na Prática · TNC · Sessão 2</title></head>
-<body><a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="noindex,nofollow" name="robots"/><link href="style.css" rel="stylesheet"/><script defer="" src="app.js"></script><title>Teams e IA na Prática · TNC · Sessão 2</title></head><body><a class="skip" href="#conteudo">Ir para o conteúdo</a>
 <div class="wrap">
 <div class="top">
 <div class="mark">DC CRUZ · TNC</div>
@@ -13,136 +8,88 @@
 </div>
 <header id="conteudo">
 <span class="eyebrow">Teams e IA na prática · PMO Cerrado · 11/11/2026</span>
-<h1>Sessão 2 · Planilhas e relatórios</h1>
-<p class="lede">Preparar, conferir e comunicar o acompanhamento físico-financeiro. Vamos combinar recursos do Excel e revisão humana com apoio da IA, preservando os números de origem.</p>
-<p class="note">Os exemplos usam as planilhas fictícias do Veredas Vivas. Troque pelas suas planilhas, sempre em uma cópia.</p>
+<h1>Sessão 2 · Como a IA pensa e como pedir bem</h1>
+<p class="lede">Por que o Copilot às vezes acerta em cheio e às vezes inventa? A resposta está em como ele funciona, e quase toda a diferença está no pedido. Hoje você aprende a escrever esse pedido e testa no Excel, em duas planilhas que chegam bagunçadas todo trimestre.</p>
+<p class="note">Os exemplos usam os arquivos do Veredas Vivas, na pasta do canal <span class="path">Prática</span> da equipe <span class="path">Treinamento Teams e IA – PMO Cerrado</span>. Os dados são fictícios.</p>
 <nav aria-label="Nesta sessão" class="toc">
-<a href="#preparar">Preparar a planilha</a>
-<a href="#limpar">Limpar uma exportação de campo com um pedido</a>
-<a href="#consolidar">Consolidar e analisar</a>
-<a href="#conferir">Conferir o que a IA devolveu</a>
-<a href="#relatorio">Dos números ao relatório e à apresentação</a>
-<a href="#depois">Para testar até quinta</a>
+<a href="#abertura">Abertura: três coisas sobre a IA</a>
+<a href="#anatomia">O que faz um pedido funcionar</a>
+<a href="#limpar">Exercício 1 · Excel: limpar a exportação de campo</a>
+<a href="#desafio">Exercício 2 · Excel: escreva o seu pedido e desafie o nosso</a>
+<a href="#depois">Fechamento e prática até quinta</a>
 </nav>
-<p class="note">9h30–11h · horário de Brasília · 90 minutos <button class="print" type="button">Imprimir / salvar PDF</button></p><p class="interface-note">Os nomes destacados indicam comandos da interface. Podem variar conforme idioma, versão e licença. Se uma opção não aparecer, siga a alternativa do exercício com o facilitador.</p></header>
-<div class="callout warning source-setup"><div class="callout-label">Fontes do exercício</div><p>A equipe informou que usa Box. Isso não confirma que uma integração com Copilot esteja habilitada, nem que SharePoint esteja autorizado para qualquer documento. Nos exercícios, use somente o pacote fictício e o local de treino indicado pelos facilitadores.</p><p>Se houver uma cópia autorizada no OneDrive ou SharePoint, registre sua origem e versão. Ela é uma cópia fixa de treinamento; não pressupõe sincronização com o Box. Antes de usar documentos reais, confirme com a TNC o caminho aprovado.</p><p>Nos prompts, <code>/Nome_do_arquivo</code> indica uma referência a selecionar, quando esse recurso estiver disponível. Digitar o nome não fornece o arquivo. Se ele não aparecer, use o anexo autorizado ou o trecho identificado do pacote de treino.</p></div><section id="preparar">
-<h2>Preparar a planilha</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#107c41">E</span>Excel</span></div>
-<p class="why">A maior parte dos resultados ruins no Excel vem da planilha, não do pedido.</p><div class="exercise-guide"><div class="callout-label">Roteiro da prática</div><dl><div><dt>Onde</dt><dd>Excel, em uma cópia de treino</dd></div><div><dt>Material</dt><dd>Exportação fictícia de campo e planilha de acompanhamento.</dd></div><div><dt>Faça</dt><dd>Confira cabeçalhos, tipos, período e moeda; calcule um total conhecido.</dd></div><div><dt>Confira</dt><dd>Registre o total de origem antes de qualquer alteração.</dd></div><div><dt>Leve adiante</dt><dd>Use essa cópia e esse total como referência no bloco de limpeza.</dd></div></dl></div><h3>Uma conferência que você consegue repetir sem IA</h3><ol class="steps"><li>Na cópia de treino, identifique período, unidade e moeda. Confira os cabeçalhos e filtre os registros do período.</li><li>Escolha um total e refaça a soma das linhas de origem no Excel. Confira uma fórmula e compare o resultado com o valor exibido no relatório.</li><li>Registre a divergência e a fonte antes de corrigir. Ao usar o Copilot, repita essa mesma conferência no resultado.</li></ol><p><strong>Critério de sucesso:</strong> explicar de onde veio o número e reproduzir o cálculo. Uma resposta bem escrita não substitui essa conferência.</p>
-<ul>
-<li><strong>Arquivo no OneDrive ou SharePoint</strong>, com Salvamento Automático ligado.</li>
-<li><strong>Dados como tabela</strong>: selecione o intervalo e use <kbd>Ctrl</kbd>+<kbd>T</kbd>, com cabeçalhos claros.</li>
-<li><strong>Cálculo automático</strong>: <span class="path">Fórmulas › Opções de Cálculo › Automático</span>.</li>
-<li><strong>Trabalhe em uma cópia</strong> de qualquer planilha importante. O Copilot edita o arquivo direto.</li>
-</ul>
-<h3>Os três modos do Copilot no Excel</h3>
-<div class="table-wrap"><table>
-<thead><tr><th>Modo</th><th>O que faz</th></tr></thead>
-<tbody>
-<tr><td>Planejar</td><td>Mostra os passos e os dados que vai usar, e espera a sua aprovação. Use para tudo que tem mais de um passo.</td></tr>
-<tr><td>Editar</td><td>Altera a planilha direto: fórmulas, tabelas, gráficos, formatação.</td></tr>
-<tr><td>Chat</td><td>Só responde. Não muda nada na planilha.</td></tr>
-</tbody>
-</table></div>
-<p class="note">Os nomes e modos disponíveis variam por versão. Neste exercício, peça um plano antes de qualquer edição e use fórmulas verificáveis para cálculos.</p>
+<p class="note">9h30–11h · horário de Brasília · 90 minutos <button class="print" type="button">Imprimir / salvar PDF</button></p><p class="interface-note">Os nomes <span class="path">destacados assim</span> são comandos que você encontra na tela. Podem variar um pouco conforme idioma, versão e licença. Se uma opção não aparecer, use a alternativa do exercício. Para achar um arquivo com <kbd>/</kbd>, basta digitar o começo do nome.</p></header>
+<div class="callout tip"><div class="callout-label">Como cada exercício funciona</div><p>Um facilitador mostra o passo rapidamente. Depois, todos fazem ao mesmo tempo. Ao terminar, reaja com 👍 no chat da reunião. Se travar, reaja com ✋ ou mande um print no chat: o segundo facilitador ajuda você enquanto a turma segue.</p></div>
+<section id="abertura">
+<h2>Abertura: três coisas sobre a IA</h2>
+<p class="why">As três coisas sobre como a IA funciona, da Sessão 1, explicam tudo o que vem hoje:</p>
+<ol class="steps">
+<li><strong>Ela completa, não consulta.</strong> Sabe o que é provável, não o que é verdade. Quando falta informação, completa com o que soa certo.</li>
+<li><strong>Ela só vê o que está na mesa:</strong> o seu pedido, a conversa e os arquivos que você selecionou.</li>
+<li><strong>O pedido é o volante.</strong> É ele que você treina hoje, no Excel.</li>
+</ol>
+<p class="note">Abra o Copilot Chat: no Teams, clique em <span class="path">Copilot</span> na barra lateral. Abriu? 👍 no chat.</p>
+</section>
+<section id="anatomia">
+<h2>O que faz um pedido funcionar</h2>
+<p class="why">Um pedido fraco gera um texto genérico. Um pedido bom gera um rascunho que você só precisa revisar. A diferença cabe em quatro perguntas.</p>
+<div class="prompt"><div class="prompt-head"><span>Pedido fraco</span></div><pre>Resuma o relatório de outubro.</pre></div>
+<div class="prompt"><div class="prompt-head"><span>Pedido bom</span><button class="copy" type="button">Copiar</button></div><pre>Resuma o relatório mensal de outubro do Hub Chapada para o comitê do ICV, em cinco tópicos: avanço físico, execução financeira, riscos, decisões pendentes e próximos passos. Use só o relatório anexado. Se uma decisão não tiver responsável ou prazo, escreva "a definir". Se uma informação não estiver no relatório, diga que não está, em vez de completar.</pre></div>
+<div class="table-wrap"><table><thead><tr><th>Pergunta</th><th>No pedido bom</th></tr></thead><tbody>
+<tr><td>O que você quer, e em que formato</td><td>Um resumo em cinco tópicos, com os temas nomeados</td></tr>
+<tr><td>Para quem é, e de que época</td><td>O comitê do ICV, sobre outubro</td></tr>
+<tr><td>De qual fonte</td><td>Só o relatório anexado</td></tr>
+<tr><td>O que fazer quando faltar informação</td><td>Escrever "a definir" e dizer o que não está no relatório</td></tr>
+</tbody></table></div>
+<div class="callout goal"><div class="callout-label">A frase que resolve metade dos problemas</div><p><strong>“Se uma informação não estiver na fonte, diga que não está, em vez de completar.”</strong> Ela dá ao Copilot permissão para não saber. Sem ela, a resposta mais provável é uma frase plausível, e às vezes errada.</p></div>
 </section>
 <section id="limpar">
-<h2>Limpar uma exportação de campo com um pedido</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#107c41">E</span>Excel</span></div><p><span class="model-tag">Ideia 2 · Em vez de inventar, ela pergunta</span></p>
-<p class="why">Datas em vários formatos, municípios escritos de jeitos diferentes, visitas repetidas. Peça um plano, confira as decisões propostas e só então aplique as alterações em uma cópia.</p><div class="exercise-guide"><div class="callout-label">Roteiro da prática</div><dl><div><dt>Onde</dt><dd>Copilot no Excel; revise o plano antes de editar</dd></div><div><dt>Material</dt><dd>A exportação conferida no bloco anterior.</dd></div><div><dt>Faça</dt><dd>Execute a limpeza em uma aba nova, sinalizando ambiguidades.</dd></div><div><dt>Confira</dt><dd>Compare totais e registros removidos com a origem preservada.</dd></div><div><dt>Leve adiante</dt><dd>Guarde a aba limpa e a lista de divergências para a análise.</dd></div></dl></div>
-<div class="prompt">
-<div class="prompt-head"><span>Modo Planejar · Exportacao_Formulario_Campo_jul-set2026</span><button class="copy" type="button">Copiar</button></div>
-<pre>Transforme os dados em uma tabela e limpe a exportação em uma aba nova, sem mexer na original:
-1. Datas da coluna Data no formato dd/mm/aaaa. Sinalize as datas que podem ser lidas de dois jeitos ou que caem fora de julho a setembro de 2026, em vez de corrigir.
+<h2>Exercício 1 · Excel: limpar a exportação de campo</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#107c41">E</span>Excel</span></div><p class="why">Toda exportação de formulário chega assim: datas em quatro formatos, “Formosa”, “FORMOSA” e “Formosa - GO” como se fossem lugares diferentes, visitas lançadas duas vezes. Arrumar isso à mão leva uma manhã. Aqui é um pedido.</p>
+<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Copilot no Excel, no arquivo baixado</dd></div><div><dt>Material</dt><dd><span class="path">Exportacao_Formulario_Campo_jul-set2026</span>: as visitas de campo de julho a setembro</dd></div><div><dt>Faça</dt><dd>Peça a limpeza em uma aba nova e leia o plano antes de aprovar.</dd></div><div><dt>Confira</dt><dd>O total de mudas bate com o número que o projeto informa ao doador.</dd></div><div><dt>Leve adiante</dt><dd>Use o mesmo pedido na próxima exportação de formulário que chegar para você.</dd></div></dl></div>
+<ol class="steps">
+<li>No canal <span class="path">Prática</span>, abra a guia <span class="path">Compartilhado</span> e a pasta de planilhas. Baixe <span class="path">Exportacao_Formulario_Campo_jul-set2026</span>: clique nos três pontos ao lado do arquivo e em <span class="path">Baixar</span>. Abra no Excel.</li>
+<li>Antes de pedir qualquer coisa, olhe a aba: role pelas colunas <span class="path">Data</span> e <span class="path">Município</span>. Selecione a coluna <span class="path">Mudas plantadas</span> e veja a soma na barra de status, embaixo à direita. Anote esse número.</li>
+<li>Abra o Copilot, cole o pedido abaixo e envie.</li>
+<li>Leia o plano. Se o Copilot entendeu errado alguma coluna, corrija ali mesmo. Depois aprove.</li>
+</ol>
+<div class="prompt"><div class="prompt-head"><span>No Copilot do Excel</span><button class="copy" type="button">Copiar</button></div><pre>Limpe esta exportação em uma aba nova chamada Limpa, sem mexer na aba original. Mostre o plano antes de alterar.
+1. Datas da coluna Data no formato dd/mm/aaaa. As visitas são de julho a setembro de 2026. Se uma data puder ser lida de dois jeitos, não escolha: marque em amarelo e diga quais são as duas leituras.
 2. Municípios padronizados: Alto Paraíso de Goiás, São João d'Aliança, Formosa e Cavalcante.
 3. Sobrevivência sempre em porcentagem.
-4. Identifique repetições pela coluna ID visita. Remova apenas duplicatas idênticas; mantenha e sinalize registros com o mesmo ID e valores divergentes para revisão.
-5. Marque em amarelo as linhas de plantio com valor faltando.
-No final, some as mudas plantadas e a área, liste o que você mudou e quantas linhas removeu.</pre>
-</div>
-<div class="check">
-<h3>Confira</h3>
-<ul>
-<li>Leia o plano antes de aprovar. Se o Copilot entendeu errado uma coluna, corrija ali.</li>
-<li>Datas como 09/03/2026 podem ser março ou setembro. O pedido manda sinalizar, não adivinhar.</li>
-<li>A aba original continua igual.</li>
-<li>Compare a soma da exportação limpa com a versão atual dos indicadores. Se houver diferença, rastreie os registros e a definição do indicador; não ajuste a soma só para fazê-la coincidir.</li>
-</ul>
-</div>
+4. Cada ID visita é uma visita. Se o mesmo ID aparecer mais de uma vez, mantenha uma linha e liste o que era diferente entre as cópias.
+No final, some as mudas plantadas e a área, e diga quantas linhas removeu e por quê.</pre></div>
+<div class="check"><h3>Confira</h3><ul><li>A soma que você anotou no passo 1 deu 25.370 mudas. Depois da limpeza, deu quanto? O projeto informa ao doador <strong>23.500</strong> mudas no trimestre (em <span class="path">Indicadores_Doador_Veredas_Vivas</span>). A diferença eram três visitas lançadas duas vezes.</li><li>Uma das cópias tinha uma observação a mais (“lançado de novo pelo celular”). Outra só mudava a grafia do município. O Copilot contou o que era diferente?</li><li>Datas como <span class="path">9/8/2026</span> podem ser 9 de agosto ou 8 de setembro, e as duas caem no trimestre. Ficaram marcadas? Uma pista que está na própria planilha: o ID da visita traz o mês (<span class="path">V202609…</span> é setembro).</li><li>A aba original continua igual.</li></ul></div>
 </section>
-<section id="consolidar">
-<h2>Consolidar e analisar</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#107c41">E</span>Excel</span></div>
-<p class="why">Três projetos, três pessoas, três jeitos de montar a planilha, um deles em dólar. O Copilot junta tudo no formato do PMO e mostra onde o previsto e o realizado se afastam.</p><div class="exercise-guide"><div class="callout-label">Roteiro da prática</div><dl><div><dt>Onde</dt><dd>Excel, com as abas de treino abertas</dd></div><div><dt>Material</dt><dd>Burn_Rate_Projetos_Hubs_2026 e Acompanhamento_Fisico_Financeiro_2026.</dd></div><div><dt>Faça</dt><dd>Confira o mapeamento de colunas e gere a comparação previsto x realizado.</dd></div><div><dt>Confira</dt><dd>Verifique moeda, data-base e uma linha calculada manualmente.</dd></div><div><dt>Leve adiante</dt><dd>Guarde a análise e as lacunas para a conferência do próximo bloco.</dd></div></dl></div>
-<div class="prompt">
-<div class="prompt-head"><span>Modo Planejar · Burn_Rate_Projetos_Hubs_2026</span><button class="copy" type="button">Copiar</button></div>
-<pre>Preencha a aba Consolidado com uma linha por projeto, a partir das abas Veredas Vivas, Pastos Parana e Rastro Limpo. Cada aba usa nomes de coluna diferentes para o mesmo dado (Executado, Gasto acumulado, Exec. 30/09): mostre como você ligou cada coluna antes de preencher.
-Os valores da aba Consolidado são em dólar. Converta os projetos em reais pela cotação de 5,15 que está na própria aba.
-Burn rate atual = executado / valor do contrato. Burn rate esperado = tempo decorrido até 30/09/2026 / duração do projeto.
-Quando a aba de origem não separar contratos e salários, deixe em branco e sinalize. Não altere as abas de origem.</pre>
-</div>
-<div class="prompt">
-<div class="prompt-head"><span>Modo Planejar · Acompanhamento_Fisico_Financeiro_2026, aba Orçamento</span><button class="copy" type="button">Copiar</button></div>
-<pre>Em uma aba nova, monte previsto x realizado por linha orçamentária e trimestre (T1 a T3), com a coluna de desvio em porcentagem. Destaque em vermelho os desvios acima de 10%, para mais ou para menos, e explique a fórmula que você usou.</pre>
-</div>
-<h3>A mesma análise com o agente Analista</h3>
-<p>No Copilot Chat, abra o agente <span class="path">Analista</span> e anexe a planilha. Ele devolve um relatório com gráficos. Compare com o que você fez no Excel.</p>
-<div class="prompt">
-<div class="prompt-head"><span>Agente Analista</span><button class="copy" type="button">Copiar</button></div>
-<pre>Compare previsto x realizado por linha orçamentária e trimestre na aba Orçamento desta planilha e destaque os desvios acima de 10%. Explique cada desvio em uma frase usando a coluna Observações. Se não houver observação, diga que falta justificativa.</pre>
-</div>
-<h3>No Plano de Trabalho</h3>
-<div class="prompt">
-<div class="prompt-head"><span>Aba Cronograma, no mesmo formato do Plano de Trabalho do PMO</span><button class="copy" type="button">Copiar</button></div>
-<pre>Recalcule o % Esperado de cada item usando a data-base de 30/09/2026 e compare com o % Concluído. Marque na coluna Flag os itens com diferença acima de 20 pontos e diga se a Saúde Prazo deveria mudar. Não altere o % Concluído.</pre>
-</div>
-<p class="note">Para trazer dados de outro arquivo, os dados de origem precisam estar formatados como tabela.</p>
-<div class="callout pratica"><div class="callout-label">Formato deles, dados fictícios</div><p>No Plano de Trabalho, preserve WBS, início, término, % concluído, % esperado e saúde do prazo. No Burn Rate, diferencie executado, comprometido e saldo. Confirme a moeda e a data-base antes de consolidar; não misture uma posição de junho com outra de setembro.</p></div></section>
-<section id="conferir">
-<h2>Conferir o que a IA devolveu</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#107c41">E</span>Excel</span></div><p><span class="model-tag">Ideia 3 · Toda resposta é um rascunho</span></p>
-<p class="why">A confiança nos números vem da conferência, não do resumo bonito no painel.</p><div class="exercise-guide"><div class="callout-label">Roteiro da prática</div><dl><div><dt>Onde</dt><dd>Excel: células, fórmulas e histórico disponível</dd></div><div><dt>Material</dt><dd>A análise produzida no bloco anterior.</dd></div><div><dt>Faça</dt><dd>Refaça um cálculo e inspecione uma alteração.</dd></div><div><dt>Confira</dt><dd>Diferencie execução de 120% de desvio de 20%; trate previsto zero separadamente.</dd></div><div><dt>Leve adiante</dt><dd>Marque a versão revisada que poderá alimentar o relatório.</dd></div></dl></div>
+<section id="desafio">
+<h2>Exercício 2 · Excel: escreva o seu pedido e desafie o nosso</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#107c41">E</span>Excel</span></div><p class="why">Agora quem escreve o pedido é você. A tarefa é real e tem quatro armadilhas escondidas na planilha. Rode o seu no Excel, depois rode o nosso no Copilot Chat e compare. A meta: o seu pedido pegar as quatro.</p>
+<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Copilot no Excel, no arquivo baixado</dd></div><div><dt>Material</dt><dd><span class="path">Acompanhamento_Fisico_Financeiro_2026</span>, aba <span class="path">Orçamento</span></dd></div><div><dt>Faça</dt><dd>Escreva o pedido com as quatro perguntas, sem copiar.</dd></div><div><dt>Confira</dt><dd>Quantas das quatro armadilhas o seu pedido pegou.</dd></div><div><dt>Leve adiante</dt><dd>As mesmas armadilhas aparecem nas suas planilhas de verdade.</dd></div></dl></div>
+<div class="callout tip"><div class="callout-label">A tarefa</div><p>O financiador quer saber quais linhas do orçamento passaram de 10% no T3, para mais ou para menos, e por quê. Prepare isso em uma aba nova da planilha.</p></div>
 <ol class="steps">
-<li><strong>Clique na célula</strong> e leia a fórmula. Não confie só no texto do painel.</li>
-<li><strong>Teste com um número conhecido.</strong> Veredas Vivas, Serviços de terceiros, 3º trimestre: 84.000 realizados para 70.000 previstos dá 120%, ou seja, 20% acima.</li>
-<li><strong>Veja o que mudou</strong> em <span class="path">Revisão › Mostrar Alterações</span>. As edições do Copilot aparecem marcadas.</li>
-<li><strong>Volte atrás se precisar</strong> com Desfazer ou em <span class="path">Arquivo › Informações › Histórico de Versões</span>.</li>
+<li>Na mesma pasta do canal <span class="path">Prática</span>, baixe <span class="path">Acompanhamento_Fisico_Financeiro_2026</span> e abra no Excel. Dê uma olhada na aba <span class="path">Orçamento</span>.</li>
+<li>Clique em <span class="path">Copilot</span> na faixa de opções. Escreva o seu pedido respondendo às quatro perguntas. No Excel, vale uma quinta: peça que ele mostre o plano antes de alterar a planilha.</li>
+<li>Envie, leia o plano, aprove e confira o resultado com as quatro armadilhas abaixo.</li>
+<li>Agora rode o nosso pedido, sem abrir o Excel. No Copilot Chat, digite <kbd>/</kbd>, comece a digitar <span class="path">Acompanhamento</span> e selecione o arquivo. Confira se ele ficou marcado no pedido, abra o nosso pedido logo abaixo, cole e envie.</li>
+<li>Compare com a sua aba Desvios: os dois chegaram às mesmas linhas? Qual pegou mais armadilhas?</li>
 </ol>
-<div class="prompt">
-<div class="prompt-head"><span>Pergunta ao Copilot</span><button class="copy" type="button">Copiar</button></div>
-<pre>O que mudou nesta planilha hoje, quem mudou e em quais células?</pre>
-</div>
-<details class="optional-reference"><summary>Referência opcional · regras reutilizáveis no Excel</summary><h3>Regras que viajam com a planilha</h3>
-<p>Quando o recurso Regras estiver disponível, use a aba especial .rules ou .copilot-rules. Uma aba comum chamada “Regras” não garante aplicação automática. Se o recurso não estiver disponível, inclua as regras no pedido e confira o resultado.</p>
-<div class="prompt">
-<div class="prompt-head"><span>Texto da aba de regras</span><button class="copy" type="button">Copiar</button></div>
-<pre>Nunca altere as abas de origem. Trabalhe sempre em abas novas.
-Valores em reais, sem centavos.
-Trimestres no formato 2026-T1.
-Desvio = (realizado - previsto) / previsto. Destaque acima de 10%, para mais ou para menos.</pre>
-</div>
-</details><div class="model-tag">Ideia 3 · Toda resposta é um rascunho</div><div class="prompt"><div class="prompt-head"><span>Teste com resposta conhecida</span><button class="copy" type="button">Copiar</button></div><pre>Em um exemplo fictício com previsto de 70.000 e realizado de 84.000, calcule o desvio como (realizado − previsto) / previsto. Mostre a fórmula e explique a diferença entre “120% do previsto” e “20% acima do previsto”. Se o previsto for zero, sinalize e não divida por zero.</pre></div><p>Verifique também uma linha exatamente em 10% e outra acima de 10%. “Acima de 10%” não é “10% ou mais”. Uma justificativa ausente deve continuar ausente, mesmo que a IA ofereça uma explicação plausível.</p></section>
-<section id="relatorio">
-<h2>Dos números ao relatório e à apresentação</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#185abd">W</span>Word</span><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#b7472a">P</span>PowerPoint</span></div><p><span class="model-tag">Ideia 4 · Decisão só anda com dono e prazo</span></p>
-<p class="why">A planilha conferida vira a seção financeira do relatório e a apresentação do comitê, sem redigitar número.</p><div class="exercise-guide"><div class="callout-label">Roteiro da prática</div><dl><div><dt>Onde</dt><dd>Word e PowerPoint; alternativa: roteiro em texto</dd></div><div><dt>Material</dt><dd>Análise revisada e parágrafo da Sessão 1, ou exemplo fictício fornecido.</dd></div><div><dt>Faça</dt><dd>Redija a seção financeira e um roteiro de apresentação com fontes.</dd></div><div><dt>Confira</dt><dd>Confira cada número e registre justificativas ausentes.</dd></div><div><dt>Leve adiante</dt><dd>Salve o relatório e o roteiro para reutilizar o processo na Sessão 3.</dd></div></dl></div>
-<div class="prompt">
-<div class="prompt-head"><span>No Copilot do Word</span><button class="copy" type="button">Copiar</button></div>
-<pre>Escreva a seção de execução financeira do relatório T3 do Veredas Vivas usando a aba Orçamento de /Acompanhamento_Fisico_Financeiro_2026, no formato da seção 7 de /Modelo_Relatorio_Trimestral_FHV. Justifique cada desvio acima de 10% com as observações da planilha e os e-mails do projeto. Marque entre colchetes o que não tiver justificativa nas fontes.</pre>
-</div>
-<div class="prompt">
-<div class="prompt-head"><span>No Copilot do PowerPoint</span><button class="copy" type="button">Copiar</button></div>
-<pre>Crie uma apresentação de 6 slides para o comitê do ICV a partir de /Relatorio_T3_Veredas_Vivas e /Relatorio_Mensal_Hub_Chapada_Outubro_2026: resumo, avanço físico, execução financeira, riscos, decisões necessárias e próximos passos. Escreva os títulos como mensagens, não como temas. Se usar a Nota Conceitual da Fase 2, deixe claro que é rascunho e não meta aprovada.</pre>
-</div>
-<div class="prompt">
-<div class="prompt-head"><span>Revisão antes de apresentar</span><button class="copy" type="button">Copiar</button></div>
-<pre>Revise esta apresentação como se você fosse o comitê do financiador: aponte o que está confuso, o que falta e as três perguntas mais prováveis. Depois escreva as notas do orador, com um minuto por slide.</pre>
-</div>
-<p class="note">Para manter o visual da organização, abra antes o modelo de apresentação da equipe e peça ao Copilot para usar o mesmo visual.</p>
-<h3>O OnePager como referência de estrutura</h3><p>Use Executive_OnePager_2026 para observar a sequência: resultados, evidências e implicações para a liderança. Os “XXX” são lacunas, não valores. Para o Veredas Vivas, troque o conteúdo por evidência do caso fictício; não copie conclusões de outro projeto.</p></section>
+<div class="check"><h3>As quatro armadilhas</h3><ul><li><strong>Exatamente 10%.</strong> Equipamentos ficou em -10%. Exatamente 10% não é acima de 10%. Ficou fora da lista?</li><li><strong>Sem justificativa.</strong> Viagens e campo passou 19% e não tem observação. O Copilot disse que falta justificativa, ou ofereceu um motivo que soa plausível?</li><li><strong>20% ou 120%.</strong> Serviços de terceiros: 84.000 realizados para 70.000 previstos. Clique na célula do desvio e leia a fórmula. É 20% acima do previsto, não 120%.</li><li><strong>Lançado não é pago.</strong> A observação de Serviços de terceiros diz que R$ 83.700 foram lançados antes do pagamento, que só sai depois do Termo de Aceite. O resultado trata esse valor como pago?</li></ul><p><strong>Gabarito:</strong> no T3, passam de 10% Viagens e campo (+19%), Insumos (+16%) e Serviços de terceiros (+20%).</p></div>
+<p class="note">Quantas o seu pedido pegou? Escreva no chat, de 0 a 4. Se o nosso pegou alguma que o seu não pegou, qual frase fez a diferença?</p>
+<details class="optional-reference"><summary>Abra depois de rodar o seu · o nosso pedido</summary>
+<div class="prompt"><div class="prompt-head"><span>No Copilot Chat, com a planilha anexada</span><button class="copy" type="button">Copiar</button></div><pre>Compare previsto x realizado por linha orçamentária no T3, na aba Orçamento desta planilha, com o desvio em porcentagem: (realizado - previsto) / previsto. Liste os desvios acima de 10%, para mais ou para menos. Exatamente 10% não é acima de 10%.
+Explique cada desvio em uma frase usando apenas a coluna Observações. Se não houver observação, escreva "sem justificativa na planilha".
+Se uma observação disser que um valor foi lançado mas ainda não foi pago, deixe isso claro.</pre></div>
+</details>
+</section>
 <section id="depois">
-<h2>Para testar até quinta</h2><div class="exercise-guide"><div class="callout-label">Roteiro da prática</div><dl><div><dt>Onde</dt><dd>Sua cópia de treino</dd></div><div><dt>Material</dt><dd>Análise, relatório e roteiro revisados.</dd></div><div><dt>Faça</dt><dd>Escolha um cálculo e explique como verificá-lo.</dd></div><div><dt>Confira</dt><dd>Outra pessoa deve conseguir reproduzir a conferência.</dd></div><div><dt>Leve adiante</dt><dd>Traga um processo recorrente que possa usar essas entregas.</dd></div></dl></div>
+<h2>Fechamento e prática até quinta</h2>
+<h3>Antes de sair</h3>
+<p>No chat da reunião, escreva uma linha: <strong>quantas armadilhas o seu pedido pegou, e qual frase faltou.</strong></p>
+<div class="callout goal"><div class="callout-label">O que você leva desta sessão</div><ol><li>Por que a IA às vezes inventa, e a frase que evita isso.</li><li>As quatro perguntas de um bom pedido.</li><li>Uma exportação de campo limpa e uma aba de desvios conferida, feitas com pedidos seus.</li></ol></div>
+<h3>Para testar até quinta</h3>
 <ul>
-<li>Uma planilha real do dia a dia, em cópia, com um pedido no modo Planejar.</li>
-<li>Um previsto x realizado conferido célula por célula com um número conhecido.</li>
+<li>Pegue uma planilha real do seu mês e escreva o pedido com as quatro perguntas. Peça o plano antes de alterar.</li>
+<li>Escolha um número do resultado e refaça a conta. Traga para a Sessão 3 o que bateu e o que não bateu.</li>
 </ul>
-<p><strong>Entrega da sessão:</strong> análise com fórmula conferida, desvio sem justificativa sinalizado e roteiro de apresentação com fontes. Se a geração a partir de arquivo não estiver disponível, produza o roteiro e monte os slides no modelo da equipe.</p></section>
-<section aria-labelledby="recap-title" class="session-recap"><h2 id="recap-title">Onde estamos e o que vem pela frente</h2><p class="recap-intro">Na próxima sessão, vamos juntar fontes, análise e revisão em um processo que outra pessoa do time consiga repetir — com notebooks, agentes e acompanhamento.</p><div class="roadmap"><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 1</div><h3 class="session-title-small"><a href="sessao-1.html">Reunir o que já existe</a></h3><ul><li>Escolher a fonte e pedir o que falta</li><li>Alertas no Teams só para o que importa</li><li>Transformar uma reunião em tarefa no Planner</li><li>Resumir e-mails e conferir um parágrafo com fontes</li></ul><p class="status-tag">Já percorremos</p></article><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 2</div><h3 class="session-title-small"><a href="sessao-2.html">Planilhas e relatórios</a></h3><ul><li>Preparar e limpar uma planilha de trabalho</li><li>Consolidar previsto e realizado sem alterar a origem</li><li>Conferir fórmulas, números e divergências</li><li>Transformar a análise em relatório e apresentação</li></ul><p class="status-tag">Nesta sessão</p></article><article class="roadmap-card current"><div class="session-label">Sessão 3</div><h3 class="session-title-small"><a href="sessao-3.html">Processos e autonomia</a></h3><ul><li>Desenhar um fluxo com responsáveis e revisão</li><li>Organizar um notebook com fontes delimitadas</li><li>Testar um agente ou prompt reutilizável</li><li>Acompanhar tarefas e repetir o processo com a equipe</li></ul><p class="status-tag">A seguir</p></article></div></section><nav aria-label="Continuar" class="bottom-nav"><a href="sessao-1.html">← Sessão anterior</a><a href="sessao-3.html">Próxima sessão →</a></nav><footer>Material do curso Teams e IA na prática, preparado pela DC Cruz para uso interno da TNC. Os exemplos usam dados fictícios. Os recursos do Copilot mudam com frequência; a interface pode variar conforme a versão.</footer>
+</section>
+<section aria-labelledby="recap-title" class="session-recap"><h2 id="recap-title">Onde estamos e o que vem pela frente</h2><p class="recap-intro">Na próxima sessão, vamos juntar fontes, análise e revisão em um processo que outra pessoa do time consiga repetir, com notebooks, agentes e acompanhamento.</p><div class="roadmap"><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 1</div><h3 class="session-title-small"><a href="sessao-1.html">Reunir o que já existe</a></h3><ul><li>Escolher a fonte e pedir o que falta</li><li>Alertas no Teams só para o que importa</li><li>Transformar uma reunião em tarefa e deixar a ata pronta</li><li>Juntar o que está nos e-mails e conferir um parágrafo com fontes</li></ul><p class="status-tag">Já percorremos</p></article><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 2</div><h3 class="session-title-small"><a href="sessao-2.html">Como a IA pensa e como pedir bem</a></h3><ul><li>Entender por que a IA às vezes inventa</li><li>Escrever um pedido com as quatro perguntas</li><li>Limpar dados e achar desvios no Excel com pedidos seus</li></ul><p class="status-tag">Nesta sessão</p></article><article class="roadmap-card upcoming"><div class="session-label">Sessão 3</div><h3 class="session-title-small"><a href="sessao-3.html">Processos e autonomia</a></h3><ul><li>Desenhar um fluxo com responsáveis e revisão</li><li>Organizar um notebook com fontes delimitadas</li><li>Testar um agente ou prompt reutilizável</li><li>Acompanhar tarefas e repetir o processo com a equipe</li></ul><p class="status-tag">A seguir</p></article></div></section><nav aria-label="Continuar" class="bottom-nav"><a href="sessao-1.html">← Sessão anterior</a><a href="sessao-3.html">Próxima sessão →</a></nav><footer>Material do curso Teams e IA na prática, preparado pela DC Cruz para uso interno da TNC. Os exemplos usam dados fictícios. Os recursos do Copilot mudam com frequência; a interface pode variar conforme a versão.</footer>
 </div>
-<span aria-live="polite" class="sr-only" role="status"></span></body>
-</html>
+<span aria-live="polite" class="sr-only" role="status"></span></body></html>
