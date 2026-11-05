@@ -48,7 +48,7 @@
 </ol>
 <div class="prompt">
 <div class="prompt-head"><span>Exemplo de instrução personalizada</span><button class="copy" type="button">Copiar</button></div>
-<pre>Trabalho no PMO de um programa de conservação no Cerrado. Use o idioma solicitado para a entrega. Se não estiver claro, pergunte se deve usar português ou inglês. Escreva de forma direta, em tópicos curtos. Em documentos, siga os modelos da equipe e diga de qual fonte veio cada informação. Se faltar informação, pergunte em vez de completar.</pre>
+<pre>Trabalho no PMO de um programa de conservação no Cerrado. Use o idioma solicitado para a entrega. Se não estiver claro, pergunte se deve usar português do Brasil ou inglês. Em português, use sempre o português do Brasil. Escreva de forma direta, em tópicos curtos. Em documentos, siga os modelos da equipe e diga de qual fonte veio cada informação. Se faltar informação, pergunte em vez de completar.</pre>
 </div>
 <h3>Onde cada coisa entra</h3>
 <p>Um atalho para escolher por onde começar. Hoje usamos as duas primeiras linhas.</p>
@@ -96,7 +96,7 @@
 <li>No Copilot Chat, digite <kbd>/</kbd>, escreva <span class="path">Transcricao_Reuniao</span> e selecione a transcrição da reunião de outubro.</li>
 <li>Cole o pedido abaixo e envie.</li>
 </ol>
-<div class="prompt"><div class="prompt-head"><span>No Copilot Chat, com a transcrição selecionada</span><button class="copy" type="button">Copiar</button></div><pre>Com base apenas na transcrição selecionada, considere só a parte sobre o Veredas Vivas e ignore os testes de áudio do começo. Organize o que foi dito em:
+<div class="prompt"><div class="prompt-head"><span>No Copilot Chat, com a transcrição selecionada</span><button class="copy" type="button">Copiar</button></div><pre>Com base apenas na transcrição selecionada, organize o que foi dito em:
 1. Decisões: o que foi decidido, com o motivo em uma linha.
 2. Ações: ação, responsável e prazo, em tabela.
 3. Pendências: o que ficou sem decisão e volta na próxima reunião.
@@ -179,13 +179,18 @@ Máximo de uma página. Use só o que foi dito na reunião.</pre>
 </ol>
 <div class="prompt">
 <div class="prompt-head"><span>No Copilot do Word, com as fontes selecionadas</span><button class="copy" type="button">Copiar</button></div>
-<pre>Com base apenas nas fontes selecionadas, incluindo a transcrição da reunião de outubro, escreva um parágrafo de progresso do Veredas Vivas para o relatório do T3 à Fundação Horizonte Verde. Siga a regra do PMO-01: todo desvio acima de 10% precisa de justificativa. Cite a origem de cada fato e diferencie o que foi planejado do que foi executado. Não invente datas, números ou justificativas. Ao final, liste as informações que faltam e transforme cada uma em uma pergunta para revisão.</pre>
+<pre>Com base apenas nas fontes selecionadas, incluindo a transcrição da reunião de outubro, escreva em português do Brasil um parágrafo de progresso do Veredas Vivas para o relatório do T3 à Fundação Horizonte Verde. Siga a regra do PMO-01: todo desvio acima de 10% precisa de justificativa. Cite a origem de cada fato e diferencie o que foi planejado do que foi executado. Não invente datas, números ou justificativas. Ao final, liste as informações que faltam e transforme cada uma em uma pergunta para revisão.</pre>
 </div>
 <div class="check"><h3>Confira</h3><ul><li>Escolha um número do parágrafo e encontre-o na fonte citada.</li><li>Cada desvio acima de 10% tem justificativa vinda de uma fonte. Se não houver, aparece como pergunta.</li><li>A lista de perguntas mostra o que buscar antes da revisão.</li><li><strong>Qual data de inauguração do 3º viveiro, em Cavalcante, o parágrafo usa? De qual fonte ela veio?</strong> Anote e siga para o passo 2.</li></ul></div>
-<h3>2. Ache a divergência</h3>
-<p>Relatórios reais costumam juntar fontes que não concordam entre si. Um texto fluente pode escolher uma versão sem avisar. Aqui você testa isso com o pedido abaixo, no mesmo painel do Copilot.</p>
+<h3>2. Confira na planilha</h3>
+<p>Relatórios reais juntam fontes que não concordam entre si. A reunião decidiu uma data; a planilha pode não ter acompanhado. Confira você mesmo, sem o Copilot.</p>
+<ol class="steps">
+<li>No canal <span class="path">Prática</span>, abra <span class="path">Acompanhamento_Fisico_Financeiro_2026</span> e vá para a aba <span class="path">Cronograma</span>.</li>
+<li>Procure o marco do 3º viveiro, em Cavalcante. Qual data está lá? É a mesma do seu parágrafo?</li>
+</ol>
+<div class="check"><h3>Confira</h3><ul><li>Se as datas não batem: qual versão vale, e quem precisa atualizar a planilha? Escreva isso como pergunta no fim do documento, sem corrigir nada por conta própria.</li><li><strong>Ideia 3:</strong> o parágrafo parecia pronto antes desta conferência?</li></ul></div>
+<p class="note">O parágrafo usou uma data sem comentar a outra? Peça ao Copilot, no mesmo painel, com as duas fontes selecionadas:</p>
 <div class="prompt"><div class="prompt-head"><span>No Copilot do Word, com /Acompanhamento_Fisico_Financeiro_2026 e /Transcricao_Reuniao_Mensal_Outubro_2026 selecionados</span><button class="copy" type="button">Copiar</button></div><pre>Compare a data de inauguração do 3º viveiro, em Cavalcante, na aba Cronograma da planilha selecionada com a decisão registrada na transcrição da reunião de outubro. Mostre as datas e as fontes lado a lado, em tabela. Sinalize contradições; não escolha uma data em silêncio.</pre></div>
-<div class="check"><h3>Confira</h3><ul><li>A data do seu parágrafo é a mesma em todas as fontes?</li><li>Se não for: qual versão vale, e quem precisa confirmar? Escreva isso como pergunta no fim do documento, sem corrigir o parágrafo por conta própria.</li><li><strong>Ideia 3:</strong> o parágrafo parecia pronto antes desta conferência?</li></ul></div>
 <details class="optional-reference"><summary>Para depois · relatório completo, revisão e formulário do financiador</summary>
 <h3>Expandir o parágrafo para um relatório completo</h3>
 <p>Use depois de conferir o parágrafo e reunir todas as fontes.</p>
