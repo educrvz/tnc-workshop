@@ -13,196 +13,200 @@
 </div>
 <header id="conteudo">
 <span class="eyebrow">Teams e IA na prática · PMO Cerrado · 12/11/2026</span>
-<h1>Sessão 3 · Processos e autonomia</h1>
-<p class="lede">Transformar o acompanhamento mensal em um processo que a equipe consegue repetir: fontes organizadas, responsabilidades claras, revisão e entrega. Notebooks e agentes apoiam as etapas em que fazem sentido.</p>
+<h1>Sessão 3 · Um assistente para o relatório do mês</h1>
+<p class="lede">Todo mês, alguém junta os relatórios dos hubs, escreve o Resumo Estratégico e cobra o que ficou pendente. Hoje você monta um assistente para isso: primeiro desenha o caminho, depois reúne as fontes num Notebook, constrói um agente e testa até confiar. Quatro exercícios, no Copilot e no Planner.</p>
 <nav aria-label="Nesta sessão" class="toc">
-<a href="#fluxo">O fluxo de acompanhamento: do material à entrega</a>
-<a href="#montar">Montar um Notebook pelo guia do PMO</a>
-<a href="#pedido">Um pedido melhor, na prática</a>
-<a href="#agente">Construir o agente Acompanhamento Mensal</a>
-<a href="#notebook">Até onde o Notebook vai</a>
-<a href="#repetir">Trabalho que se repete</a>
-<a href="#fechamento">Para onde vai cada pedido</a>
+<a href="#fluxo">Exercício 1 · O caminho do relatório mensal</a>
+<a href="#montar">Exercício 2 · Um Notebook com as fontes do projeto</a>
+<a href="#agente">Exercício 3 · O agente Acompanhamento Mensal</a>
+<a href="#repetir">Exercício 4 · As ações abertas viram tarefas</a>
+<a href="#fechamento">Fechamento e o próximo mês</a>
 </nav>
-<p class="note">9h30–11h · horário de Brasília · 90 minutos <button class="print" type="button">Imprimir / salvar PDF</button></p><p class="interface-note">Os nomes destacados indicam comandos da interface. Podem variar conforme idioma, versão e licença. Se uma opção não aparecer, siga a alternativa do exercício com o facilitador.</p></header><p class="note">Os exemplos usam os arquivos fictícios do Veredas Vivas, na pasta do canal <span class="path">Prática</span>. Documentos guardados só no Box não aparecem para o Copilot: para usar os seus, coloque uma cópia no OneDrive ou no SharePoint da equipe.</p>
-<div class="callout goal"><div class="callout-label">Da prática atual à autonomia</div>O caso de hoje é Acompanhamento Mensal. O mesmo desenho pode ser adaptado depois para Relatório para Doador. O resultado só está pronto após revisão e transferência para o sistema de uso.</div><section id="fluxo">
-<h2>O fluxo de acompanhamento: do material à entrega</h2>
-<p class="why">Os guias fornecidos são o ponto de partida. Confirme com a equipe como o processo funciona hoje.</p><div class="exercise-guide"><div class="callout-label">Roteiro da prática</div><dl><div><dt>Onde</dt><dd>Um documento ou quadro de trabalho</dd></div><div><dt>Material</dt><dd>Entregas das sessões anteriores e guias fornecidos pelo PMO.</dd></div><div><dt>Faça</dt><dd>Desenhe entrada, preparação, revisão, entrega e acompanhamento.</dd></div><div><dt>Confira</dt><dd>Identifique responsável e lugar de registro em cada etapa.</dd></div><div><dt>Leve adiante</dt><dd>Use esse desenho para escolher as fontes e o escopo do notebook.</dd></div></dl></div><h3>Desenhe o processo antes de escolher a ferramenta</h3><ol class="steps"><li>Anote: entrada → preparação → revisão → entrega → acompanhamento.</li><li>Para cada passagem, defina responsável, prazo e lugar de registro. Teste o fluxo com uma entrega de treino, mesmo sem agente.</li><li>Separe o que exige julgamento humano, o que é uma regra repetitiva e o que se beneficia de síntese com IA. Só então escolha notebook, prompt, agente ou automação.</li></ol><p><strong>Entrega:</strong> um fluxo que outra pessoa consiga executar e conferir. O agente é uma das formas de apoiar esse processo.</p>
+<p class="note">9h30–11h · horário de Brasília · 90 minutos <button class="print" type="button">Imprimir / salvar PDF</button></p><p class="interface-note">Os nomes <span class="path">destacados assim</span> são comandos que você encontra na tela. Podem variar um pouco conforme idioma, versão e licença. Se uma opção não aparecer, use a alternativa do exercício. Para achar um arquivo com <kbd>/</kbd>, basta digitar o começo do nome.</p></header>
+<p class="note">Os exemplos usam os arquivos fictícios do Veredas Vivas, na pasta do canal <span class="path">Prática</span>. Quer usar o seu projeto? Siga os mesmos passos com os seus arquivos. Documentos guardados só no Box não aparecem para o Copilot: para usá-los, coloque uma cópia no OneDrive ou no SharePoint da equipe.</p>
+<section id="fluxo">
+<h2>Exercício 1 · O caminho do relatório mensal</h2>
+<p class="why">Antes de montar um assistente, vale saber como o relatório é feito hoje: quem manda o quê, até quando, quem confere e para onde vai. A IA ajuda em algumas etapas, não no processo inteiro. Saber em qual etapa ela ajuda é o que faz um agente ser útil.</p>
+<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Um papel, um Word ou um Loop</dd></div><div><dt>Material</dt><dd>Um relatório que você faz todo mês. Se não tiver, o exemplo abaixo.</dd></div><div><dt>Faça</dt><dd>Monte uma tabela com as etapas e marque onde a IA ajuda.</dd></div><div><dt>Confira</dt><dd>Toda linha tem um nome e uma data.</dd></div><div><dt>Leve adiante</dt><dd>Comece pela linha em que a IA ajuda mais e alguém ainda confere.</dd></div></dl></div>
+<h3>Exemplo: o ciclo mensal dos hubs (PMO-04)</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Quando</th><th>Etapa</th><th>Quem</th><th>A IA ajuda?</th></tr></thead>
+<tbody>
+<tr><td>3º dia útil</td><td>Cada hub salva o relatório mensal na pasta do projeto</td><td>Coordenação do hub</td><td>Não</td></tr>
+<tr><td>5º dia útil</td><td>O PMO confere quem enviou e cobra quem não enviou</td><td>PMO</td><td>Em parte: um lembrete automático</td></tr>
+<tr><td>7º dia útil</td><td>O PMO escreve o Resumo Estratégico de cada hub e confere os fatos</td><td>PMO</td><td><strong>Sim: o agente escreve o rascunho, a pessoa confere</strong></td></tr>
+<tr><td>10º dia útil</td><td>Reunião de coordenação com o Resumo na tela</td><td>PMO e hubs</td><td>Sim: a ata sai pronta da transcrição</td></tr>
+<tr><td>12º dia útil</td><td>Resumo no Smartsheet; decisões e ações registradas</td><td>PMO</td><td>Em parte: as ações viram tarefas no Planner</td></tr>
+</tbody>
+</table></div>
 <ol class="steps">
-<li>Relatórios mensais, atas e acompanhamentos do hub reunidos.</li>
-<li>Notebook com as fontes e o prompt padrão do acompanhamento mensal.</li>
-<li>Campos do Dashboard Mensal por Hub revisados pelo analista.</li>
-<li>Conteúdo colado na base do Smartsheet.</li>
+<li>Escolha um relatório que você faz todo mês. Se não tiver um, use o exemplo acima.</li>
+<li>Monte a mesma tabela: quando, etapa, quem e se a IA ajuda.</li>
+<li>Onde marcou “Sim”, escreva em poucas palavras o que a IA faz e quem confere depois.</li>
 </ol>
-<p>Neste exercício, uma pessoa prepara o conjunto de fontes e outra testa o processo. O agente desta sessão busca tornar o processo repetível para pessoas com licença e acesso às fontes; a qualidade precisa ser testada.</p>
-<div class="callout warning"><div class="callout-label">Qual versão do formato vale?</div><p>O Prompt Padrão tem sete seções. O guia do Dashboard Mensal por Hub, de julho de 2026, remove explicitamente “Prioridades Emergentes”, mas essa coluna permanece no modelo Resumo Estratégico. Para este exercício, seguimos os oito campos do guia, incluindo Mês/Ano e Hub. Antes de usar no dashboard real, o responsável pelo PMO confirma o mapeamento; não alteramos a planilha em silêncio.</p></div></section>
+<div class="check"><h3>Confira</h3><ul><li>Toda linha tem uma pessoa e uma data?</li><li>Cada “Sim” diz exatamente o que a IA faz, e quem confere?</li><li>Alguma etapa depende de uma decisão de alguém? Essa continua com a pessoa.</li></ul></div>
+<p class="note">Hoje você constrói a linha do 7º dia útil (exercícios 2 e 3) e a do 12º (exercício 4).</p>
+</section>
 <section id="montar">
-<h2>Montar um Notebook pelo guia do PMO</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot</span></div><p class="why">Quem ainda não montou um Notebook monta agora, seguindo o guia do PMO.</p><div class="exercise-guide"><div class="callout-label">Roteiro da prática</div><dl><div><dt>Onde</dt><dd>Notebooks no Copilot, se disponível</dd></div><div><dt>Material</dt><dd>Fontes fictícias e guias delimitados para o exercício.</dd></div><div><dt>Faça</dt><dd>Selecione as referências e execute o teste de prontidão.</dd></div><div><dt>Confira</dt><dd>Abra uma citação e identifique uma informação que o conjunto não contém.</dd></div><div><dt>Leve adiante</dt><dd>Guarde a lista de fontes e as lacunas para testar os próximos pedidos.</dd></div></dl></div>
+<h2>Exercício 2 · Copilot: um Notebook com as fontes do projeto</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot</span></div>
+<p class="why">Um Notebook é um espaço do Copilot com um conjunto fechado de arquivos. Ele responde só com o que está ali. Isso é a força e o limite: o que você deixou de fora não existe para ele, e o que você colocou errado ele usa como se fosse certo.</p>
+<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Notebooks no Copilot</dd></div><div><dt>Material</dt><dd>Os arquivos do Veredas Vivas, ou os do seu projeto</dd></div><div><dt>Faça</dt><dd>Monte o Notebook, rode o teste de prontidão e faça uma pergunta que cruza duas fontes.</dd></div><div><dt>Confira</dt><dd>O Notebook apontou o que falta e achou a divergência entre a ata e a planilha.</dd></div><div><dt>Leve adiante</dt><dd>Antes de pedir um relatório a um Notebook, rode o teste de prontidão.</dd></div></dl></div>
+<h3>1. Monte o Notebook</h3>
 <ol class="steps">
-<li>No Copilot, abra <span class="path">Notebooks › Novo Notebook</span> e dê um nome claro, por exemplo "Veredas Vivas · Relatório T3".</li>
-<li>Em <span class="path">Adicionar referências</span>, escolha primeiro o que define o combinado (acordo de doação, contrato de cercamento, modelo de relatório da FHV, PMO-01), depois o histórico (relatório semestral, atas de agosto e setembro) e por fim as evidências do período (relatórios de campo, medição da cerca, planilhas, relatório mensal de outubro).</li>
-<li>Na pasta de planilhas há duas versões dos indicadores. Escolha uma e explique por quê.</li>
+<li>No Copilot, abra <span class="path">Notebooks › Novo Notebook</span> e dê um nome claro, por exemplo “Veredas Vivas · Relatório T3”.</li>
+<li>Em <span class="path">Adicionar referências</span>, adicione nesta ordem:
+<ul><li><strong>O combinado:</strong> o acordo de doação, o contrato de cercamento, o modelo de relatório da FHV e o PMO-01.</li><li><strong>O histórico:</strong> o relatório semestral e as atas de agosto e setembro.</li><li><strong>O que aconteceu no período:</strong> os relatórios de campo, a medição da cerca, as planilhas e o relatório mensal de outubro.</li></ul></li>
+<li>Na pasta de planilhas há dois arquivos de indicadores, um deles terminado em <span class="path">_v1</span>. Escolha só um e diga ao colega ao lado por quê.</li>
 <li>Clique no nome do Notebook › <span class="path">Instruções do Copilot</span> e cole a instrução abaixo.</li>
-<li>Rode o teste de prontidão antes de pedir qualquer relatório.</li>
 </ol>
 <div class="prompt">
 <div class="prompt-head"><span>Instruções do Copilot no Notebook</span><button class="copy" type="button">Copiar</button></div>
 <pre>Você apoia a redação de relatórios para financiadores. Use apenas as referências deste Notebook. Diferencie o que foi planejado, o que foi executado e o que ainda precisa de validação. Não invente dados, datas, números ou parceiros. Quando faltar informação, sinalize a lacuna antes de escrever o texto.</pre>
 </div>
+<h3>2. Rode o teste de prontidão</h3>
+<p>Antes de pedir qualquer relatório, pergunte ao Notebook o que ele sabe e o que não sabe.</p>
 <div class="prompt">
 <div class="prompt-head"><span>Teste de prontidão</span><button class="copy" type="button">Copiar</button></div>
 <pre>Com base em todas as referências deste Notebook, responda em tópicos: qual é o objetivo do projeto, qual período as fontes cobrem, quais atividades e resultados aparecem, quais desafios e riscos são mencionados, quais próximos passos aparecem e quais informações importantes parecem faltar para um bom relatório.</pre>
 </div>
-<div class="check">
-<h3>Confira</h3>
-<ul>
-<li>Resposta genérica: faltam fontes de contexto ou do período.</li>
-<li>Resposta que mistura versões: remova arquivos antigos ou duplicados.</li>
-<li>Um bom teste aponta lacunas, como a medição da cerca ainda sem Termo de Aceite.</li>
-</ul>
+<div class="check"><h3>Confira</h3><ul><li>Um bom teste aponta lacunas, como a medição da cerca ainda sem termo de aceite assinado.</li><li>A resposta veio genérica? Faltam fontes do combinado ou do período.</li><li>A resposta mistura números diferentes para o mesmo indicador? Você deixou as duas versões dos indicadores. A <span class="path">_v1</span> é a antiga: tire do Notebook.</li></ul></div>
+<h3>3. Faça uma pergunta que cruza duas fontes</h3>
+<div class="prompt">
+<div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div>
+<pre>Compare as atas de agosto e setembro com o cronograma da planilha de acompanhamento. O que as atas registram, como risco, decisão ou pendência, que o cronograma ainda não mostra? Cite a fonte de cada item.</pre>
 </div>
-</section>
-<section id="pedido">
-<h2>Um pedido melhor, na prática</h2>
-<p class="why">Ninguém pensa em blocos de prompt na hora de pedir. Comparar respostas ajuda a entender o papel de cada instrução; observe as diferenças sem presumir que toda execução vai piorar.</p><div class="exercise-guide"><div class="callout-label">Roteiro da prática</div><dl><div><dt>Onde</dt><dd>Copilot com o mesmo conjunto de fontes</dd></div><div><dt>Material</dt><dd>Uma ata de treino e o prompt padrão.</dd></div><div><dt>Faça</dt><dd>Compare o pedido completo com versões sem contexto, regras ou formato.</dd></div><div><dt>Confira</dt><dd>Anote diferenças observadas; uma falha não é garantida em cada execução.</dd></div><div><dt>Leve adiante</dt><dd>Guarde a versão que funcionou e o motivo de cada instrução.</dd></div></dl></div>
-<ol class="steps">
-<li>Rode o prompt padrão do acompanhamento mensal inteiro sobre uma ata.</li>
-<li>Rode de novo sem a parte de papel e contexto. Compare.</li>
-<li>Rode sem as regras de uso das fontes. Confira se aparecem informações sem suporte nas fontes.</li>
-<li>Rode sem a lista de seções. Veja o que acontece com o formato.</li>
-</ol>
-<div class="table-wrap"><table>
-<thead><tr><th>Sem esta parte</th><th>O que costuma piorar</th></tr></thead>
-<tbody>
-<tr><td>Papel e contexto</td><td>O texto fica genérico e descritivo, sem leitura estratégica.</td></tr>
-<tr><td>Regras das fontes</td><td>Surgem informações que não estão nos documentos.</td></tr>
-<tr><td>Seções e formato</td><td>A resposta muda de estrutura a cada vez e não cabe no Smartsheet.</td></tr>
-</tbody>
-</table></div>
-<p class="note">Para melhorar um pedido de qualquer tarefa, use o agente Prompt Coach, na lista de agentes do Copilot.</p>
+<div class="check"><h3>Confira</h3><ul><li>Antes de ler a resposta, abra a ata de setembro e procure Cavalcante. Depois procure o 3º viveiro no cronograma. O que você encontrou?</li><li>A resposta achou a mesma coisa? A ata registra o risco de atraso do 3º viveiro por causa do cartório, mas o cronograma ainda diz “No prazo”.</li><li>Agora pergunte algo que não está nas fontes, por exemplo: “Qual é o orçamento do projeto Rastro Limpo?”. O Notebook deve dizer que não encontrou, em vez de completar.</li></ul></div>
 </section>
 <section id="agente">
-<h2>Construir o agente Acompanhamento Mensal</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot</span></div><p class="why">Um agente é um especialista com papel, conhecimento permitido, limites e formato de resposta. Este faz o acompanhamento mensal no padrão do PMO.</p><div class="exercise-guide"><div class="callout-label">Roteiro da prática</div><dl><div><dt>Onde</dt><dd>Construtor de agentes; alternativa: prompt reutilizável</dd></div><div><dt>Material</dt><dd>Guia do dashboard, formato confirmado para treino e documentos fictícios do mês.</dd></div><div><dt>Faça</dt><dd>Configure uma tarefa estreita e teste os três cenários abaixo.</dd></div><div><dt>Confira</dt><dd>Teste caso normal, informação ausente e pergunta fora do escopo.</dd></div><div><dt>Leve adiante</dt><dd>Guarde instruções, fontes e resultados antes de compartilhar.</dd></div></dl></div>
-<h3>Passo a passo</h3>
+<h2>Exercício 3 · Copilot: o agente Acompanhamento Mensal</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot</span></div>
+<p class="why">Um agente é um assistente com uma tarefa só, sempre a mesma: as mesmas regras, as mesmas fontes de consulta e o mesmo formato de resposta. Você configura uma vez e qualquer pessoa do time usa. Este escreve o rascunho do Resumo Estratégico de um hub, a linha do 7º dia útil do exercício 1.</p>
+<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Copilot Chat › Novo agente</dd></div><div><dt>Material</dt><dd>O PMO-04, o Resumo Estratégico dos meses anteriores e o relatório mensal de outubro do Hub Chapada</dd></div><div><dt>Faça</dt><dd>Configure o agente e teste três situações: um mês normal, uma pergunta fora do assunto e um mês sem documentos.</dd></div><div><dt>Confira</dt><dd>Cada item do resumo existe no relatório, e o agente diz “não sei” quando não tem base.</dd></div><div><dt>Leve adiante</dt><dd>Só compartilhe um agente depois que ele passar nos três testes.</dd></div></dl></div>
+<h3>1. Configure o agente</h3>
 <ol class="steps">
-<li>No Copilot Chat, clique em <span class="path">Novo agente</span>.</li>
-<li>Descreva o agente em português na aba de descrição, ou vá direto para <span class="path">Configurar</span>.</li>
-<li>Em <span class="path">Instruções</span>, cole o texto abaixo.</li>
-<li>Em <span class="path">Conhecimento</span>, adicione o guia do Notebook do Dashboard Mensal por Hub, o prompt padrão do acompanhamento mensal e o modelo do Resumo Estratégico.</li>
-<li>Adicione os prompts iniciais.</li>
-<li>Teste na aba de teste com um caso normal e um caso fora do escopo.</li>
-<li>Ajuste as instruções e compartilhe com a equipe.</li>
+<li>No Copilot Chat, clique em <span class="path">Novo agente</span> e vá para <span class="path">Configurar</span>.</li>
+<li>Dê o nome “Acompanhamento Mensal” e cole a descrição abaixo.</li>
+<li>Em <span class="path">Instruções</span>, cole as instruções abaixo.</li>
+<li>Em <span class="path">Conhecimento</span>, adicione <span class="path">PMO-04_Ciclo_Mensal_de_Acompanhamento</span> e <span class="path">Resumo_Estrategico_Acompanhamento_Mensal</span>.</li>
+<li>Em <span class="path">Prompts iniciais</span>, cole os exemplos abaixo, um por linha.</li>
 </ol>
 <div class="prompt">
 <div class="prompt-head"><span>Descrição</span><button class="copy" type="button">Copiar</button></div>
-<pre>Gera o conteúdo do Dashboard Mensal por Hub a partir dos documentos do mês, no padrão do PMO Cerrado, pronto para revisão e para colar no Smartsheet.</pre>
+<pre>Escreve o rascunho do Resumo Estratégico mensal de um hub a partir dos documentos do mês, no padrão do PMO Cerrado, pronto para revisão e para colar no Smartsheet.</pre>
 </div>
 <div class="prompt">
 <div class="prompt-head"><span>Instruções</span><button class="copy" type="button">Copiar</button></div>
 <pre>Você apoia o PMO Cerrado no acompanhamento mensal dos hubs. A pessoa indica os documentos do mês de um hub: relatório mensal, atas, acompanhamento ou status report.
 1. Confirme o hub e o mês/ano. Se faltar, pergunte antes de começar.
-2. Use apenas o que está explícito nos documentos indicados e no guia do Dashboard Mensal por Hub. Não faça inferências nem use conhecimento externo.
-3. Entregue os campos nesta ordem: Mês/Ano; Hub; Conquistas no Período; Problemas e Desafios no Momento; Lições Aprendidas no Período; Oportunidades; Riscos; Pontos para Decisão ou Direcionamento da Coordenação.
-4. Escreva bullets curtos, com o contexto necessário para quem não acompanha o hub no dia a dia. Separe por doador quando possível.
-5. Se não houver informação para um campo, escreva: Nenhuma informação explícita identificada nos documentos para esta seção.
-6. Não decida nem recomende soluções. Aponte apenas o que precisa de decisão.
-7. No final, liste as pendências de validação: dados sem evidência, siglas sem explicação, trechos que parecem inferência e informações sensíveis.
-8. Entregue também uma linha em tabela com as colunas do Resumo Estratégico, pronta para colar no Smartsheet.</pre>
+2. Use apenas o que está escrito nos documentos indicados. Não faça suposições nem use conhecimento externo.
+3. Entregue os campos nesta ordem: Mês/Ano; Hub; Conquistas no Período; Problemas e Desafios no Momento; Lições Aprendidas no Período; Oportunidades; Riscos; Decisões Necessárias.
+4. Escreva tópicos curtos, com o contexto necessário para quem não acompanha o hub no dia a dia. Siga o tamanho e o tom das linhas dos meses anteriores no Resumo Estratégico.
+5. Se não houver informação para um campo, escreva: Nenhuma informação nos documentos do mês.
+6. Não decida nem recomende soluções. Em Decisões Necessárias, liste só o que a coordenação precisa decidir.
+7. No final, liste o que precisa ser conferido: números sem fonte, siglas sem explicação e trechos que parecem suposição.
+8. Entregue também os campos em uma linha de tabela, pronta para colar no Smartsheet.</pre>
 </div>
 <div class="prompt">
 <div class="prompt-head"><span>Prompts iniciais</span><button class="copy" type="button">Copiar</button></div>
-<pre>Gere o dashboard do hub [nome do hub] de [mês/ano] com os documentos que vou indicar.
+<pre>Escreva o Resumo Estratégico do hub [nome do hub] de [mês/ano] com os documentos que vou indicar.
 Revise este texto antes de eu colar no Smartsheet: [texto]
-Gere só a seção Riscos do hub [nome do hub] de [mês/ano].</pre>
+Escreva só o campo Riscos do hub [nome do hub] de [mês/ano].</pre>
 </div>
-<div class="check">
-<h3>Teste antes de compartilhar</h3>
-<ul>
-<li><strong>Caso normal:</strong> /Relatorio_Mensal_Hub_Chapada_Outubro_2026. Cada bullet deve existir no relatório. Compare com as linhas de agosto e setembro em Resumo_Estrategico_Acompanhamento_Mensal.</li>
-<li><strong>Fora do escopo:</strong> "Qual é o saldo do projeto Pastos do Paranã?" O agente deve dizer que não tem base para responder.</li>
-<li><strong>Campo vazio:</strong> peça um mês sem documentos. O agente deve avisar, não inventar.</li>
-</ul>
-</div>
-<p class="note">Confira como o conhecimento foi fornecido e teste com outra conta antes de compartilhar. Referências do SharePoint respeitam permissões; arquivos carregados ou conteúdo incorporado ao agente podem ter regras de compartilhamento diferentes. Compartilhar o agente não equivale a compartilhar uma pasta.</p>
-<h3>Outro agente: perguntas frequentes do time</h3>
-<p>Um agente com a pasta de procedimentos do PMO como conhecimento responde às perguntas básicas que hoje chegam ao PMO, citando o procedimento.</p>
+<h3>2. Teste antes de confiar</h3>
+<p>Na área de teste ao lado da configuração, rode as três situações. Um agente bom acerta o caso normal e, principalmente, sabe dizer “não sei”.</p>
+<div class="check"><h3>Os três testes</h3><ul>
+<li><strong>Mês normal:</strong> peça o Resumo do Hub Chapada de 10/2026 e indique, com <kbd>/</kbd>, o <span class="path">Relatorio_Mensal_Hub_Chapada_Outubro_2026</span>. Escolha três itens da resposta e encontre cada um no relatório. Compare o tamanho e o tom com as linhas de agosto e setembro no Resumo Estratégico.</li>
+<li><strong>Fora do assunto:</strong> pergunte “Qual é o saldo do projeto Pastos do Paranã?”. O agente deve dizer que não tem base para responder.</li>
+<li><strong>Mês sem documentos:</strong> peça o Resumo do Hub Chapada de 11/2026, sem indicar nenhum arquivo. O agente deve avisar que falta o material, não inventar.</li>
+</ul></div>
+<p>Falhou em algum? Ajuste a instrução que deveria ter evitado o erro e rode o mesmo teste de novo. É assim que um agente fica confiável.</p>
+<div class="check"><h3>Se Novo agente não aparecer</h3><p>Salve as instruções como um pedido reutilizável e rode os mesmos três testes no Copilot Chat, selecionando as fontes com <kbd>/</kbd> a cada vez. O resultado é o mesmo processo testado, sem o construtor de agentes.</p></div>
+<p class="note">Antes de compartilhar, teste com outra pessoa do time. O agente só lê os arquivos do SharePoint que essa pessoa já pode abrir. Compartilhar o agente não compartilha a pasta.</p>
+<details class="optional-reference"><summary>Para depois · um agente que responde às dúvidas do time</summary>
+<p>Muitas perguntas que chegam ao PMO já estão respondidas nos procedimentos. Um agente com os procedimentos do PMO como conhecimento responde citando a regra, e você só entra quando a regra não resolve.</p>
+<ol class="steps"><li>Crie um novo agente e, em <span class="path">Conhecimento</span>, adicione os procedimentos PMO-01 a PMO-04.</li><li>Nas instruções, peça que ele responda só com base nos procedimentos, cite o trecho e diga quando a regra não resolve a pergunta.</li><li>Teste com as perguntas abaixo e confira a resposta no procedimento.</li></ol>
 <div class="prompt">
 <div class="prompt-head"><span>Exemplos de pergunta</span><button class="copy" type="button">Copiar</button></div>
 <pre>Posso remanejar R$ 40.000 de Insumos para Serviços de terceiros sem falar com o financiador? A linha de Insumos tem R$ 310.000 no ano.
 Posso dividir uma compra em duas para ficar abaixo da faixa de três orçamentos?</pre>
 </div>
-<p class="note">Confira o cálculo e a regra do procedimento. Para perguntas que a fonte não resolve, o agente deve registrar a lacuna e indicar o que precisa ser validado.</p>
-<div class="check"><h3>Se Novo agente não aparecer</h3><p>Salve as instruções como prompt reutilizável e rode o mesmo teste no Copilot Chat, fornecendo as fontes autorizadas a cada execução. O objetivo é um processo testado, mesmo sem o construtor disponível.</p></div></section>
-<section id="notebook">
-<h2>Até onde o Notebook vai</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot</span></div>
-<p class="why">O Notebook responde só com as fontes que estão nele. Isso é a força e o limite.</p><div class="exercise-guide"><div class="callout-label">Roteiro da prática</div><dl><div><dt>Onde</dt><dd>Notebook ou chat com as fontes selecionadas</dd></div><div><dt>Material</dt><dd>Cronograma e ata do mesmo caso fictício.</dd></div><div><dt>Faça</dt><dd>Compare uma decisão com o cronograma e faça uma pergunta sem resposta nas fontes.</dd></div><div><dt>Confira</dt><dd>Exija referências e uma indicação explícita do que não foi encontrado.</dd></div><div><dt>Leve adiante</dt><dd>Registre a pendência que uma pessoa precisa resolver.</dd></div></dl></div>
-<div class="prompt">
-<div class="prompt-head"><span>Pergunta que cruza fontes</span><button class="copy" type="button">Copiar</button></div>
-<pre>O que foi decidido na reunião de outubro que ainda não aparece no cronograma da planilha de acompanhamento?</pre>
-</div>
-<ul>
-<li>Compare as fontes e registre qualquer divergência antes de ver a discussão do facilitador. Diferencie uma decisão registrada de uma alteração formalmente aprovada.</li>
-<li>Pergunte algo que não está nas fontes. O Notebook deve dizer que não encontrou, em vez de completar.</li>
-<li>A quantidade e os tipos de fontes dependem da licença e da versão. Use um conjunto pequeno e explícito; confira na resposta quais referências sustentam a conclusão.</li>
-</ul>
+</details>
 </section>
 <section id="repetir">
-<h2>Trabalho que se repete</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#237b4b">P</span>Planner</span><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#6264a7">T</span>Teams</span><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#8035c2">L</span>Loop</span></div><p class="why">Três formas de não refazer o mesmo trabalho todo mês.</p><div class="exercise-guide"><div class="callout-label">Roteiro da prática</div><dl><div><dt>Onde</dt><dd>Planner de treino e documento compartilhado autorizado</dd></div><div><dt>Material</dt><dd>Tabela de ações revisada e desenho do processo.</dd></div><div><dt>Faça</dt><dd>Registre uma tarefa com responsável e prazo e teste a passagem para outra pessoa.</dd></div><div><dt>Confira</dt><dd>Confirme que a tarefa existe e que o destinatário tem acesso.</dd></div><div><dt>Leve adiante</dt><dd>Escolha uma rotina para repetir; agendamento e automação são referências opcionais.</dd></div></dl></div>
-<details class="optional-reference"><summary>Referência opcional · agendar um pedido recorrente</summary><h3>Prompt agendado</h3>
+<h2>Exercício 4 · Copilot e Planner: as ações abertas viram tarefas</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot Chat</span><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#237b4b">P</span>Planner</span></div>
+<p class="why">Ações combinadas em reunião se perdem de um mês para o outro: uma vence sem ninguém ver, outra aparece em duas atas. Aqui o Copilot lê duas atas de uma vez e entrega a lista do que ainda está aberto. Esta é a linha do 12º dia útil do exercício 1.</p>
+<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Copilot Chat e o Planner do canal <span class="path">Prática</span></dd></div><div><dt>Material</dt><dd>As atas de agosto e setembro do Veredas Vivas, ou duas atas suas</dd></div><div><dt>Faça</dt><dd>Peça a lista de ações abertas e crie uma tarefa para cada uma.</dd></div><div><dt>Confira</dt><dd>As ações vencidas estão marcadas e nenhuma aparece duas vezes.</dd></div><div><dt>Leve adiante</dt><dd>Depois de cada reunião mensal, rode o mesmo pedido com a ata nova e a anterior.</dd></div></dl></div>
 <ol class="steps">
-<li>Envie o pedido uma vez no Copilot Chat.</li>
+<li>No Copilot Chat, digite <kbd>/</kbd> e selecione <span class="path">Ata_Reuniao_Mensal_Agosto_2026</span>. Repita para <span class="path">Ata_Reuniao_Mensal_Setembro_2026</span>. Confira que os dois arquivos aparecem no pedido.</li>
+<li>Cole o pedido abaixo e envie.</li>
+</ol>
+<div class="prompt">
+<div class="prompt-head"><span>No Copilot Chat, com as duas atas selecionadas</span><button class="copy" type="button">Copiar</button></div>
+<pre>Com base apenas nas duas atas selecionadas, liste em tabela as ações que ainda não foram concluídas: tarefa, responsável, prazo e reunião de origem. Se a mesma ação aparece nas duas atas, junte em uma linha e use o prazo mais recente. Marque as ações com prazo vencido em 30/09/2026 e as que não têm responsável. Deixe de fora o que já foi concluído.</pre>
+</div>
+<div class="check"><h3>Confira</h3><ul><li>As duas ações concluídas em agosto (enviar o relatório semestral e revisar o fechamento do S1) ficaram de fora?</li><li>O levantamento de sobrevivência em Formosa aparece nas duas atas. Virou uma linha só?</li><li>“Falar com o cartório de Cavalcante”, com prazo em 31/08, aparece como vencida?</li><li>Abra uma das atas e confira um responsável e um prazo.</li></ul></div>
+<h3>Crie as tarefas no Planner</h3>
+<ol class="steps">
+<li>No canal <span class="path">Prática</span>, abra a guia <span class="path">Treino – Veredas Vivas</span>.</li>
+<li>Crie uma tarefa para cada linha da tabela, com responsável (no treino, você mesmo) e data de conclusão.</li>
+<li>Em <span class="path">Observações</span>, cole a reunião de origem.</li>
+</ol>
+<div class="check"><h3>Confira</h3><p>Uma tabela no chat ainda não é uma tarefa. A ação só existe quando tem responsável, prazo e um lugar onde a equipe acompanha.</p></div>
+<details class="optional-reference"><summary>Para depois · o ciclo do mês como tarefas que se repetem</summary>
+<p>As etapas do <span class="path">PMO-04_Ciclo_Mensal_de_Acompanhamento</span> podem virar tarefas recorrentes no Planner: o envio dos hubs (3º dia útil), a cobrança (5º), o Resumo Estratégico (7º), a reunião (10º) e o Smartsheet (12º). Crie cada tarefa uma vez e, em <span class="path">Repetir</span>, escolha mensal.</p>
+</details>
+<details class="optional-reference"><summary>Para depois · um pedido que roda sozinho toda semana</summary>
+<ol class="steps">
+<li>Envie o pedido abaixo uma vez no Copilot Chat.</li>
 <li>Passe o mouse sobre o pedido e escolha <span class="path">Agendar este prompt</span>.</li>
-<li>Defina o horário, a frequência e se quer receber por e-mail. Confira os limites exibidos na sua conta.</li>
+<li>Defina o dia, o horário e se quer receber por e-mail. Confira os limites exibidos na sua conta.</li>
 </ol>
 <div class="prompt">
 <div class="prompt-head"><span>Toda segunda às 8h</span><button class="copy" type="button">Copiar</button></div>
 <pre>Com base nos meus e-mails, chats e reuniões da semana passada, liste o que está pendente nos projetos que eu acompanho, por projeto, com responsável e prazo. Destaque o que vence nesta semana.</pre>
 </div>
-</details><h3>Do rascunho pessoal à entrega do time</h3>
-<ol class="steps">
-<li>Comece no Copilot Chat, no seu computador.</li>
-<li>Clique no lápis abaixo da resposta para abrir uma Page.</li>
-<li>Compartilhe a Page com a equipe. Todos editam e pedem ajuda ao Copilot dentro dela.</li>
-<li>Com o conteúdo fechado, peça o documento final no formato da equipe.</li>
-</ol>
-<div class="prompt">
-<div class="prompt-head"><span>Primeiro pedido</span><button class="copy" type="button">Copiar</button></div>
-<pre>Monte o plano de trabalho do relatório T3 do Veredas Vivas com etapas, responsáveis e prazos, seguindo os prazos internos de /PMO-01_Relatorios_para_Financiadores. A entrega ao financiador é em 14/11.</pre>
-</div>
-<p class="note">Um pedido que funcionou bem pode ser salvo na galeria de prompts e compartilhado com o time do Teams.</p>
-<h3>Das atas ao Planner: responsável, prazo e acompanhamento</h3>
-<div class="prompt">
-<div class="prompt-head"><span>No Copilot Chat</span><button class="copy" type="button">Copiar</button></div>
-<pre>Leia /Ata_Reuniao_Mensal_Agosto_2026, /Ata_Reuniao_Mensal_Setembro_2026 e /Transcricao_Reuniao_Mensal_Outubro_2026. Liste em tabela as ações ainda abertas: tarefa, responsável, prazo e reunião de origem. Deixe de fora o que já foi concluído, marque as ações com prazo vencido e as que não têm responsável.</pre>
-</div>
-<ol class="steps">
-<li>Crie um plano no Planner para o projeto e uma tarefa por linha da tabela, com responsável e prazo.</li>
-<li>As etapas do ciclo mensal de /PMO-04_Ciclo_Mensal_de_Acompanhamento viram tarefas recorrentes: envio dos hubs, cobrança, resumo, reunião e Smartsheet.</li>
-</ol>
+</details>
+<details class="optional-reference"><summary>Para depois · avisar o canal quando um relatório chegar</summary>
+<p>Se o seu ambiente permitir, no Teams abra <span class="path">Workflows</span> e escolha um modelo que avisa o canal quando um arquivo novo entra em uma pasta. Use a pasta de treino. O fluxo só enxerga pastas do Teams e do SharePoint, não do Box. O aviso não substitui a conferência: o fluxo avisa, a pessoa confere.</p>
+</details>
 <details class="optional-reference"><summary>Para depois · o que mudou de uma ata para a outra</summary>
-<p>Antes de montar a lista de ações, veja o que mudou de um mês para o outro sem abrir os dois arquivos lado a lado.</p>
-<ol class="steps"><li>No OneDrive ou na pasta do canal, marque <span class="path">Ata_Reuniao_Mensal_Agosto_2026</span> e <span class="path">Ata_Reuniao_Mensal_Setembro_2026</span>.</li><li>Clique em <span class="path">Copilot › Comparar arquivos</span>.</li><li>Confira uma diferença abrindo as duas atas.</li></ol>
+<ol class="steps">
+<li>No OneDrive ou na pasta do canal, marque <span class="path">Ata_Reuniao_Mensal_Agosto_2026</span> e <span class="path">Ata_Reuniao_Mensal_Setembro_2026</span>.</li>
+<li>Clique em <span class="path">Copilot › Comparar arquivos</span>.</li>
+<li>Confira uma diferença abrindo as duas atas.</li></ol>
 <p class="note">Se a opção não aparecer, peça no Copilot Chat, com as duas atas selecionadas por <kbd>/</kbd>: “Compare estas duas atas e liste o que mudou nas ações e nos prazos.”</p>
 </details>
-<p class="note">O fluxo avisa; a pessoa confere. Os nomes dos modelos de Workflows variam conforme a versão.</p>
-<details class="optional-reference"><summary>Referência opcional · notificar o canal com Workflows</summary><p>Teste somente depois de concluir a tarefa no Planner. Esta automação exige integração e permissões disponíveis no ambiente.</p><p>Se o conector e a política estiverem liberados, no Teams abra Workflows e escolha um modelo que avisa o canal quando um arquivo novo entra em uma pasta. Escolha a pasta de treino. O fluxo só enxerga pastas do Teams e do SharePoint, não do Box.</p></details></section>
+</section>
 <section id="fechamento">
-<h2>Para onde vai cada pedido</h2>
-<p class="why">Quando um pedido chegar ao PMO, mostre o caminho em vez de fazer.</p><div class="exercise-guide"><div class="callout-label">Roteiro da prática</div><dl><div><dt>Onde</dt><dd>Material das três sessões</dd></div><div><dt>Material</dt><dd>Seu fluxo, fontes, prompt ou agente e registro de testes.</dd></div><div><dt>Faça</dt><dd>Explique como outra pessoa pode repetir uma entrega.</dd></div><div><dt>Confira</dt><dd>Mostre onde verificar, quem decide e como acompanhar.</dd></div><div><dt>Leve adiante</dt><dd>Repita o fluxo duas vezes e registre ajustes para compartilhar com a equipe.</dd></div></dl></div>
+<h2>Fechamento e o próximo mês</h2>
+<h3>Antes de sair</h3>
+<p>No chat da reunião, escreva uma linha: <strong>qual etapa do seu mês você vai entregar à IA primeiro, e quem confere o resultado.</strong></p>
+<div class="callout goal"><div class="callout-label">O que você leva desta sessão</div><ol><li>O caminho de um relatório mensal, com o lugar exato em que a IA ajuda.</li><li>Um Notebook com as fontes de um projeto, testado.</li><li>Um agente que escreve o rascunho do Resumo Estratégico e sabe dizer “não sei”.</li><li>As ações abertas de duas reuniões como tarefas no Planner.</li></ol></div>
+<h3>Quando um pedido chegar ao PMO</h3>
+<p>Em vez de fazer pela pessoa, mostre o caminho.</p>
 <div class="table-wrap"><table>
-<thead><tr><th>Pedido</th><th>Caminho</th></tr></thead>
+<thead><tr><th>Pedido</th><th>Caminho</th><th>Onde vimos</th></tr></thead>
 <tbody>
-<tr><td>"Prepara a ata para mim"</td><td>Facilitador na reunião agendada, com o modelo de ata do PMO. Sessão 1.</td></tr>
-<tr><td>"O que ficou combinado?"</td><td>Pergunta ao Copilot Chat sobre a reunião, com as citações. Sessão 1.</td></tr>
-<tr><td>"Junta tudo sobre X"</td><td>Copilot Chat com fontes de trabalho, pedindo para ignorar o que não é do tema. Sessão 1.</td></tr>
-<tr><td>"Rascunho do relatório"</td><td>Word com as fontes citadas por "/", ou Notebook do relatório. Sessões 1 e 2.</td></tr>
-<tr><td>"Rascunho da apresentação"</td><td>PowerPoint a partir da planilha e do relatório do mês. Sessão 2.</td></tr>
-<tr><td>"Me ajuda com o Notebook"</td><td>Guia do Notebook do PMO e o teste de prontidão. Sessão 3.</td></tr>
-<tr><td>"Faz um agente para X"</td><td>Agent Builder com papel, conhecimento, limites e formato. Sessão 3.</td></tr>
+<tr><td>“Prepara a ata para mim”</td><td>Modelo de ata do PMO na recapitulação da reunião</td><td>Sessão 1</td></tr>
+<tr><td>“Junta tudo sobre X”</td><td>Copilot Chat com e-mails, chats e reuniões, pedindo a mensagem de origem de cada item</td><td>Sessão 1</td></tr>
+<tr><td>“Arruma esta planilha” ou “onde estão os desvios?”</td><td>Copilot no Excel, conferindo o plano antes de aprovar</td><td>Sessão 2</td></tr>
+<tr><td>“Rascunho da apresentação”</td><td>PowerPoint a partir da planilha e do relatório do mês</td><td>Sessão 2</td></tr>
+<tr><td>“Rascunho do relatório”</td><td>Notebook do projeto, com o teste de prontidão antes</td><td>Sessão 3</td></tr>
+<tr><td>“Faz um agente para X”</td><td>Novo agente com uma tarefa só, testado nas três situações</td><td>Sessão 3</td></tr>
 </tbody>
 </table></div>
-<h3>Para lembrar</h3><div class="callout goal"><div class="callout-label">Três coisas sobre como a IA funciona</div><ol class="model-list"><li><strong>A IA prevê palavras, não verifica fatos.</strong> Ela sabe o que é provável, não o que é verdade. Peça que diga o que falta e confira na origem.</li><li><strong>A IA só enxerga o que você mostra.</strong> Selecione as fontes. O que está só no Box não aparece.</li><li><strong>O pedido faz toda a diferença.</strong> O que você quer, para quem, de qual fonte e o que fazer quando faltar informação.</li></ol><p>E duas regras do trabalho: uma decisão só anda com responsável, prazo e lugar para acompanhar; e alerta só para o que importa.</p></div><h3>As sessões viram uma referência consultável</h3><p>Crie, no ambiente aprovado pela TNC, um notebook com os materiais finais e as transcrições autorizadas das sessões. Teste “como reviso uma ata?” e confira a fonte. Mantenha respostas do facilitador e gabaritos fora das referências dos exercícios.</p><h3>O próximo mês</h3><p>Reserve um encontro semanal de 30 minutos: cada pessoa traz um exemplo, uma fonte e uma correção feita. Escolha um fluxo para repetir duas vezes e registre tempo, ajustes e dúvidas de acesso.</p><p><strong>Entrega final:</strong> um notebook com fontes conferidas e um agente ou prompt reutilizável testado com caso normal, fonte ausente e pergunta fora do escopo.</p><p class="note">A equipe informou que não tem acesso ao Copilot Cowork. Nenhum exercício depende dele.</p></section>
-<section aria-labelledby="recap-title" class="session-recap"><h2 id="recap-title">Onde estamos e o que vem pela frente</h2><p class="recap-intro">Depois do workshop, escolha um fluxo para repetir duas vezes. Registre o que funcionou, o que precisou de revisão e as dúvidas para compartilhar com a equipe.</p><div class="roadmap"><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 1</div><h3 class="session-title-small"><a href="sessao-1.html">Comece com o Copilot bem configurado</a></h3><ul><li>Entender como a IA funciona</li><li>Ensinar o Copilot sobre você</li><li>Alertas no Teams só para o que importa</li><li>Deixar a ata pronta e transformar a reunião em tarefa</li><li>Juntar o que está espalhado nos e-mails</li></ul><p class="status-tag">Já percorremos</p></article><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 2</div><h3 class="session-title-small"><a href="sessao-2.html">Como a IA pensa e como pedir bem</a></h3><ul><li>Entender por que a IA às vezes inventa</li><li>Pedir que o Copilot te entreviste e escreva o pedido</li><li>Limpar dados, achar desvios e montar uma apresentação</li></ul><p class="status-tag">Já percorremos</p></article><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 3</div><h3 class="session-title-small"><a href="sessao-3.html">Processos e autonomia</a></h3><ul><li>Desenhar um fluxo com responsáveis e revisão</li><li>Organizar um notebook com fontes delimitadas</li><li>Testar um agente ou prompt reutilizável</li><li>Acompanhar tarefas e repetir o processo com a equipe</li></ul><p class="status-tag">Nesta sessão</p></article></div></section><nav aria-label="Continuar" class="bottom-nav"><a href="sessao-2.html">← Sessão anterior</a><a href="index.html">Voltar ao início →</a></nav><footer>Material do curso Teams e IA na prática, preparado pela DC Cruz para uso interno da TNC. Os exemplos usam dados fictícios. Os recursos do Copilot mudam com frequência; a interface pode variar conforme a versão.</footer>
+<h3>Para lembrar</h3>
+<div class="callout goal">
+<div class="callout-label">Três coisas sobre como a IA funciona</div>
+<ol class="model-list">
+<li><strong>A IA prevê palavras, não verifica fatos.</strong> Ela sabe o que é provável, não o que é verdade. Peça que diga o que falta e confira na origem.</li>
+<li><strong>A IA só enxerga o que você mostra.</strong> Selecione as fontes. O que está só no Box não aparece.</li>
+<li><strong>O pedido faz toda a diferença.</strong> O que você quer, para quem, de qual fonte e o que fazer quando faltar informação.</li></ol>
+<p>E duas regras do trabalho: uma decisão só anda com responsável, prazo e lugar para acompanhar; e alerta só para o que importa.</p></div>
+<h3>O próximo mês</h3>
+<p>Escolha uma etapa do seu mês e use a IA nela duas vezes, no ciclo deste mês e no do próximo. Anote quanto tempo levou, o que precisou corrigir e o que ajustou nas instruções. Uma vez por semana, em 30 minutos, cada pessoa traz um exemplo do que funcionou e uma correção que precisou fazer.</p>
+<p class="note">A equipe informou que não tem acesso ao Copilot Cowork. Nenhum exercício depende dele.</p>
+</section>
+<section aria-labelledby="recap-title" class="session-recap"><h2 id="recap-title">Onde estamos e o que vem pela frente</h2><p class="recap-intro">Depois do workshop, escolha uma etapa do seu mês e use a IA nela duas vezes. Anote o que funcionou e o que precisou corrigir.</p><div class="roadmap"><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 1</div><h3 class="session-title-small"><a href="sessao-1.html">Comece com o Copilot bem configurado</a></h3><ul><li>Entender como a IA funciona</li><li>Ensinar o Copilot sobre você</li><li>Alertas no Teams só para o que importa</li><li>Deixar a ata pronta e transformar a reunião em tarefa</li><li>Juntar o que está espalhado nos e-mails</li></ul><p class="status-tag">Já percorremos</p></article><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 2</div><h3 class="session-title-small"><a href="sessao-2.html">Como a IA pensa e como pedir bem</a></h3><ul><li>Entender por que a IA às vezes inventa</li><li>Pedir que o Copilot te entreviste e escreva o pedido</li><li>Limpar dados, achar desvios e montar uma apresentação</li></ul><p class="status-tag">Já percorremos</p></article><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 3</div><h3 class="session-title-small"><a href="sessao-3.html">Um assistente para o relatório do mês</a></h3><ul><li>Desenhar o caminho do relatório mensal</li><li>Montar um Notebook com as fontes do projeto</li><li>Construir e testar um agente</li><li>Transformar ações abertas em tarefas</li></ul><p class="status-tag">Nesta sessão</p></article></div></section><nav aria-label="Continuar" class="bottom-nav"><a href="sessao-2.html">← Sessão anterior</a><a href="index.html">Voltar ao início →</a></nav><footer>Material do curso Teams e IA na prática, preparado pela DC Cruz para uso interno da TNC. Os exemplos usam dados fictícios. Os recursos do Copilot mudam com frequência; a interface pode variar conforme a versão.</footer>
 </div>
 <span aria-live="polite" class="sr-only" role="status"></span></body>
 </html>
