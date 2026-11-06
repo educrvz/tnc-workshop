@@ -17,7 +17,7 @@
 <p class="lede">Todo mês, alguém junta os relatórios dos hubs, escreve o Resumo Estratégico e cobra o que ficou pendente. Hoje o Copilot faz o primeiro rascunho dessas tarefas: o relatório do trimestre num Notebook, o Resumo Estratégico com um agente e a lista de ações abertas no Planner. Você confere. Três exercícios, no Copilot e no Planner.</p>
 <nav aria-label="Nesta sessão" class="toc">
 <a href="#agente-o-que">Abertura: o que é um agente</a>
-<a href="#montar">Exercício 1 · Um Notebook com as fontes do projeto</a>
+<a href="#montar">Exercício 1 · O relatório do trimestre, em conversa</a>
 <a href="#agente">Exercício 2 · O agente Acompanhamento Mensal</a>
 <a href="#repetir">Exercício 3 · As ações abertas viram tarefas</a>
 <a href="#fechamento">Fechamento e o próximo mês</a>
@@ -41,49 +41,55 @@
 </table></div>
 <p>Vale criar um agente quando a tarefa se repete e outra pessoa conseguiria fazê-la seguindo o manual. Não vale para uma tarefa única, nem para o que depende de uma decisão: o agente prepara, a pessoa decide.</p>
 <p class="note">O agente desta sessão não age sozinho: não envia e-mails nem altera arquivos. Ele responde quando alguém pede, e a resposta é sempre um rascunho para conferir.</p>
-<p>Hoje você chega lá em dois passos: primeiro reúne as fontes certas num Notebook e vê o Copilot escrever com elas (exercício 1); depois escreve o manual do agente e testa (exercício 2).</p>
+<p>Hoje você chega lá em dois passos: primeiro reúne as fontes num Notebook e escreve um relatório em conversa com o Copilot (exercício 1); depois escreve o manual do agente e testa (exercício 2).</p>
 </section>
 <section id="montar">
-<h2>Exercício 1 · Copilot: um Notebook com as fontes do projeto</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot</span></div>
-<p class="why">Um Notebook é um espaço do Copilot com um conjunto fechado de arquivos. Ele responde só com o que está ali. Isso é a força e o limite: o que você deixou de fora não existe para ele, e o que você colocou errado ele usa como se fosse certo.</p>
-<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Notebooks no Copilot</dd></div><div><dt>Material</dt><dd>Os arquivos do Veredas Vivas, ou os do seu projeto</dd></div><div><dt>Faça</dt><dd>Monte o Notebook, rode o teste de prontidão e faça uma pergunta que cruza duas fontes.</dd></div><div><dt>Confira</dt><dd>O Notebook apontou o que falta e achou a divergência entre a ata e a planilha.</dd></div><div><dt>Leve adiante</dt><dd>Antes de pedir um relatório a um Notebook, rode o teste de prontidão.</dd></div></dl></div>
+<h2>Exercício 1 · Copilot: o relatório do trimestre, em conversa</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot</span></div>
+<p class="why">Você monta um Notebook com os arquivos do projeto e cola um roteiro que transforma o Copilot num editor de relatório. Ele lê tudo, diz o que encontrou e o que falta, faz perguntas a você, propõe a estrutura e só então escreve. No fim, você sai com o documento do relatório para o financiador. Um Notebook é um espaço do Copilot com um conjunto fechado de arquivos: ele responde só com o que está ali.</p>
+<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Notebooks no Copilot, e depois o Word</dd></div><div><dt>Material</dt><dd>Os arquivos do Veredas Vivas, ou os do seu projeto</dd></div><div><dt>Faça</dt><dd>Monte o Notebook, cole o roteiro, responda às quatro perguntas do Copilot e peça o documento.</dd></div><div><dt>Confira</dt><dd>O documento segue o modelo da FHV, cada número tem fonte e o que você não sabia ficou marcado como pendente.</dd></div><div><dt>Leve adiante</dt><dd>O mesmo roteiro serve para qualquer relatório: troque o modelo e os arquivos.</dd></div></dl></div>
 <h3>1. Monte o Notebook</h3>
 <ol class="steps">
 <li>No Copilot, abra <span class="path">Notebooks › Novo Notebook</span> e dê um nome claro, por exemplo “Veredas Vivas · Relatório T3”.</li>
-<li>Em <span class="path">Adicionar referências</span>, adicione nesta ordem:
-<ul><li><strong>O combinado:</strong> o acordo de doação, o contrato de cercamento, o modelo de relatório da FHV e o PMO-01.</li><li><strong>O histórico:</strong> o relatório semestral e as atas de agosto e setembro.</li><li><strong>O que aconteceu no período:</strong> os relatórios de campo, a medição da cerca, as planilhas e o relatório mensal de outubro.</li></ul></li>
-<li>Na pasta de planilhas há dois arquivos de indicadores, um deles terminado em <span class="path">_v1</span>. Escolha só um e diga ao colega ao lado por quê.</li>
-<li>Clique no nome do Notebook › <span class="path">Instruções do Copilot</span> e cole a instrução abaixo.</li>
+<li>Em <span class="path">Adicionar referências</span>, adicione os 13 arquivos da tabela abaixo. Procure cada um pelo começo do nome. Um bom conjunto de fontes tem três tipos de arquivo; se faltar um deles, a resposta sai mais fraca.</li></ol><div class="table-wrap"><table><thead><tr><th>O que o Notebook precisa</th><th>Arquivos</th></tr></thead><tbody><tr><td><strong>Compromissos e regras</strong><br>O que o projeto se comprometeu a entregar, as regras do PMO e o modelo do relatório. Sem isso, o Notebook não sabe o que era esperado.</td><td><span class="path">Acordo_de_Doacao_FHV-2025-017_Veredas_Vivas</span><br><span class="path">Contrato_TdR_Cercamento_ICV-2026-031</span><br><span class="path">Modelo_Relatorio_Trimestral_FHV</span><br><span class="path">PMO-01_Relatorios_para_Financiadores</span></td></tr><tr><td><strong>Histórico</strong><br>O último relatório enviado e o que foi decidido nas reuniões. Sem isso, o relatório novo pode repetir ou contradizer o anterior.</td><td><span class="path">Relatorio_Semestral_S1-2026_Veredas_Vivas</span><br><span class="path">Ata_Reuniao_Mensal_Agosto_2026</span><br><span class="path">Ata_Reuniao_Mensal_Setembro_2026</span></td></tr><tr><td><strong>Evidências do período</strong><br>O que de fato aconteceu: visitas de campo, medições e números. Cada frase do relatório precisa vir daqui.</td><td><span class="path">Relatorio_Visita_Formosa_Set2026</span><br><span class="path">Relatorio_Visita_Viveiro_Cavalcante_Out2026</span><br><span class="path">Relatorio_Medicao_01_Cercas_Planalto_Set2026</span><br><span class="path">Acompanhamento_Fisico_Financeiro_2026</span><br><span class="path">Indicadores_Doador_Veredas_Vivas</span><br><span class="path">Relatorio_Mensal_Hub_Chapada_Outubro_2026</span></td></tr></tbody></table></div><p class="note">Atenção: na pasta de planilhas há também <span class="path">Indicadores_Doador_Veredas_Vivas_v1</span>. Não adicione: é a versão antiga, com números diferentes. Uma versão antiga misturada às fontes faz o Notebook responder com dois números para a mesma coisa.</p><h3>2. Cole o roteiro e converse</h3>
+<ol class="steps">
+<li>No campo de pedido do Notebook, cole o roteiro abaixo e envie.</li>
+<li>Leia o diagnóstico. Ele aponta o que está pronto, o que falta e onde as fontes não batem.</li>
+<li>Responda às quatro perguntas. São decisões suas, e cada uma vem com opções: escolha uma ou escreva a sua. Se não souber uma resposta, diga “não sei” e veja o que ele faz.</li>
+<li>Leia a estrutura proposta. Peça uma mudança, por exemplo “junte as seções 5 e 6” ou “comece pelo desafio de Cavalcante”, e depois aprove.</li>
 </ol>
 <div class="prompt">
-<div class="prompt-head"><span>Instruções do Copilot no Notebook</span><button class="copy" type="button">Copiar</button></div>
-<pre>Você apoia a redação de relatórios para financiadores. Use apenas as referências deste Notebook. Diferencie o que foi planejado, o que foi executado e o que ainda precisa de validação. Não invente dados, datas, números ou parceiros. Quando faltar informação, sinalize a lacuna antes de escrever o texto.</pre>
+<div class="prompt-head"><span>Roteiro · editor de relatório</span><button class="copy" type="button">Copiar</button></div>
+<pre>Você é o editor do relatório trimestral do Veredas Vivas para a Fundação Horizonte Verde, referente ao terceiro trimestre de 2026 (julho a setembro). Eu sou do PMO e respondo pelo relatório. Use apenas as referências deste Notebook. Siga as etapas abaixo, uma de cada vez, e espere a minha resposta antes de passar para a próxima.
+
+Etapa 1 · Diagnóstico. Leia todas as referências. Mostre uma tabela com as dez seções do Modelo_Relatorio_Trimestral_FHV e, para cada uma, diga se as fontes são suficientes, parciais ou insuficientes. Depois, liste em até cinco tópicos os pontos de atenção: fontes que não batem entre si e regras do PMO-01 que o relatório precisa cumprir. Pare e pergunte se pode seguir.
+
+Etapa 2 · Entrevista. Faça exatamente 4 perguntas, uma de cada vez, numeradas "Pergunta 1 de 4", "Pergunta 2 de 4" e assim por diante. Pergunte só o que eu preciso decidir: como apresentar um problema, o que destacar, o que pedir à FHV. Não pergunte fatos: o que faltar nas fontes vira pendência, sem pergunta. Antes de cada pergunta, diga em uma linha o que as fontes mostram e ofereça duas ou três opções de resposta. Se eu responder "não sei", registre como pendência. Depois da Pergunta 4, vá direto para a Etapa 3, sem perguntas extras.
+
+Etapa 3 · Estrutura. Proponha a estrutura do relatório, seção por seção, com uma linha sobre o que vai em cada uma. Espere a minha aprovação ou os meus ajustes.
+
+Etapa 4 · Rascunho. Escreva o relatório completo na estrutura aprovada. Indique entre parênteses a fonte de cada número. Marque com [PENDENTE] o que ficou sem resposta. Não afirme nada que as fontes não sustentem.
+
+Etapa 5 · Pendências. No fim, liste as pendências e quem deveria responder cada uma.</pre>
 </div>
-<h3>2. Rode o teste de prontidão</h3>
-<p>Antes de pedir qualquer relatório, pergunte ao Notebook o que ele sabe e o que não sabe.</p>
-<div class="prompt">
-<div class="prompt-head"><span>Teste de prontidão</span><button class="copy" type="button">Copiar</button></div>
-<pre>Com base em todas as referências deste Notebook, responda em tópicos: qual é o objetivo do projeto, qual período as fontes cobrem, quais atividades e resultados aparecem, quais desafios e riscos são mencionados, quais próximos passos aparecem e quais informações importantes parecem faltar para um bom relatório.</pre>
-</div>
-<div class="check"><h3>Confira</h3><ul><li>Um bom teste aponta lacunas, como a medição da cerca ainda sem termo de aceite assinado.</li><li>A resposta veio genérica? Faltam fontes do combinado ou do período.</li><li>A resposta mistura números diferentes para o mesmo indicador? Você deixou as duas versões dos indicadores. A <span class="path">_v1</span> é a antiga: tire do Notebook.</li></ul></div>
-<h3>3. Faça uma pergunta que cruza duas fontes</h3>
-<div class="prompt">
-<div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div>
-<pre>Compare as atas de agosto e setembro com o cronograma da planilha de acompanhamento. O que as atas registram, como risco, decisão ou pendência, que o cronograma ainda não mostra? Cite a fonte de cada item.</pre>
-</div>
-<div class="check"><h3>Confira</h3><ul><li>Antes de ler a resposta, abra a ata de setembro e procure Cavalcante. Depois procure o 3º viveiro no cronograma. O que você encontrou?</li><li>A resposta achou a mesma coisa? A ata registra o risco de atraso do 3º viveiro por causa do cartório, mas o cronograma ainda diz “No prazo”.</li><li>Agora pergunte algo que não está nas fontes, por exemplo: “Qual é o orçamento do projeto Rastro Limpo?”. O Notebook deve dizer que não encontrou, em vez de completar.</li></ul></div>
-<h3>4. Peça o rascunho do relatório</h3>
-<p>Com o Notebook testado, peça o texto. O modelo da FHV dá a estrutura; as outras referências dão o conteúdo.</p>
-<div class="prompt">
-<div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div>
-<pre>Escreva o rascunho da seção de progresso do relatório do terceiro trimestre de 2026, de julho a setembro, para a Fundação Horizonte Verde. Siga a estrutura do Modelo_Relatorio_Trimestral_FHV. Use apenas as referências deste Notebook. Diferencie o que foi executado do que ainda depende de validação, e marque com [CONFERIR] cada número que precisa ser checado. No fim, liste o que falta para concluir o relatório.</pre>
-</div>
-<div class="check"><h3>Confira</h3><ul><li>A cerca aparece como medida, mas ainda sem aceite, e não como entregue e aprovada?</li><li>O risco do 3º viveiro em Cavalcante está no texto?</li><li>Escolha dois números marcados com [CONFERIR] e encontre cada um na fonte citada.</li><li>Gostou do rascunho? Copie para um Word e siga revisando lá.</li></ul></div>
+<h3>3. Transforme em documento</h3>
+<ol class="steps">
+<li>Na pasta do canal <span class="path">Prática</span>, abra o <span class="path">Modelo_Relatorio_Trimestral_FHV</span> no Word e salve uma cópia com o nome do seu relatório.</li>
+<li>Copie cada seção do rascunho do Notebook para o lugar dela no modelo.</li>
+</ol>
+<p class="note">O Notebook entrega o texto, não o arquivo. O documento final fica no modelo da FHV, na pasta do canal.</p>
+<div class="check"><h3>Confira o documento</h3><ul>
+<li>A cerca aparece como medida, mas sem aceite? O PMO-01 diz que só é entrega com o Termo de Aceite assinado.</li>
+<li>O atraso do 3º viveiro em Cavalcante está nos desafios? A ata de setembro registra o risco, mas o cronograma da planilha ainda diz “No prazo”. O diagnóstico pegou essa diferença?</li>
+<li>A execução financeira explica as linhas com variação acima de 10%?</li>
+<li>Escolha dois números e encontre cada um na fonte indicada entre parênteses.</li>
+<li>O que você respondeu “não sei” aparece como [PENDENTE], e não preenchido por suposição?</li>
+</ul></div>
+<p><strong>Repare:</strong> você colou um texto só, e o Copilot conduziu o resto. Ele leu, apontou problemas, perguntou o que só você sabia e esperou a sua aprovação antes de escrever. É esse tipo de roteiro que, no próximo exercício, vira um agente que qualquer pessoa do time usa.</p>
 </section>
 <section id="agente">
 <h2>Exercício 2 · Copilot: o agente Acompanhamento Mensal</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot</span></div>
 <p class="why">Agora você monta o manual do colega novo da abertura. Este agente escreve o rascunho do Resumo Estratégico de um hub, que o PMO prepara todo mês no 7º dia útil.</p>
-<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Copilot Chat › Novo agente</dd></div><div><dt>Material</dt><dd>O PMO-04, o Resumo Estratégico dos meses anteriores e o relatório mensal de outubro do Hub Chapada</dd></div><div><dt>Faça</dt><dd>Configure o agente e teste três situações: um mês normal, uma pergunta fora do assunto e um mês sem documentos.</dd></div><div><dt>Confira</dt><dd>Cada item do resumo existe no relatório, e o agente diz “não sei” quando não tem base.</dd></div><div><dt>Leve adiante</dt><dd>Só compartilhe um agente depois que ele passar nos três testes.</dd></div></dl></div>
+<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Copilot Chat › Novo agente</dd></div><div><dt>Material</dt><dd>O PMO-04, o Resumo Estratégico dos meses anteriores e o relatório mensal de outubro do Hub Chapada</dd></div><div><dt>Faça</dt><dd>Configure o agente, teste três situações (um mês normal, uma pergunta fora do assunto e um mês sem documentos) e compartilhe com o colega ao lado.</dd></div><div><dt>Confira</dt><dd>Cada item do resumo existe no relatório, e o agente diz “não sei” quando não tem base.</dd></div><div><dt>Leve adiante</dt><dd>Só compartilhe um agente depois que ele passar nos três testes.</dd></div></dl></div>
 <h3>1. Configure o agente</h3>
 <ol class="steps">
 <li>No Copilot Chat, clique em <span class="path">Novo agente</span> e vá para <span class="path">Configurar</span>.</li>
@@ -123,7 +129,16 @@ Escreva só o campo Riscos do hub [nome do hub] de [mês/ano].</pre>
 </ul></div>
 <p>Falhou em algum? Ajuste a instrução que deveria ter evitado o erro e rode o mesmo teste de novo. É assim que um agente fica confiável.</p>
 <div class="check"><h3>Se Novo agente não aparecer</h3><p>Salve as instruções como um pedido reutilizável e rode os mesmos três testes no Copilot Chat, selecionando as fontes com <kbd>/</kbd> a cada vez. O resultado é o mesmo processo testado, sem o construtor de agentes.</p></div>
-<p class="note">Antes de compartilhar, teste com outra pessoa do time. O agente só lê os arquivos do SharePoint que essa pessoa já pode abrir. Compartilhar o agente não compartilha a pasta.</p>
+<h3>3. Compartilhe com o time</h3>
+<p>Um agente só vale a pena quando outras pessoas usam. Teste agora com o colega ao lado.</p>
+<ol class="steps">
+<li>No agente, clique em <span class="path">Compartilhar</span>.</li>
+<li>Adicione o colega ao lado com a permissão de quem só conversa com o agente, sem editar. Para editar, a pessoa precisa ser adicionada como proprietária.</li>
+<li>Copie o link do agente e mande para ele no chat.</li>
+<li>O colega abre o link e roda um dos três testes. Funcionou do mesmo jeito para ele?</li>
+</ol>
+<div class="check"><h3>Confira</h3><ul><li>O colega conseguiu abrir o agente? Se <span class="path">Compartilhar</span> não aparecer ou não aceitar o nome dele, o compartilhamento pode estar bloqueado pela TI. Anote e siga.</li><li>O agente só lê os arquivos do SharePoint que o colega já pode abrir. Compartilhar o agente não compartilha a pasta: se a resposta dele veio sem fonte, confira se ele tem acesso aos arquivos.</li></ul></div>
+<p class="note">Para o time inteiro, mande o link no canal do Teams. Quem recebe o link de edição pode alterar as instruções, então guarde esse link só para quem cuida do agente.</p>
 <details class="optional-reference"><summary>Para depois · um agente que responde às dúvidas do time</summary>
 <p>Muitas perguntas que chegam ao PMO já estão respondidas nos procedimentos. Um agente com os procedimentos do PMO como conhecimento responde citando a regra, e você só entra quando a regra não resolve.</p>
 <ol class="steps"><li>Crie um novo agente e, em <span class="path">Conhecimento</span>, adicione os procedimentos PMO-01 a PMO-04.</li><li>Nas instruções, peça que ele responda só com base nos procedimentos, cite o trecho e diga quando a regra não resolve a pergunta.</li><li>Teste com as perguntas abaixo e confira a resposta no procedimento.</li></ol>
@@ -183,7 +198,7 @@ Posso dividir uma compra em duas para ficar abaixo da faixa de três orçamentos
 <h2>Fechamento e o próximo mês</h2>
 <h3>Antes de sair</h3>
 <p>No chat da reunião, escreva uma linha: <strong>qual etapa do seu mês você vai entregar à IA primeiro, e quem confere o resultado.</strong></p>
-<div class="callout goal"><div class="callout-label">O que você leva desta sessão</div><ol><li>Um Notebook com as fontes de um projeto, testado, e o rascunho do relatório do trimestre.</li><li>Um agente que escreve o rascunho do Resumo Estratégico e sabe dizer “não sei”.</li><li>As ações abertas de duas reuniões como tarefas no Planner.</li></ol></div>
+<div class="callout goal"><div class="callout-label">O que você leva desta sessão</div><ol><li>O relatório do trimestre em Word, escrito em conversa com o Copilot a partir de um Notebook.</li><li>Um agente que escreve o rascunho do Resumo Estratégico e sabe dizer “não sei”.</li><li>As ações abertas de duas reuniões como tarefas no Planner.</li></ol></div>
 <h3>Quando um pedido chegar ao PMO</h3>
 <p>Em vez de fazer pela pessoa, mostre o caminho.</p>
 <div class="table-wrap"><table>
@@ -193,7 +208,7 @@ Posso dividir uma compra em duas para ficar abaixo da faixa de três orçamentos
 <tr><td>“Junta tudo sobre X”</td><td>Copilot Chat com e-mails, chats e reuniões, pedindo a mensagem de origem de cada item</td><td>Sessão 1</td></tr>
 <tr><td>“Arruma esta planilha” ou “onde estão os desvios?”</td><td>Copilot no Excel, conferindo o plano antes de aprovar</td><td>Sessão 2</td></tr>
 <tr><td>“Rascunho da apresentação”</td><td>PowerPoint a partir da planilha e do relatório do mês</td><td>Sessão 2</td></tr>
-<tr><td>“Rascunho do relatório”</td><td>Notebook do projeto, com o teste de prontidão antes</td><td>Sessão 3</td></tr>
+<tr><td>“Rascunho do relatório”</td><td>Notebook do projeto, com o roteiro de editor de relatório</td><td>Sessão 3</td></tr>
 <tr><td>“Faz um agente para X”</td><td>Novo agente com uma tarefa só, testado nas três situações</td><td>Sessão 3</td></tr>
 </tbody>
 </table></div>
