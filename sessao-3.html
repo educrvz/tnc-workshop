@@ -4,26 +4,32 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="noindex,nofollow" name="robots"/><link href="style.css" rel="stylesheet"/><script defer="" src="app.js"></script><title>Teams e IA na Prática · TNC · Sessão 3</title></head>
-<body><a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<meta content="noindex,nofollow" name="robots"/><link href="style.css?v=20261106d" rel="stylesheet"/><script defer="" src="app.js?v=20261106d"></script><title>Teams e IA na Prática · TNC · Sessão 3</title></head>
+<body class="rail-page"><a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<nav aria-label="Exercícios desta sessão" class="session-rail" id="session-rail"><p class="lbl">Sessão 3 · hoje</p><ol><li><a data-s="agente-o-que" href="#agente-o-que"><span class="dot">0</span><span>O que é um agente</span></a></li><li><a data-s="montar" href="#montar"><span class="dot">1</span><span>O relatório em conversa</span></a></li><li><a data-s="agente" href="#agente"><span class="dot">2</span><span>O agente</span></a></li><li><a data-s="repetir" href="#repetir"><span class="dot">3</span><span>Ações viram tarefas</span></a></li><li><a data-s="fechamento" href="#fechamento"><span class="dot">+</span><span>Fechamento</span></a></li></ol><p class="help">Terminou: 👍 no chat.<br/>Travou: ✋ e a Fê ajuda.</p></nav>
+
 <div class="wrap">
 <div class="top">
 <div class="mark">DC CRUZ · TNC</div>
 <nav aria-label="Sessões" class="sessions"><a href="index.html">Início</a><a href="sessao-1.html">Sessão 1</a><a href="sessao-2.html">Sessão 2</a><a aria-current="page" href="sessao-3.html">Sessão 3</a></nav>
 </div>
 <header id="conteudo">
-<span class="eyebrow">Teams e IA na prática · PMO Cerrado · 12/11/2026</span>
-<h1>Sessão 3 · Um assistente para o relatório do mês</h1>
-<p class="lede">Todo mês, alguém junta os relatórios dos hubs, escreve o Resumo Estratégico e cobra o que ficou pendente. Hoje o Copilot faz o primeiro rascunho dessas tarefas: o relatório do trimestre num Notebook, o Resumo Estratégico com um agente e a lista de ações abertas no Planner. Você confere. Três exercícios, no Copilot e no Planner.</p>
-<nav aria-label="Nesta sessão" class="toc">
-<a href="#agente-o-que">Abertura: o que é um agente</a>
-<a href="#montar">Exercício 1 · O relatório do trimestre, em conversa</a>
-<a href="#agente">Exercício 2 · O agente Acompanhamento Mensal</a>
-<a href="#repetir">Exercício 3 · As ações abertas viram tarefas</a>
-<a href="#fechamento">Fechamento e o próximo mês</a>
-</nav>
-<p class="note">9h30–11h · horário de Brasília · 90 minutos <button class="print" type="button">Imprimir / salvar PDF</button></p><p class="interface-note">Os nomes <span class="path">destacados assim</span> são comandos que você encontra na tela. Podem variar um pouco conforme idioma, versão e licença. Se uma opção não aparecer, use a alternativa do exercício. Para achar um arquivo com <kbd>/</kbd>, basta digitar o começo do nome.</p><p class="legend"><span class="legend-item legend-prompt">Cole no Copilot</span> pedidos prontos para copiar. <span class="legend-item legend-check">Confira</span> o que verificar antes de seguir.</p></header>
-<p class="note">Os exemplos usam os arquivos fictícios do Veredas Vivas, na pasta do canal <span class="path">Prática</span>. Quer usar o seu projeto? Siga os mesmos passos com os seus arquivos: crie uma pasta para eles no OneDrive ou no SharePoint, ou anexe os arquivos ao pedido pelo clipe.</p>
+<p class="meta-line">Quinta, 12/11 · 9h30–11h (Brasília) · 90 minutos <button class="print" type="button">Imprimir / salvar PDF</button></p>
+<h1 class="page-title">Sessão 3 · Um assistente para o relatório do mês</h1>
+<p class="page-lede">Todo mês, alguém junta os relatórios dos hubs, escreve o Resumo Estratégico e cobra o que ficou pendente. Hoje o Copilot faz o primeiro rascunho dessas tarefas: o relatório do trimestre num Notebook, o Resumo Estratégico com um agente e a lista de ações abertas no Planner. Você confere.</p>
+<nav aria-label="Nesta sessão"><ol class="session-map" id="session-map">
+<li><a href="#agente-o-que"><span class="n soft">0</span><span class="t">Abertura: o que é um agente<span class="s">Um colega novo com um manual</span></span><span class="apps"></span></a></li>
+<li><a href="#montar"><span class="n">1</span><span class="t">O relatório do trimestre, em conversa<span class="s">Um Notebook com as fontes e o Copilot como editor</span></span><span class="apps"><img alt="Copilot" src="icons/copilot.svg"/></span></a></li>
+<li><a href="#agente"><span class="n">2</span><span class="t">O agente Acompanhamento Mensal<span class="s">Configurar, testar em três situações e compartilhar</span></span><span class="apps"><img alt="Copilot" src="icons/copilot.svg"/></span></a></li>
+<li><a href="#repetir"><span class="n">3</span><span class="t">As ações abertas viram tarefas<span class="s">Duas atas, uma lista e as tarefas no Planner</span></span><span class="apps"><img alt="Copilot" src="icons/copilot.svg"/><img alt="Planner" src="icons/planner.svg"/></span></a></li>
+<li><a href="#fechamento"><span class="n soft">+</span><span class="t">Fechamento e o próximo mês<span class="s">O que você leva e como seguir</span></span><span class="apps"></span></a></li>
+</ol></nav>
+<details class="before-start"><summary>Antes de começar: material e legenda</summary><div class="in">
+<p>Os exemplos usam os arquivos fictícios do Veredas Vivas, na pasta do canal <span class="path">Prática</span>. Quer usar o seu projeto? Siga os mesmos passos com os seus arquivos: crie uma pasta para eles no OneDrive ou no SharePoint, ou anexe os arquivos ao pedido pelo clipe.</p>
+<p>Os nomes <span class="path">destacados assim</span> são comandos que você encontra na tela. Podem variar um pouco conforme idioma, versão e licença. Se uma opção não aparecer, use a alternativa do exercício. Para achar um arquivo com <kbd>/</kbd>, basta digitar o começo do nome.</p>
+<p><span class="legend-item legend-prompt">Cole no Copilot</span> pedidos prontos para copiar. <span class="legend-item legend-check">Confira</span> o que verificar antes de seguir.</p>
+</div></details>
+</header>
 <section id="agente-o-que">
 <h2>Abertura: o que é um agente</h2>
 <p class="why">Até agora, cada pedido ao Copilot começou do zero: você explica a tarefa, escolhe as fontes e diz como quer a resposta. Um agente guarda tudo isso. Você explica uma vez, e a partir daí qualquer pessoa do time só diz “faça o deste mês”.</p>
@@ -43,20 +49,17 @@
 <p class="note">O agente desta sessão não age sozinho: não envia e-mails nem altera arquivos. Ele responde quando alguém pede, e a resposta é sempre um rascunho para conferir.</p>
 <p>Hoje você chega lá em dois passos: primeiro reúne as fontes num Notebook e escreve um relatório em conversa com o Copilot (exercício 1); depois escreve o manual do agente e testa (exercício 2).</p>
 </section>
-<section id="montar">
-<h2>Exercício 1 · Copilot: o relatório do trimestre, em conversa</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><img alt="" aria-hidden="true" class="app-icon" src="icons/copilot.svg"/>Copilot</span></div>
-<p class="why">Você monta um Notebook com os arquivos do projeto e cola um roteiro que transforma o Copilot num editor de relatório. Ele lê tudo, diz o que encontrou e o que falta, faz perguntas a você, propõe a estrutura e só então escreve. No fim, você sai com o documento do relatório para o financiador. Um Notebook é um espaço do Copilot com um conjunto fechado de arquivos: ele responde só com o que está ali.</p>
-<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Notebooks no Copilot, e depois o Word</dd></div><div><dt>Material</dt><dd>Os arquivos do Veredas Vivas, ou os do seu projeto</dd></div><div><dt>Faça</dt><dd>Monte o Notebook, cole o roteiro, responda às quatro perguntas do Copilot e peça o documento.</dd></div><div><dt>Confira</dt><dd>O documento segue o modelo da FHV, cada número tem fonte e o que você não sabia ficou marcado como pendente.</dd></div><div><dt>Leve adiante</dt><dd>O mesmo roteiro serve para qualquer relatório: troque o modelo e os arquivos.</dd></div></dl></div>
-<h3>1. Monte o Notebook</h3>
-<ol class="steps">
-<li>No Copilot, abra <span class="path">Notebooks › Novo Notebook</span> e dê um nome claro, por exemplo “Veredas Vivas · Relatório T3”.</li>
-<li>Em <span class="path">Adicionar referências</span>, adicione os 13 arquivos da tabela abaixo. Procure cada um pelo começo do nome. Um bom conjunto de fontes tem três tipos de arquivo; se faltar um deles, a resposta sai mais fraca.</li></ol><div class="table-wrap"><table><thead><tr><th>O que o Notebook precisa</th><th>Arquivos</th></tr></thead><tbody><tr><td><strong>Compromissos e regras</strong><br>O que o projeto se comprometeu a entregar, as regras do PMO e o modelo do relatório. Sem isso, o Notebook não sabe o que era esperado.</td><td><span class="path">Acordo_de_Doacao_FHV-2025-017_Veredas_Vivas</span><br><span class="path">Contrato_TdR_Cercamento_ICV-2026-031</span><br><span class="path">Modelo_Relatorio_Trimestral_FHV</span><br><span class="path">PMO-01_Relatorios_para_Financiadores</span></td></tr><tr><td><strong>Histórico</strong><br>O último relatório enviado e o que foi decidido nas reuniões. Sem isso, o relatório novo pode repetir ou contradizer o anterior.</td><td><span class="path">Relatorio_Semestral_S1-2026_Veredas_Vivas</span><br><span class="path">Ata_Reuniao_Mensal_Agosto_2026</span><br><span class="path">Ata_Reuniao_Mensal_Setembro_2026</span></td></tr><tr><td><strong>Evidências do período</strong><br>O que de fato aconteceu: visitas de campo, medições e números. Cada frase do relatório precisa vir daqui.</td><td><span class="path">Relatorio_Visita_Formosa_Set2026</span><br><span class="path">Relatorio_Visita_Viveiro_Cavalcante_Out2026</span><br><span class="path">Relatorio_Medicao_01_Cercas_Planalto_Set2026</span><br><span class="path">Acompanhamento_Fisico_Financeiro_2026</span><br><span class="path">Indicadores_Doador_Veredas_Vivas</span><br><span class="path">Relatorio_Mensal_Hub_Chapada_Outubro_2026</span></td></tr></tbody></table></div><p class="note">Atenção: na pasta de planilhas há também <span class="path">Indicadores_Doador_Veredas_Vivas_v1</span>. Não adicione: é a versão antiga, com números diferentes. Uma versão antiga misturada às fontes faz o Notebook responder com dois números para a mesma coisa.</p><h3>2. Cole o roteiro e converse</h3>
-<ol class="steps">
-<li>No campo de pedido do Notebook, cole o roteiro abaixo e envie.</li>
-<li>Leia o diagnóstico. Ele aponta o que está pronto, o que falta e onde as fontes não batem.</li>
-<li>Responda às quatro perguntas. São decisões suas, e cada uma vem com opções: escolha uma ou escreva a sua. Se não souber uma resposta, diga “não sei” e veja o que ele faz.</li>
-<li>Leia a estrutura proposta. Peça uma mudança, por exemplo “junte as seções 5 e 6” ou “comece pelo desafio de Cavalcante”, e depois aprove.</li>
-</ol>
+
+<section class="exercise" id="montar">
+<div class="exhead"><span aria-hidden="true" class="big">1</span><span class="ex-apps"><img alt="" aria-hidden="true" src="icons/copilot.svg"/>Copilot</span><h2><span class="sr-only">Exercício 1: </span>O relatório do trimestre, em conversa</h2></div>
+<p class="why">Você monta um Notebook com os arquivos do projeto e cola um roteiro que transforma o Copilot num editor de relatório. Ele lê tudo, diz o que encontrou e o que falta, faz perguntas a você, propõe a estrutura e só então escreve. Um Notebook é um espaço do Copilot com um conjunto fechado de arquivos: ele responde só com o que está ali.</p>
+<p class="outcome"><strong>Você sai com</strong>O relatório do trimestre em Word, escrito em conversa com o Copilot a partir de um Notebook.</p>
+<ol class="trail">
+<li><span class="st">Crie o Notebook</span>No Copilot, abra <span class="path">Notebooks › Novo Notebook</span> e dê um nome claro, por exemplo “Veredas Vivas · Relatório T3”.</li>
+<li><span class="st">Adicione as referências</span>Em <span class="path">Adicionar referências</span>, adicione os 13 arquivos da tabela. Procure cada um pelo começo do nome. Um bom conjunto de fontes tem três tipos de arquivo; se faltar um deles, a resposta sai mais fraca.
+<div class="table-wrap"><table><thead><tr><th>O que o Notebook precisa</th><th>Arquivos</th></tr></thead><tbody><tr><td><strong>Compromissos e regras</strong><br/>O que o projeto se comprometeu a entregar, as regras do PMO e o modelo do relatório. Sem isso, o Notebook não sabe o que era esperado.</td><td><span class="path">Acordo_de_Doacao_FHV-2025-017_Veredas_Vivas</span><br/><span class="path">Contrato_TdR_Cercamento_ICV-2026-031</span><br/><span class="path">Modelo_Relatorio_Trimestral_FHV</span><br/><span class="path">PMO-01_Relatorios_para_Financiadores</span></td></tr><tr><td><strong>Histórico</strong><br/>O último relatório enviado e o que foi decidido nas reuniões. Sem isso, o relatório novo pode repetir ou contradizer o anterior.</td><td><span class="path">Relatorio_Semestral_S1-2026_Veredas_Vivas</span><br/><span class="path">Ata_Reuniao_Mensal_Agosto_2026</span><br/><span class="path">Ata_Reuniao_Mensal_Setembro_2026</span></td></tr><tr><td><strong>Evidências do período</strong><br/>O que de fato aconteceu: visitas de campo, medições e números. Cada frase do relatório precisa vir daqui.</td><td><span class="path">Relatorio_Visita_Formosa_Set2026</span><br/><span class="path">Relatorio_Visita_Viveiro_Cavalcante_Out2026</span><br/><span class="path">Relatorio_Medicao_01_Cercas_Planalto_Set2026</span><br/><span class="path">Acompanhamento_Fisico_Financeiro_2026</span><br/><span class="path">Indicadores_Doador_Veredas_Vivas</span><br/><span class="path">Relatorio_Mensal_Hub_Chapada_Outubro_2026</span></td></tr></tbody></table></div>
+<p class="note">Atenção: na pasta de planilhas há também <span class="path">Indicadores_Doador_Veredas_Vivas_v1</span>. Não adicione: é a versão antiga, com números diferentes. Uma versão antiga misturada às fontes faz o Notebook responder com dois números para a mesma coisa.</p></li>
+<li><span class="st">Cole o roteiro</span>No campo de pedido do Notebook, cole o roteiro e envie.
 <div class="prompt">
 <div class="prompt-head"><span>Roteiro · editor de relatório</span><button class="copy" type="button">Copiar</button></div>
 <pre>Você é o editor do relatório trimestral do Veredas Vivas para a Fundação Horizonte Verde, referente ao terceiro trimestre de 2026 (julho a setembro). Eu sou do PMO e respondo pelo relatório. Use apenas as referências deste Notebook. Siga as etapas abaixo, uma de cada vez, e espere a minha resposta antes de passar para a próxima.
@@ -70,38 +73,38 @@ Etapa 3 · Estrutura. Proponha a estrutura do relatório, seção por seção, c
 Etapa 4 · Rascunho. Escreva o relatório completo na estrutura aprovada. Indique entre parênteses a fonte de cada número. Marque com [PENDENTE] o que ficou sem resposta. Não afirme nada que as fontes não sustentem.
 
 Etapa 5 · Pendências. No fim, liste as pendências e quem deveria responder cada uma.</pre>
-</div>
-<h3>3. Transforme em documento</h3>
-<ol class="steps">
-<li>Na pasta do canal <span class="path">Prática</span>, abra o <span class="path">Modelo_Relatorio_Trimestral_FHV</span> no Word e salve uma cópia com o nome do seu relatório.</li>
-<li>Copie cada seção do rascunho do Notebook para o lugar dela no modelo.</li>
-</ol>
-<p class="note">O Notebook entrega o texto, não o arquivo. O documento final fica no modelo da FHV, na pasta do canal.</p>
-<div class="check"><h3>Confira o documento</h3><ul>
+</div></li>
+<li><span class="st">Leia o diagnóstico</span>Ele aponta o que está pronto, o que falta e onde as fontes não batem.</li>
+<li><span class="st">Responda às quatro perguntas</span>São decisões suas, e cada uma vem com opções: escolha uma ou escreva a sua. Se não souber uma resposta, diga “não sei” e veja o que ele faz.</li>
+<li><span class="st">Aprove a estrutura</span>Leia a estrutura proposta. Peça uma mudança, por exemplo “junte as seções 5 e 6” ou “comece pelo desafio de Cavalcante”, e depois aprove.</li>
+<li><span class="st">Abra o modelo no Word</span>Na pasta do canal <span class="path">Prática</span>, abra o <span class="path">Modelo_Relatorio_Trimestral_FHV</span> no Word e salve uma cópia com o nome do seu relatório.</li>
+<li><span class="st">Monte o documento</span>Copie cada seção do rascunho do Notebook para o lugar dela no modelo.
+<p class="note">O Notebook entrega o texto, não o arquivo. O documento final fica no modelo da FHV, na pasta do canal.</p></li>
+<li class="confira"><span class="st">Confira o documento</span><div class="check"><ul>
 <li>A cerca aparece como medida, mas sem aceite? O PMO-01 diz que só é entrega com o Termo de Aceite assinado.</li>
 <li>O atraso do 3º viveiro em Cavalcante está nos desafios? A ata de setembro registra o risco, mas o cronograma da planilha ainda diz “No prazo”. O diagnóstico pegou essa diferença?</li>
 <li>A execução financeira explica as linhas com variação acima de 10%?</li>
 <li>Escolha dois números e encontre cada um na fonte indicada entre parênteses.</li>
 <li>O que você respondeu “não sei” aparece como [PENDENTE], e não preenchido por suposição?</li>
-</ul></div>
-<p><strong>Repare:</strong> você colou um texto só, e o Copilot conduziu o resto. Ele leu, apontou problemas, perguntou o que só você sabia e esperou a sua aprovação antes de escrever. É esse tipo de roteiro que, no próximo exercício, vira um agente que qualquer pessoa do time usa.</p>
-</section>
-<section id="agente">
-<h2>Exercício 2 · Copilot: o agente Acompanhamento Mensal</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><img alt="" aria-hidden="true" class="app-icon" src="icons/copilot.svg"/>Copilot</span></div>
-<p class="why">Agora você monta o manual do colega novo da abertura. Este agente escreve o rascunho do Resumo Estratégico de um hub, que o PMO prepara todo mês no 7º dia útil.</p>
-<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Copilot Chat › Novo agente</dd></div><div><dt>Material</dt><dd>O PMO-04, o Resumo Estratégico dos meses anteriores e o relatório mensal de outubro do Hub Chapada</dd></div><div><dt>Faça</dt><dd>Configure o agente, teste três situações (um mês normal, uma pergunta fora do assunto e um mês sem documentos) e compartilhe com o colega ao lado.</dd></div><div><dt>Confira</dt><dd>Cada item do resumo existe no relatório, e o agente diz “não sei” quando não tem base.</dd></div><div><dt>Leve adiante</dt><dd>Só compartilhe um agente depois que ele passar nos três testes.</dd></div></dl></div>
-<h3>1. Configure o agente</h3>
-<ol class="steps">
-<li>No Copilot Chat, clique em <span class="path">Novo agente</span> e vá para <span class="path">Configurar</span>.</li>
-<li>Dê o nome “Acompanhamento Mensal” e cole a descrição abaixo.</li>
-<li>Em <span class="path">Instruções</span>, cole as instruções abaixo.</li>
-<li>Em <span class="path">Conhecimento</span>, adicione <span class="path">PMO-04_Ciclo_Mensal_de_Acompanhamento</span> e <span class="path">Resumo_Estrategico_Acompanhamento_Mensal</span>.</li>
-<li>Em <span class="path">Prompts iniciais</span>, cole os exemplos abaixo, um por linha.</li>
+</ul></div><p class="done-row">Terminou? 👍 no chat da reunião.</p></li>
 </ol>
+<p><strong>Repare:</strong> você colou um texto só, e o Copilot conduziu o resto. Ele leu, apontou problemas, perguntou o que só você sabia e esperou a sua aprovação antes de escrever. É esse tipo de roteiro que, no próximo exercício, vira um agente que qualquer pessoa do time usa.</p>
+<p class="keep"><strong>Leve adiante:</strong> o mesmo roteiro serve para qualquer relatório: troque o modelo e os arquivos.</p>
+</section>
+
+<section class="exercise" id="agente">
+<div class="exhead"><span aria-hidden="true" class="big">2</span><span class="ex-apps"><img alt="" aria-hidden="true" src="icons/copilot.svg"/>Copilot</span><h2><span class="sr-only">Exercício 2: </span>O agente Acompanhamento Mensal</h2></div>
+<p class="why">Agora você monta o manual do colega novo da abertura. Este agente escreve o rascunho do Resumo Estratégico de um hub, que o PMO prepara todo mês no 7º dia útil.</p>
+<p class="outcome"><strong>Você sai com</strong>Um agente que escreve o rascunho do Resumo Estratégico e sabe dizer “não sei”.</p>
+<ol class="trail">
+<li><span class="st">Crie o agente</span>No Copilot Chat, clique em <span class="path">Novo agente</span> e vá para <span class="path">Configurar</span>.
+<details class="optional-reference"><summary>Novo agente não aparece?</summary><p>Salve as instruções como um pedido reutilizável e rode os mesmos três testes no Copilot Chat, selecionando as fontes com <kbd>/</kbd> a cada vez. O resultado é o mesmo processo testado, sem o construtor de agentes.</p></details></li>
+<li><span class="st">Nome e descrição</span>Dê o nome “Acompanhamento Mensal” e cole a descrição.
 <div class="prompt">
 <div class="prompt-head"><span>Descrição</span><button class="copy" type="button">Copiar</button></div>
 <pre>Escreve o rascunho do Resumo Estratégico mensal de um hub a partir dos documentos do mês, no padrão do PMO Cerrado, pronto para revisão e para colar no Smartsheet.</pre>
-</div>
+</div></li>
+<li><span class="st">Instruções</span>Em <span class="path">Instruções</span>, cole as instruções.
 <div class="prompt">
 <div class="prompt-head"><span>Instruções</span><button class="copy" type="button">Copiar</button></div>
 <pre>Você apoia o PMO Cerrado no acompanhamento mensal dos hubs. A pessoa indica os documentos do mês de um hub: relatório mensal, atas, acompanhamento ou status report.
@@ -113,32 +116,32 @@ Etapa 5 · Pendências. No fim, liste as pendências e quem deveria responder ca
 6. Não decida nem recomende soluções. Em Decisões Necessárias, liste só o que a coordenação precisa decidir.
 7. No final, liste o que precisa ser conferido: números sem fonte, siglas sem explicação e trechos que parecem suposição.
 8. Entregue também os campos em uma linha de tabela, pronta para colar no Smartsheet.</pre>
-</div>
+</div></li>
+<li><span class="st">Conhecimento</span>Em <span class="path">Conhecimento</span>, adicione <span class="path">PMO-04_Ciclo_Mensal_de_Acompanhamento</span> e <span class="path">Resumo_Estrategico_Acompanhamento_Mensal</span>.</li>
+<li><span class="st">Prompts iniciais</span>Em <span class="path">Prompts iniciais</span>, cole os exemplos, um por linha.
 <div class="prompt">
 <div class="prompt-head"><span>Prompts iniciais</span><button class="copy" type="button">Copiar</button></div>
 <pre>Escreva o Resumo Estratégico do hub [nome do hub] de [mês/ano] com os documentos que vou indicar.
 Revise este texto antes de eu colar no Smartsheet: [texto]
 Escreva só o campo Riscos do hub [nome do hub] de [mês/ano].</pre>
-</div>
-<h3>2. Teste antes de confiar</h3>
-<p>Na área de teste ao lado da configuração, rode as três situações. Um agente bom acerta o caso normal e, principalmente, sabe dizer “não sei”.</p>
+</div></li>
+<li class="confira"><span class="st">Teste antes de confiar</span>Na área de teste ao lado da configuração, rode as três situações. Um agente bom acerta o caso normal e, principalmente, sabe dizer “não sei”.
 <div class="check"><h3>Os três testes</h3><ul>
 <li><strong>Mês normal:</strong> peça o Resumo do Hub Chapada de 10/2026 e indique, com <kbd>/</kbd>, o <span class="path">Relatorio_Mensal_Hub_Chapada_Outubro_2026</span>. Escolha três itens da resposta e encontre cada um no relatório. Compare o tamanho e o tom com as linhas de agosto e setembro no Resumo Estratégico.</li>
 <li><strong>Fora do assunto:</strong> pergunte “Qual é o saldo do projeto Pastos do Paranã?”. O agente deve dizer que não tem base para responder.</li>
 <li><strong>Mês sem documentos:</strong> peça o Resumo do Hub Chapada de 11/2026, sem indicar nenhum arquivo. O agente deve avisar que falta o material, não inventar.</li>
 </ul></div>
-<p>Falhou em algum? Ajuste a instrução que deveria ter evitado o erro e rode o mesmo teste de novo. É assim que um agente fica confiável.</p>
-<div class="check"><h3>Se Novo agente não aparecer</h3><p>Salve as instruções como um pedido reutilizável e rode os mesmos três testes no Copilot Chat, selecionando as fontes com <kbd>/</kbd> a cada vez. O resultado é o mesmo processo testado, sem o construtor de agentes.</p></div>
-<h3>3. Compartilhe com o time</h3>
-<p>Um agente só vale a pena quando outras pessoas usam. Teste agora com o colega ao lado.</p>
-<ol class="steps">
+<p>Falhou em algum? Ajuste a instrução que deveria ter evitado o erro e rode o mesmo teste de novo. É assim que um agente fica confiável.</p></li>
+<li><span class="st">Compartilhe com o time</span>Um agente só vale a pena quando outras pessoas usam. Teste agora com o colega ao lado.
+<ol class="sub">
 <li>No agente, clique em <span class="path">Compartilhar</span>.</li>
 <li>Adicione o colega ao lado com a permissão de quem só conversa com o agente, sem editar. Para editar, a pessoa precisa ser adicionada como proprietária.</li>
 <li>Copie o link do agente e mande para ele no chat.</li>
 <li>O colega abre o link e roda um dos três testes. Funcionou do mesmo jeito para ele?</li>
+</ol></li>
+<li class="confira"><span class="st">Confira</span><div class="check"><ul><li>O colega conseguiu abrir o agente? Se <span class="path">Compartilhar</span> não aparecer ou não aceitar o nome dele, o compartilhamento pode estar bloqueado pela TI. Anote e siga.</li><li>O agente só lê os arquivos do SharePoint que o colega já pode abrir. Compartilhar o agente não compartilha a pasta: se a resposta dele veio sem fonte, confira se ele tem acesso aos arquivos.</li></ul></div>
+<p class="note">Para o time inteiro, mande o link no canal do Teams. Quem recebe o link de edição pode alterar as instruções, então guarde esse link só para quem cuida do agente.</p><p class="done-row">Terminou? 👍 no chat da reunião.</p></li>
 </ol>
-<div class="check"><h3>Confira</h3><ul><li>O colega conseguiu abrir o agente? Se <span class="path">Compartilhar</span> não aparecer ou não aceitar o nome dele, o compartilhamento pode estar bloqueado pela TI. Anote e siga.</li><li>O agente só lê os arquivos do SharePoint que o colega já pode abrir. Compartilhar o agente não compartilha a pasta: se a resposta dele veio sem fonte, confira se ele tem acesso aos arquivos.</li></ul></div>
-<p class="note">Para o time inteiro, mande o link no canal do Teams. Quem recebe o link de edição pode alterar as instruções, então guarde esse link só para quem cuida do agente.</p>
 <details class="optional-reference"><summary>Para depois · um agente que responde às dúvidas do time</summary>
 <p>Muitas perguntas que chegam ao PMO já estão respondidas nos procedimentos. Um agente com os procedimentos do PMO como conhecimento responde citando a regra, e você só entra quando a regra não resolve.</p>
 <ol class="steps"><li>Crie um novo agente e, em <span class="path">Conhecimento</span>, adicione os procedimentos PMO-01 a PMO-04.</li><li>Nas instruções, peça que ele responda só com base nos procedimentos, cite o trecho e diga quando a regra não resolve a pergunta.</li><li>Teste com as perguntas abaixo e confira a resposta no procedimento.</li></ol>
@@ -148,27 +151,26 @@ Escreva só o campo Riscos do hub [nome do hub] de [mês/ano].</pre>
 Posso dividir uma compra em duas para ficar abaixo da faixa de três orçamentos?</pre>
 </div>
 </details>
+<p class="keep"><strong>Leve adiante:</strong> só compartilhe um agente depois que ele passar nos três testes.</p>
 </section>
-<section id="repetir">
-<h2>Exercício 3 · Copilot e Planner: as ações abertas viram tarefas</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><img alt="" aria-hidden="true" class="app-icon" src="icons/copilot.svg"/>Copilot Chat</span><span class="app-marker"><img alt="" aria-hidden="true" class="app-icon" src="icons/planner.svg"/>Planner</span></div>
+
+<section class="exercise" id="repetir">
+<div class="exhead"><span aria-hidden="true" class="big">3</span><span class="ex-apps"><img alt="" aria-hidden="true" src="icons/copilot.svg"/>Copilot Chat <img alt="" aria-hidden="true" src="icons/planner.svg"/>Planner</span><h2><span class="sr-only">Exercício 3: </span>As ações abertas viram tarefas</h2></div>
 <p class="why">Ações combinadas em reunião se perdem de um mês para o outro: uma vence sem ninguém ver, outra aparece em duas atas. Aqui o Copilot lê duas atas de uma vez e entrega a lista do que ainda está aberto.</p>
-<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Copilot Chat e o Planner do canal <span class="path">Prática</span></dd></div><div><dt>Material</dt><dd>As atas de agosto e setembro do Veredas Vivas, ou duas atas suas</dd></div><div><dt>Faça</dt><dd>Peça a lista de ações abertas e crie uma tarefa para cada uma.</dd></div><div><dt>Confira</dt><dd>As ações vencidas estão marcadas e nenhuma aparece duas vezes.</dd></div><div><dt>Leve adiante</dt><dd>Depois de cada reunião mensal, rode o mesmo pedido com a ata nova e a anterior.</dd></div></dl></div>
-<ol class="steps">
-<li>No Copilot Chat, digite <kbd>/</kbd> e selecione <span class="path">Ata_Reuniao_Mensal_Agosto_2026</span>. Repita para <span class="path">Ata_Reuniao_Mensal_Setembro_2026</span>. Confira que os dois arquivos aparecem no pedido.</li>
-<li>Cole o pedido abaixo e envie.</li>
-</ol>
+<p class="outcome"><strong>Você sai com</strong>As ações abertas de duas reuniões como tarefas no Planner.</p>
+<ol class="trail">
+<li><span class="st">Selecione as atas</span>No Copilot Chat, digite <kbd>/</kbd> e selecione <span class="path">Ata_Reuniao_Mensal_Agosto_2026</span>. Repita para <span class="path">Ata_Reuniao_Mensal_Setembro_2026</span>. Confira que os dois arquivos aparecem no pedido.</li>
+<li><span class="st">Peça a lista</span>Cole o pedido e envie.
 <div class="prompt">
 <div class="prompt-head"><span>No Copilot Chat, com as duas atas selecionadas</span><button class="copy" type="button">Copiar</button></div>
 <pre>Com base apenas nas duas atas selecionadas, liste em tabela as ações que ainda não foram concluídas: tarefa, responsável, prazo e reunião de origem. Se a mesma ação aparece nas duas atas, junte em uma linha e use o prazo mais recente. Marque as ações com prazo vencido em 30/09/2026 e as que não têm responsável. Deixe de fora o que já foi concluído.</pre>
-</div>
-<div class="check"><h3>Confira</h3><ul><li>As duas ações concluídas em agosto (enviar o relatório semestral e revisar o fechamento do S1) ficaram de fora?</li><li>O levantamento de sobrevivência em Formosa aparece nas duas atas. Virou uma linha só?</li><li>“Falar com o cartório de Cavalcante”, com prazo em 31/08, aparece como vencida?</li><li>Abra uma das atas e confira um responsável e um prazo.</li></ul></div>
-<h3>Crie as tarefas no Planner</h3>
-<ol class="steps">
-<li>No canal <span class="path">Prática</span>, abra a guia <span class="path">Treino – Veredas Vivas</span>.</li>
-<li>Crie uma tarefa para cada linha da tabela, com responsável (no treino, você mesmo) e data de conclusão.</li>
-<li>Em <span class="path">Observações</span>, cole a reunião de origem.</li>
+</div></li>
+<li class="confira"><span class="st">Confira a lista</span><div class="check"><ul><li>As duas ações concluídas em agosto (enviar o relatório semestral e revisar o fechamento do S1) ficaram de fora?</li><li>O levantamento de sobrevivência em Formosa aparece nas duas atas. Virou uma linha só?</li><li>“Falar com o cartório de Cavalcante”, com prazo em 31/08, aparece como vencida?</li><li>Abra uma das atas e confira um responsável e um prazo.</li></ul></div></li>
+<li><span class="st">Abra o plano</span>No canal <span class="path">Prática</span>, abra a guia <span class="path">Treino – Veredas Vivas</span>.</li>
+<li><span class="st">Crie as tarefas</span>Crie uma tarefa para cada linha da tabela, com responsável (no treino, você mesmo) e data de conclusão.</li>
+<li><span class="st">Anote a origem</span>Em <span class="path">Observações</span>, cole a reunião de origem.</li>
+<li class="confira"><span class="st">Confira</span><div class="check"><p>Uma tabela no chat ainda não é uma tarefa. A ação só existe quando tem responsável, prazo e um lugar onde a equipe acompanha.</p></div><p class="done-row">Terminou? 👍 no chat da reunião.</p></li>
 </ol>
-<div class="check"><h3>Confira</h3><p>Uma tabela no chat ainda não é uma tarefa. A ação só existe quando tem responsável, prazo e um lugar onde a equipe acompanha.</p></div>
 <details class="optional-reference"><summary>Para depois · o ciclo do mês como tarefas que se repetem</summary>
 <p>As etapas do <span class="path">PMO-04_Ciclo_Mensal_de_Acompanhamento</span> podem virar tarefas recorrentes no Planner: o envio dos hubs (3º dia útil), a cobrança (5º), o Resumo Estratégico (7º), a reunião (10º) e o Smartsheet (12º). Crie cada tarefa uma vez e, em <span class="path">Repetir</span>, escolha mensal.</p>
 </details>
@@ -193,6 +195,7 @@ Posso dividir uma compra em duas para ficar abaixo da faixa de três orçamentos
 <li>Confira uma diferença abrindo as duas atas.</li></ol>
 <p class="note">Se a opção não aparecer, peça no Copilot Chat, com as duas atas selecionadas por <kbd>/</kbd>: “Compare estas duas atas e liste o que mudou nas ações e nos prazos.”</p>
 </details>
+<p class="keep"><strong>Leve adiante:</strong> depois de cada reunião mensal, rode o mesmo pedido com a ata nova e a anterior.</p>
 </section>
 <section id="fechamento">
 <h2>Fechamento e o próximo mês</h2>
