@@ -147,3 +147,4 @@ body{max-width:1120px;padding-left:32px;padding-right:32px}
 .legend-prompt{border-color:#1a365d;background:#eef3fb;color:#1a365d}
 .legend-check{border-color:#2d6a4f;background:#f0faf4;color:#2d6a4f}
 .tip-line{font-size:10pt;color:#444;border-top:1px dashed #ddd;padding-top:10px;margin-top:18px}
+.app-icon{width:25px;height:25px;display:block}
