@@ -9,113 +9,90 @@
 <header id="conteudo">
 <span class="eyebrow">Teams e IA na prática · PMO Cerrado · 09/11/2026</span>
 <h1>Sessão 1 · Comece com o Copilot bem configurado</h1>
-<p class="lede">O básico de como a IA funciona e uma configuração que trabalha por você todos os dias: o Copilot sabe quem você é, o Teams só avisa o que importa e as reuniões terminam com a ata no formato do PMO. Cinco exercícios curtos, no Teams, Copilot, Planner e Outlook.</p>
+<p class="lede">Uma configuração que trabalha por você todos os dias: o Copilot sabe quem você é, busca na fonte certa, transforma reuniões em tarefas e todo dia às 9h diz o que precisa de você. Quatro exercícios curtos, no Copilot, Teams e Planner.</p>
 <p class="note">Os exemplos usam o Veredas Vivas, um projeto fictício do Instituto Cerrado Vivo criado para o treinamento. Os arquivos estão na pasta do canal <span class="path">Prática</span> da equipe <span class="path">Treinamento Teams e IA – PMO Cerrado</span>.</p>
 <nav aria-label="Nesta sessão" class="toc">
-<a href="#abertura">Abertura: como a IA funciona e acesso</a>
-<a href="#preferencias">Exercício 1 · Copilot: ensine o Copilot sobre você</a>
-<a href="#ruido">Exercício 2 · Teams: alertas só para o que importa</a>
-<a href="#fontes">Exercício 3 · Copilot: fonte certa e o que falta</a>
-<a href="#teams">Exercício 4 · Copilot e Planner: da reunião à tarefa</a>
-<a href="#outlook">Exercício 5 · Outlook: juntar o que está espalhado</a>
+<a href="#abertura">Abertura: como a IA funciona</a>
+<a href="#preferencias">Exercício 1 · Copilot: ele te entrevista e aprende quem você é</a>
+<a href="#fontes">Exercício 2 · Copilot: fonte certa e o que falta</a>
+<a href="#reuniao">Exercício 3 · Copilot e Planner: da reunião às tarefas</a>
+<a href="#piloto">Exercício 4 · Copilot e Teams: o Teams no piloto automático</a>
+<a href="#extra">Se sobrar tempo</a>
 <a href="#depois">Fechamento e prática até quarta</a>
 </nav>
-<p class="note">9h30–11h · horário de Brasília · 90 minutos <button class="print" type="button">Imprimir / salvar PDF</button></p><p class="interface-note">Os nomes <span class="path">destacados assim</span> são comandos que você encontra na tela. Podem variar um pouco conforme idioma, versão e licença. Se uma opção não aparecer, use a alternativa do exercício. Para achar um arquivo com <kbd>/</kbd>, basta digitar o começo do nome.</p></header>
-<div class="callout tip"><div class="callout-label">Como cada exercício funciona</div><p>Um facilitador mostra o passo rapidamente. Depois, todos fazem ao mesmo tempo. Ao terminar, reaja com 👍 no chat da reunião. Se travar, reaja com ✋ ou mande um print no chat: o segundo facilitador ajuda você enquanto a turma segue.</p></div>
+<p class="note">9h30–11h · horário de Brasília · 90 minutos <button class="print" type="button">Imprimir / salvar PDF</button></p><p class="interface-note">Os nomes <span class="path">destacados assim</span> são comandos que você encontra na tela. Podem variar um pouco conforme idioma, versão e licença. Se uma opção não aparecer, use a alternativa do exercício. Para achar um arquivo com <kbd>/</kbd>, basta digitar o começo do nome.</p>
+<p class="legend"><span class="legend-item legend-prompt">Cole no Copilot</span> pedidos prontos para copiar. <span class="legend-item legend-check">Confira</span> o que verificar antes de seguir.</p></header>
+<div class="callout"><div class="callout-label">Como cada exercício funciona</div><p>O Edu mostra o passo rapidamente. Depois, todos fazem ao mesmo tempo. Ao terminar, reaja com 👍 no chat da reunião. Se travar, reaja com ✋ ou mande um print no chat: a Fê ajuda você enquanto a turma segue.</p></div>
 <section id="abertura">
-<h2>Abertura: como a IA funciona e acesso</h2>
-<p class="why">Três coisas sobre como o Copilot funciona explicam quase todo acerto e quase todo erro que você vai ver. Hoje você vê cada uma acontecer em um exercício.</p>
-<div class="callout goal"><div class="callout-label">Três coisas sobre como a IA funciona</div>
-<div class="mental-model"><h3>1. A IA prevê palavras, não verifica fatos</h3><p>O Copilot funciona como o preenchimento automático do celular, só que muito mais sofisticado: prevê a palavra mais provável, depois a seguinte. <strong>Ele não sabe o que é verdade, sabe o que é provável.</strong> Quando falta informação, a resposta mais provável é uma frase que soa certa. Por isso, peça que ele diga o que falta, e confira na origem antes de usar. <em>Você vê no exercício 3.</em></p></div>
-<div class="mental-model"><h3>2. A IA só enxerga o que você mostra</h3><p>Em cada conversa, ela enxerga o seu pedido, o que já foi dito e os arquivos que você selecionou. O que ficou de fora não existe para ela, mesmo que esteja no seu Teams ou no Box. <em>Você vê no exercício 3.</em></p></div>
-<div class="mental-model"><h3>3. O pedido faz toda a diferença</h3><p>O mesmo Copilot, com o mesmo arquivo, entrega um texto genérico ou um rascunho pronto para revisar. A diferença está quase toda no pedido: o que você quer, para quem, de qual fonte e o que fazer quando faltar informação. <em>Na Sessão 2, você aprende a chegar a esse pedido com a ajuda do próprio Copilot.</em></p></div>
+<h2>Abertura: como a IA funciona</h2>
+<p class="why">Três ideias explicam quase tudo o que o Copilot faz bem e quase tudo o que ele erra. Cada uma aparece em um exercício de hoje.</p>
+<div class="callout"><div class="callout-label">Três coisas sobre como a IA funciona</div>
+<div class="mental-model"><h3>1. A IA prevê palavras, não verifica fatos</h3><p>O Copilot funciona como o preenchimento automático do celular, só que muito mais sofisticado: prevê a palavra mais provável, depois a seguinte. <strong>Ele não sabe o que é verdade, sabe o que é provável.</strong> Quando falta informação, a resposta mais provável é uma frase que soa certa. Por isso, peça que ele diga o que falta, e confira na origem antes de usar. <em>Você vê no exercício 2.</em></p></div>
+<div class="mental-model"><h3>2. A IA só usa o que consegue alcançar</h3><p>O Copilot trabalha com o que você seleciona com <kbd>/</kbd> ou com o que ele encontra sozinho no seu Microsoft 365: e-mails, chats, reuniões e arquivos a que você tem acesso. O que está fora dali, como o Box, não existe para ele. Quando você escolhe a fonte, você controla a resposta. <em>Você vê nos exercícios 2 e 4.</em></p></div>
+<div class="mental-model"><h3>3. O pedido faz toda a diferença</h3><p>O mesmo Copilot, com o mesmo arquivo, entrega um texto genérico ou um rascunho pronto para revisar. A diferença está quase toda no pedido: o que você quer, para quem, de qual fonte e o que fazer quando faltar informação. <em>No exercício 1, o próprio Copilot ajuda você a chegar lá. Na Sessão 2, você usa isso em uma tarefa de trabalho.</em></p></div>
 </div>
 <h3>Confira o acesso</h3>
 <ol class="steps">
 <li>Abra o Copilot Chat: no Teams, clique em <span class="path">Copilot</span> na barra lateral.</li>
-<li>Digite <kbd>/</kbd> no campo de pedido e comece a escrever <span class="path">Relatorio_Semestral</span>. O relatório semestral do Veredas Vivas deve aparecer na lista.</li>
-<li><strong>Voz (opcional):</strong> se quiser ditar seus pedidos, clique no microfone do campo de pedido e diga uma frase. Confira se o texto apareceu. Prefere não usar, ou está em um lugar com mais gente? Pule este passo: em todos os exercícios dá para digitar ou colar.</li>
+<li><strong>Voz (opcional):</strong> se quiser ditar seus pedidos, clique no microfone do campo de pedido e diga uma frase. Prefere não usar? Pule: em todos os exercícios dá para digitar ou colar.</li>
 </ol>
-<p class="note">Funcionou nos três? 👍 no chat. Algum falhou? ✋: o facilitador de apoio resolve com você agora, antes do primeiro exercício.</p>
-<h3>Onde cada coisa entra</h3>
-<p>Um atalho para escolher por onde começar. Hoje usamos as duas primeiras linhas.</p>
-<div class="table-wrap"><table>
-<thead><tr><th>Use</th><th>Quando</th></tr></thead>
-<tbody>
-<tr><td>Copilot no programa</td><td>O trabalho acontece dentro de um arquivo: um Word, uma planilha, um e-mail.</td></tr>
-<tr><td>Copilot Chat</td><td>O pedido cruza vários programas ou ainda não existe documento.</td></tr>
-<tr><td>Pages</td><td>Um texto vivo para construir com a equipe.</td></tr>
-<tr><td>Notebook</td><td>O trabalho deve ficar limitado a um conjunto escolhido de fontes, como todos os documentos de um projeto. Na Sessão 3 você monta o seu.</td></tr>
-<tr><td>Agente</td><td>Uma tarefa estreita que se repete, para qualquer pessoa do time rodar sozinha.</td></tr>
-</tbody>
-</table></div>
+<p class="note">Abriu? 👍 no chat. Não abriu? ✋: a Fê resolve com você agora, antes do primeiro exercício.</p>
+<p><strong>Pergunta rápida no chat:</strong> quem já usa o <kbd>/</kbd> no Copilot para escolher um arquivo?</p>
 </section>
 <section id="preferencias">
-<h2>Exercício 1 · Copilot: ensine o Copilot sobre você</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot Chat</span></div>
-<p class="why">Cinco minutos aqui valem para todos os pedidos daqui em diante, inclusive os de hoje. Em vez de explicar em cada conversa quem você é e como quer a resposta, você diz uma vez.</p>
-<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Copilot Chat, nas configurações</dd></div><div><dt>Material</dt><dd>O exemplo abaixo, ajustado ao seu jeito</dd></div><div><dt>Faça</dt><dd>Salve a sua instrução personalizada e revise as memórias.</dd></div><div><dt>Confira</dt><dd>Faça uma pergunta qualquer e veja se a resposta já vem no seu formato.</dd></div><div><dt>Leve adiante</dt><dd>Quando uma resposta vier no formato errado, ajuste a instrução, não o pedido.</dd></div></dl></div>
+<h2>Exercício 1 · Copilot: ele te entrevista e aprende quem você é</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot Chat</span></div>
+<p class="why">Em vez de explicar em cada conversa quem você é e como quer a resposta, você diz uma vez. E nem precisa escrever: o Copilot faz as perguntas e escreve a instrução para você.</p>
+<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Copilot Chat e as configurações dele</dd></div><div><dt>Material</dt><dd>As suas respostas</dd></div><div><dt>Faça</dt><dd>Responda à entrevista, salve a instrução e revise as memórias.</dd></div><div><dt>Confira</dt><dd>A mesma pergunta, antes e depois: a resposta mudou?</dd></div><div><dt>Leve adiante</dt><dd>Quando uma resposta vier no formato errado, ajuste a instrução, não o pedido.</dd></div></dl></div>
+<h3>1. Antes: uma pergunta de teste</h3>
 <ol class="steps">
-<li>No Copilot Chat, abra <span class="path">Configurações › Personalização</span>.</li>
-<li>Em <span class="path">Personalizar o Copilot › Gerenciar</span>, cole o exemplo abaixo, ajuste ao seu jeito e salve.</li>
+<li>No Copilot Chat, pergunte: <em>“Como devo organizar a pauta de uma reunião mensal de acompanhamento de projeto?”</em> Guarde a resposta.</li>
+</ol>
+<h3>2. A entrevista</h3>
+<ol class="steps">
+<li>Abra uma conversa nova, cole o pedido abaixo e responda às perguntas, uma de cada vez. Respostas curtas bastam.</li>
+<li>Leia a instrução que ele escreveu. Faltou algo? Peça que ajuste.</li>
+<li>Abra <span class="path">Configurações › Personalização</span>. Em <span class="path">Personalizar o Copilot › Gerenciar</span>, cole a instrução e salve.</li>
 <li>Em <span class="path">Memórias salvas › Gerenciar</span>, veja o que o Copilot já guardou sobre você e apague o que não deve ficar.</li>
 </ol>
+<div class="prompt">
+<div class="prompt-head"><span>Cole no Copilot Chat</span><button class="copy" type="button">Copiar</button></div>
+<pre>Quero escrever a minha instrução personalizada do Copilot, o texto que você lê antes de cada pedido meu. Antes de escrever, me entreviste: uma pergunta de cada vez, esperando a minha resposta. No máximo cinco perguntas, sobre:
+- a minha função e os projetos que acompanho;
+- em que idioma vai cada tipo de entrega (português do Brasil ou inglês);
+- como prefiro as respostas: tamanho, formato e tom;
+- o que você deve fazer quando faltar informação.
+No fim, escreva a instrução em primeira pessoa, em um parágrafo curto, pronta para eu colar nas configurações.</pre>
+</div>
+<details class="optional-reference"><summary>Prefere não fazer a entrevista? Use este exemplo</summary>
 <div class="prompt">
 <div class="prompt-head"><span>Exemplo de instrução personalizada</span><button class="copy" type="button">Copiar</button></div>
 <pre>Trabalho no PMO de um programa de conservação no Cerrado. Use o idioma solicitado para a entrega. Se não estiver claro, pergunte se deve usar português do Brasil ou inglês. Em português, use sempre o português do Brasil. Escreva de forma direta, em tópicos curtos. Em documentos, siga os modelos da equipe e diga de qual fonte veio cada informação. Se faltar informação, pergunte em vez de completar.</pre>
 </div>
-<div class="check"><h3>Confira</h3><ul><li>Abra uma conversa nova e peça, por exemplo, um resumo de três linhas sobre o que é um PMO. A resposta veio em português do Brasil, direta e em tópicos?</li><li>Nas memórias salvas, ficou alguma coisa que você não quer que o Copilot lembre? Apague.</li></ul></div>
-</section>
-<section id="ruido">
-<h2>Exercício 2 · Teams: alertas só para o que importa</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#6264a7">T</span>Teams</span></div><p class="why">O Teams fica mais útil para todo mundo quando cada pessoa escolhe o que merece alerta. Silenciar sem uma rotina de revisão apenas troca o problema de lugar.</p>
-<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Teams: o canal <span class="path">Prática</span> e um chat seu</dd></div><div><dt>Material</dt><dd>Suas notificações e uma mensagem do canal de treino</dd></div><div><dt>Faça</dt><dd>Três coisas: um canal que avisa sem interromper, um chat no mudo e um lembrete salvo que você sabe reencontrar.</dd></div><div><dt>Confira</dt><dd>As três aparecem no seu Teams.</dd></div><div><dt>Leve adiante</dt><dd>Repita no canal real que mais interrompe você. No celular, ative o horário silencioso.</dd></div></dl></div>
-<ol class="steps">
-<li><strong>Canal:</strong> no canal <span class="path">Prática</span>, clique em <span class="path">⋯ › Notificações do canal</span>. Em <span class="path">Notificar-me de todas as novas postagens</span>, há três níveis: <span class="path">Mostrar em Atividade e faixa</span> (aparece na tela, para o canal que não pode esperar), <span class="path">Mostrar na Atividade</span> (fica na lista, sem aviso na tela) e <span class="path">Desativado</span>. Para este canal, escolha <span class="path">Mostrar na Atividade</span> e clique em <span class="path">Salvar</span>. Menções a você continuam chegando em qualquer nível.</li>
-<li><strong>Chat no mudo:</strong> na lista à esquerda, passe o mouse sobre um chat em grupo que você não precisa acompanhar na hora. Clique em <span class="path">⋯ › Ativar mudo</span>. O chat continua na lista; só para de avisar. Para desfazer: <span class="path">⋯ › Desativar mudo</span>.</li>
-<li><strong>Salvar:</strong> no canal <span class="path">Prática</span>, passe o mouse sobre o lembrete do facilitador (“Lembrete: até sexta…”). Na barra que aparece sobre a mensagem, clique em <span class="path">⋯ › Salvar esta mensagem</span>. Atenção: é o <span class="path">⋯</span> da mensagem, não o do canal.</li>
-<li><strong>Reencontrar:</strong> em <span class="path">Chat</span>, na lista à esquerda, abra <span class="path">Exibições rápidas › Salvo</span>. O lembrete está lá. Clique nele para voltar à mensagem.</li>
-</ol>
-<div class="check"><h3>Confira</h3><p>Reaja com 👍 no chat da reunião quando tiver as três: o canal Prática em <span class="path">Mostrar na Atividade</span>, um chat no mudo e o lembrete aberto a partir de <span class="path">Salvo</span>.</p></div>
+</details>
+<div class="check"><h3>Confira</h3><p>Abra uma conversa nova e faça a mesma pergunta do passo 1. Compare as duas respostas: idioma, tamanho e formato mudaram?</p></div>
 </section>
 <section id="fontes">
-<h2>Exercício 3 · Copilot: fonte certa e o que falta</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot Chat</span></div><div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Copilot Chat</dd></div><div><dt>Material</dt><dd>O relatório semestral do Veredas Vivas (<span class="path">Relatorio_Semestral_S1-2026</span>)</dd></div><div><dt>Faça</dt><dd>Escolha a fonte, cole o pedido e confira as citações.</dd></div><div><dt>Confira</dt><dd>Abra uma citação e veja se as lacunas viraram perguntas.</dd></div><div><dt>Leve adiante</dt><dd>Antes de pedir um texto, selecione a fonte. É isso que separa uma resposta conferível de uma inventada.</dd></div></dl></div>
+<h2>Exercício 2 · Copilot: fonte certa e o que falta</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot Chat</span></div>
+<p class="why">Com <kbd>/</kbd>, você escolhe de onde vem a resposta. E com um pedido bem feito, o Copilot diz o que não sabe, em vez de completar com uma frase que soa certa.</p>
+<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Copilot Chat</dd></div><div><dt>Material</dt><dd>O relatório semestral do Veredas Vivas (<span class="path">Relatorio_Semestral_S1-2026</span>)</dd></div><div><dt>Faça</dt><dd>Escolha a fonte, cole o pedido e peça ao Copilot que revise a própria resposta.</dd></div><div><dt>Confira</dt><dd>Uma citação e as lacunas que viraram perguntas.</dd></div><div><dt>Leve adiante</dt><dd>Antes de pedir um texto, selecione a fonte. É isso que separa uma resposta conferível de uma inventada.</dd></div></dl></div>
 <ol class="steps">
 <li><strong>Escolha a fonte.</strong> No Copilot Chat, digite <kbd>/</kbd>, escreva <span class="path">Relatorio_Semestral</span> e selecione o relatório semestral do Veredas Vivas. Confira que o arquivo aparece dentro do pedido. Se <kbd>/</kbd> não mostrar o arquivo, anexe-o pelo clipe.</li>
 <li><strong>Cole o pedido abaixo e envie.</strong></li>
-<li><strong>Confira.</strong> Clique em uma citação da resposta e veja o trecho de origem.</li>
+<li><strong>Peça a revisão.</strong> Na mesma conversa, cole o segundo pedido. O Copilot confere o que escreveu contra a fonte.</li>
 </ol>
-<div class="prompt"><div class="prompt-head"><span>No Copilot Chat, com a fonte selecionada</span><button class="copy" type="button">Copiar</button></div><pre>Preciso de um parágrafo de progresso do terceiro trimestre de 2026, de julho a setembro, para o relatório à Fundação Horizonte Verde. Com base apenas na fonte que selecionei, escreva esse parágrafo. Depois, liste o que falta saber para concluir o relatório. Para cada informação ausente, formule uma pergunta e diga que tipo de documento ou confirmação precisamos buscar. Não preencha as lacunas por suposição.</pre></div>
-<div class="check"><h3>Confira</h3><ul><li>A citação leva a um trecho que existe no arquivo.</li><li>O parágrafo não afirma nada que o arquivo não diga.</li><li>O que falta aparece como pergunta, não como texto inventado.</li><li>O relatório semestral cobre janeiro a junho. A resposta avisou que faltam os dados de julho a setembro, ou escreveu o trimestre como se soubesse?</li><li><strong>Repare:</strong> o que mudaria se o arquivo não estivesse selecionado, ou se você não tivesse dito que o pedido é de julho a setembro?</li></ul></div>
+<div class="prompt"><div class="prompt-head"><span>Cole no Copilot Chat, com a fonte selecionada</span><button class="copy" type="button">Copiar</button></div><pre>Preciso de um parágrafo de progresso do terceiro trimestre de 2026, de julho a setembro, para o relatório à Fundação Horizonte Verde. Com base apenas na fonte que selecionei, escreva esse parágrafo. Depois, liste o que falta saber para concluir o relatório. Para cada informação ausente, formule uma pergunta e diga que tipo de documento ou confirmação precisamos buscar. Não preencha as lacunas por suposição.</pre></div>
+<div class="prompt"><div class="prompt-head"><span>Cole em seguida, na mesma conversa</span><button class="copy" type="button">Copiar</button></div><pre>Revise a sua resposta. Alguma frase afirma algo que não está na fonte selecionada? Liste essas frases e corrija o parágrafo.</pre></div>
+<div class="check"><h3>Confira</h3><ul><li>Clique em uma citação e veja se o trecho de origem diz aquilo.</li><li>O relatório semestral cobre <strong>janeiro a junho</strong>. A resposta avisou que faltam os dados de julho a setembro, ou escreveu o trimestre como se soubesse?</li></ul></div>
+<p class="tip-line"><strong>Dica rápida:</strong> na busca do Teams, procure “Veredas Vivas” e filtre por pessoa, data ou arquivos para abrir a mensagem de origem. É o jeito manual de conferir o que o Copilot citou.</p>
 </section>
-<section id="teams">
-<h2>Exercício 4 · Copilot e Planner: da reunião à tarefa</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot</span><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#237b4b">P</span>Planner</span></div><p class="why">Uma reunião só vira trabalho quando as decisões viram tarefas com responsável e prazo. Aqui você usa a transcrição de uma reunião do Veredas Vivas e transforma o que foi dito em uma tarefa acompanhada.</p>
-<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Copilot Chat e o Planner do canal <span class="path">Prática</span></dd></div><div><dt>Material</dt><dd>A transcrição da reunião mensal de outubro do Veredas Vivas (<span class="path">Transcricao_Reuniao_Mensal_Outubro_2026</span>)</dd></div><div><dt>Faça</dt><dd>Peça decisões, ações e pendências, confira na transcrição, crie uma tarefa e salve o pedido como modelo de ata.</dd></div><div><dt>Confira</dt><dd>Decisão, responsável e prazo batem com a transcrição. O que ficou para depois não virou decisão.</dd></div><div><dt>Leve adiante</dt><dd>A partir de hoje, suas reuniões transcritas terminam com a ata no formato do PMO.</dd></div></dl></div>
-<h3>1. Peça a recapitulação</h3>
-<ol class="steps">
-<li>No Copilot Chat, digite <kbd>/</kbd>, escreva <span class="path">Transcricao_Reuniao</span> e selecione a transcrição da reunião de outubro.</li>
-<li>Cole o pedido abaixo e envie.</li>
-</ol>
-<div class="prompt"><div class="prompt-head"><span>No Copilot Chat, com a transcrição selecionada</span><button class="copy" type="button">Copiar</button></div><pre>Com base apenas na transcrição selecionada, organize o que foi dito em:
-1. Decisões: o que foi decidido, com o motivo em uma linha.
-2. Ações: ação, responsável e prazo, em tabela.
-3. Pendências: o que ficou sem decisão e volta na próxima reunião.
-Use só o que foi dito. Se um responsável ou prazo não foi dito, escreva "não informado".</pre></div>
-<h3>2. Confira</h3>
-<div class="check"><ul><li>Escolha uma decisão e um prazo e encontre a frase na transcrição. Abra o arquivo e use a busca.</li><li>O que ficou “para a próxima reunião” não aparece como decisão.</li><li>Uma ação de alguém (“eu vou agendar…”) não virou decisão.</li><li>Onde faltou responsável ou prazo, o Copilot escreveu “não informado” em vez de inventar.</li><li><strong>Repare:</strong> o texto pareceu certo antes de você conferir?</li></ul></div>
-<p><strong>Guarde a recapitulação:</strong> depois de corrigir o que for preciso, publique-a como mensagem no canal <span class="path">Prática</span>.</p>
-<h3>3. Crie a tarefa no Planner</h3>
-<ol class="steps">
-<li>No canal <span class="path">Prática</span>, abra a guia <span class="path">Treino – Veredas Vivas</span>.</li>
-<li>Clique em <span class="path">Adicionar tarefa</span>. Use uma ação conferida como título, por exemplo o replantio em Formosa.</li>
-<li>Abra a tarefa: em <span class="path">Atribuir</span>, coloque você mesmo (no treino) e, em <span class="path">Data de conclusão</span>, o prazo dito na reunião. Em <span class="path">Observações</span>, cole a linha da recapitulação que originou a tarefa.</li>
-<li>Feche e abra de novo a tarefa para conferir os campos.</li>
-</ol>
-<div class="check"><h3>Confira</h3><p>uma tabela no chat ainda não é uma tarefa. A ação só existe quando tem responsável, prazo e um lugar onde a equipe acompanha.</p></div>
-<h3>4. Deixe a ata pronta para as próximas reuniões</h3>
-<p class="why">O pedido que você usou no passo 1 pode virar o modelo de ata das suas reuniões. Depois disso, toda reunião transcrita já termina com a ata no formato do PMO, sem pedir de novo.</p>
+<section id="reuniao">
+<h2>Exercício 3 · Copilot e Planner: da reunião às tarefas</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot</span><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#237b4b">P</span>Planner</span></div><p class="why">A partir de hoje, as suas reuniões transcritas terminam com a ata no formato do PMO, e as tarefas que saem delas vão para o Planner sem você digitar uma por uma.</p>
+<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>A recapitulação de uma reunião sua no Teams, o Copilot e o Planner do canal <span class="path">Prática</span></dd></div><div><dt>Material</dt><dd>Uma reunião sua já transcrita. Sem reunião transcrita? Use a transcrição do Veredas Vivas (alternativa abaixo).</dd></div><div><dt>Faça</dt><dd>Crie o modelo de ata, aplique na reunião e peça ao Copilot que crie as tarefas no Planner.</dd></div><div><dt>Confira</dt><dd>As tarefas estão no plano, com prazo. Falta o responsável: esse passo é seu.</dd></div><div><dt>Leve adiante</dt><dd>Em reuniões recorrentes, o modelo fica escolhido para as próximas.</dd></div></dl></div>
+<h3>1. A ata no formato do PMO</h3>
 <ol class="steps">
 <li>No Teams, abra uma reunião sua já transcrita, por exemplo uma da semana passada, e vá em <span class="path">Recapitulação</span>.</li>
 <li>Abra <span class="path">Resumo personalizado › Criar modelo</span>, dê um nome (por exemplo, “Ata PMO”) e cole o modelo abaixo.</li>
-<li>Salve e aplique o modelo nessa reunião. Em reuniões recorrentes, ele fica escolhido para as próximas.</li>
+<li>Salve e aplique o modelo nessa reunião.</li>
 </ol>
 <div class="prompt">
 <div class="prompt-head"><span>Modelo de resumo</span><button class="copy" type="button">Copiar</button></div>
@@ -125,76 +102,95 @@ Use só o que foi dito. Se um responsável ou prazo não foi dito, escreva "não
 4. Mudanças no cronograma ou no orçamento.
 Máximo de uma página. Use só o que foi dito na reunião.</pre>
 </div>
-<div class="check"><h3>Confira</h3><p>A ata da sua reunião apareceu nas quatro partes do modelo? Abra uma decisão e confira na transcrição.</p></div>
-<details class="optional-reference"><summary>Para usar nas suas reuniões · Facilitador e tarefas sugeridas</summary>
-<h3>Ligar o Facilitador</h3>
+<h3>2. As tarefas vão para o Planner</h3>
+<ol class="steps">
+<li>Na recapitulação, encontre <span class="path">Tarefas de acompanhamento</span>. Selecione a lista e copie.</li>
+<li>Abra o <span class="path">Copilot</span> (no painel da reunião ou no Copilot Chat), cole as tarefas com o pedido abaixo e envie.</li>
+<li>No canal <span class="path">Prática</span>, abra a guia <span class="path">Treino – Veredas Vivas</span> e veja as tarefas que o Copilot criou.</li>
+</ol>
+<div class="prompt">
+<div class="prompt-head"><span>Cole no Copilot, com as tarefas logo abaixo</span><button class="copy" type="button">Copiar</button></div>
+<pre>Adicione estas tarefas ao plano Treino – Veredas Vivas no Planner, com o prazo de cada uma. Se uma tarefa não tiver prazo, me avise em vez de inventar uma data.</pre>
+</div>
+<div class="check"><h3>Confira</h3><ul><li>As tarefas estão no plano, com prazo.</li><li>O Copilot não atribui responsáveis no Planner: os nomes ficam nas notas da tarefa. Abra uma tarefa e, em <span class="path">Atribuir</span>, coloque a pessoa (no treino, você mesmo).</li></ul></div>
+<details class="optional-reference"><summary>Sem reunião transcrita? Use a reunião de outubro do Veredas Vivas</summary>
+<ol class="steps">
+<li>No Copilot Chat, digite <kbd>/</kbd>, escreva <span class="path">Transcricao_Reuniao</span> e selecione a transcrição da reunião de outubro.</li>
+<li>Cole o modelo de resumo acima, com esta frase no início: <em>“Com base apenas na transcrição selecionada, organize a reunião neste formato:”</em>. Envie.</li>
+<li>Na mesma conversa, peça: <em>“Adicione as ações ao plano Treino – Veredas Vivas no Planner, com o prazo de cada uma.”</em> Depois, siga o “Confira” acima.</li>
+</ol>
+</details>
+<p class="tip-line"><strong>Dica rápida:</strong> agrupe os chats de um projeto em uma seção da lista de chats e reencontre a conversa sem rolar a lista.</p>
+</section>
+<section id="piloto">
+<h2>Exercício 4 · Copilot e Teams: o Teams no piloto automático</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot Chat</span><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#6264a7">T</span>Teams</span></div>
+<p class="why">Em vez de acompanhar cada chat, o Copilot lê tudo e todo dia diz o que precisa de você, com a fonte de cada item. Com isso, dá para silenciar o resto sem medo de perder algo.</p>
+<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Copilot Chat e o Teams</dd></div><div><dt>Material</dt><dd>Seus próprios e-mails, chats e reuniões</dd></div><div><dt>Faça</dt><dd>Rode o resumo do dia, agende para todo dia às 9h, silencie o que não pode interromper e crie um fluxo para o que não pode esperar.</dd></div><div><dt>Confira</dt><dd>O resumo agendado, um canal silenciado e um fluxo criado.</dd></div><div><dt>Leve adiante</dt><dd>Amanhã às 9h, o seu resumo chega sozinho.</dd></div></dl></div>
+<p class="note">Este exercício usa a sua caixa de entrada. Não compartilhe a tela.</p>
+<h3>1. O que precisa de você hoje</h3>
+<ol class="steps">
+<li>No Copilot Chat, abra uma conversa nova, cole o pedido abaixo e envie. Sem <kbd>/</kbd>: o Copilot procura sozinho nos seus e-mails, chats e reuniões.</li>
+<li>Clique em uma citação e confira que a mensagem diz aquilo.</li>
+</ol>
+<div class="prompt">
+<div class="prompt-head"><span>Cole no Copilot Chat</span><button class="copy" type="button">Copiar</button></div>
+<pre>O que, nos meus e-mails, chats e reuniões das últimas 24 horas, precisa de uma ação minha? Liste por prioridade: o que é, quem pediu, o prazo, se houver, e a mensagem de origem. Se um prazo não estiver informado, sinalize. Se nada precisar de mim, diga isso.</pre>
+</div>
+<h3>2. Agende para todo dia</h3>
+<ol class="steps">
+<li>Passe o mouse sobre o pedido que você enviou e clique em <span class="path">Agendar este prompt</span>.</li>
+<li>Escolha todos os dias úteis, às 9h, e salve. O resumo chega no Copilot Chat, com um aviso.</li>
+</ol>
+<h3>3. Silencie o resto</h3>
+<ol class="steps">
+<li><strong>Canal:</strong> no canal <span class="path">Prática</span>, clique em <span class="path">⋯ › Notificações do canal</span>. Em <span class="path">Notificar-me de todas as novas postagens</span>, há três níveis: <span class="path">Mostrar em Atividade e faixa</span> (aparece na tela, para o canal que não pode esperar), <span class="path">Mostrar na Atividade</span> (fica na lista, sem aviso na tela) e <span class="path">Desativado</span>. Para este canal, escolha <span class="path">Mostrar na Atividade</span> e clique em <span class="path">Salvar</span>. Menções a você continuam chegando em qualquer nível.</li>
+<li><strong>Chat no mudo:</strong> na lista à esquerda, passe o mouse sobre um chat em grupo que você não precisa acompanhar na hora e clique em <span class="path">⋯ › Ativar mudo</span>. O chat continua na lista; só para de avisar.</li>
+</ol>
+<h3>4. Um fluxo para o que não pode esperar</h3>
+<p>Os fluxos de trabalho do Teams fazem uma tarefa sozinhos quando algo acontece: avisar, lembrar, encaminhar. Assim, mesmo com o canal em silêncio, o que é urgente chega até você.</p>
+<ol class="steps">
+<li>No canal <span class="path">Prática</span>, clique em <span class="path">⋯ › Fluxos de trabalho</span> e veja os modelos prontos.</li>
+<li>Escolha um modelo que avise você só do que importa, por exemplo quando uma mensagem citar uma palavra-chave como “urgente” ou o nome do seu projeto. Siga os passos e salve.</li>
+</ol>
+<div class="check"><h3>Confira</h3><p>Reaja com 👍 no chat da reunião quando tiver as três: o resumo agendado para as 9h, o canal Prática em <span class="path">Mostrar na Atividade</span> e um fluxo de trabalho criado.</p></div>
+<p class="tip-line"><strong>Dica rápida:</strong> para guardar uma mensagem e achar depois, passe o mouse sobre ela e clique em <span class="path">⋯ › Salvar esta mensagem</span>. Ela fica em <span class="path">Chat › Exibições rápidas › Salvo</span>. E para mandar uma mensagem no horário de trabalho de quem recebe, use <span class="path">Agendar envio</span>.</p>
+</section>
+<section id="extra">
+<h2>Se sobrar tempo</h2>
+<p class="why">Dois recursos para as suas próximas reuniões. Se a turma estiver no horário, fazemos juntos. Se não, ficam para você testar até quarta.</p>
+<details class="optional-reference"><summary>Chegar à próxima reunião já sabendo o contexto</summary>
+<p>Antes de uma reunião, o Copilot junta os e-mails, arquivos e conversas anteriores com as mesmas pessoas e entrega um resumo.</p>
+<ol class="steps"><li>No calendário do Outlook ou do Teams, abra a sua próxima reunião.</li><li>Clique em <span class="path">Preparar</span> ou no ícone do <span class="path">Copilot</span> do convite.</li><li>Leia o resumo e abra uma citação para conferir.</li></ol>
+</details>
+<details class="optional-reference"><summary>Ligar o Facilitador na reunião</summary>
+<p>O Facilitador toma notas ao vivo e ajuda a reunião a seguir a pauta.</p>
 <ol class="steps">
 <li>A reunião precisa ser agendada. O Facilitador não funciona em “Reunir agora”, em chamadas nem em reuniões de canal.</li>
 <li>Ao entrar: <span class="path">Mais ações › Gravar e transcrever › Iniciar transcrição</span>, com o idioma falado correto: Português (Brasil) ou Inglês, conforme a reunião.</li>
 <li>Ainda em <span class="path">Mais ações</span>, ative o Facilitador. Quem organiza ou apresenta pode ligar.</li>
-<li>As notas aparecem depois de alguns minutos e ficam, ao final, em <span class="path">Recapitulação › Anotações</span>.</li>
+<li>No chat da reunião, passe a pauta com o pedido abaixo. As notas ficam, ao final, em <span class="path">Recapitulação › Anotações</span>.</li>
 </ol>
-<h3>Tarefas que o Teams sugere</h3>
-<p>Depois da reunião, o cartão no chat mostra algo como <span class="path">4 tarefas</span>. Elas também aparecem em <span class="path">Exibir recapitulação › Resumo de IA › Tarefas de acompanhamento</span>. São uma boa lista de partida, mas <strong>não vão para o Planner sozinhas e costumam vir sem prazo</strong>. Confira cada uma com a transcrição, crie a tarefa no Planner e acrescente a data.</p>
 <div class="prompt">
-<div class="prompt-head"><span>No chat da reunião</span><button class="copy" type="button">Copiar</button></div>
+<div class="prompt-head"><span>Cole no chat da reunião</span><button class="copy" type="button">Copiar</button></div>
 <pre>@Facilitator a pauta é: abertura (5 min), execução do trimestre (20 min), cercamento (10 min), relatório para o financiador (10 min). Avise quando faltarem 5 minutos de cada item.</pre>
 </div>
-</details>
-<details class="optional-reference"><summary>Para depois · atalhos do Teams que poupam tempo</summary>
-<ul><li><strong>Seções por projeto:</strong> agrupe os chats de um projeto em uma seção da lista de chats e reencontre a conversa sem rolar a lista.</li><li><strong>Busca com filtros:</strong> procure “Veredas Vivas”, filtre por pessoa, data e arquivos e abra a mensagem de origem. Compare com a citação do Copilot.</li><li><strong>Componente Loop:</strong> em um chat, crie uma lista de “quem faz o quê” que todos editam ali mesmo. Peça para outra pessoa alterar um item.</li><li><strong>Agendar envio:</strong> prepare uma mensagem para chegar no horário de trabalho de quem recebe. Confira a data antes de confirmar.</li><li><kbd>Ctrl</kbd> + <kbd>.</kbd> mostra todos os atalhos de teclado.</li></ul>
-</details>
-</section>
-<section id="outlook">
-<h2>Exercício 5 · Outlook: juntar o que está espalhado</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot Chat</span><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#086dc1">O</span>Outlook</span></div><p class="why">“Junta tudo o que temos sobre esse assunto” é um dos pedidos que mais chegam ao PMO. A informação está em vários e-mails, em um chat e numa reunião. Este exercício é com o seu trabalho de verdade: o Copilot junta tudo sobre um assunto seu, mostra de onde veio cada parte e prepara a resposta. A decisão continua sendo sua.</p>
-<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Copilot Chat e Outlook</dd></div><div><dt>Material</dt><dd>Seus próprios e-mails, chats e reuniões</dd></div><div><dt>Faça</dt><dd>Escolha um assunto seu das últimas semanas, peça tudo sobre ele e prepare uma resposta sem enviar.</dd></div><div><dt>Confira</dt><dd>Cada item aponta para uma mensagem real, e o que ninguém assumiu aparece sem responsável.</dd></div><div><dt>Leve adiante</dt><dd>Use o mesmo pedido da próxima vez que alguém pedir para você “juntar tudo” sobre um assunto.</dd></div></dl></div>
-<p class="note">Este exercício mostra a sua caixa de entrada. Não compartilhe a tela. Escolha um assunto sem informação sensível.</p>
-<h3>1. Junte tudo sobre um assunto seu</h3>
-<ol class="steps">
-<li>Pense em um assunto que se arrastou por vários e-mails nas últimas semanas: um relatório, uma compra, um evento, um parceiro.</li>
-<li>No Copilot Chat, confira que a resposta pode usar seus e-mails, chats e reuniões, e não só a web.</li>
-<li>Cole o pedido abaixo, troque <strong>[assunto]</strong> pelo seu e envie. Sem <kbd>/</kbd>: o Copilot procura sozinho.</li>
-</ol>
-<div class="prompt">
-<div class="prompt-head"><span>No Copilot Chat</span><button class="copy" type="button">Copiar</button></div>
-<pre>Junte tudo o que recebi nas últimas três semanas, em e-mails, chats e reuniões, sobre [assunto]. Organize em uma tabela: o que foi decidido, o que está pendente, quem é responsável e de qual mensagem veio cada item. Se um responsável ou prazo não estiver informado, sinalize. Ignore o que não for desse assunto.</pre>
-</div>
-<div class="check"><h3>Confira</h3><ul><li>Clique em uma citação e confira que a mensagem diz aquilo.</li><li>Apareceram itens de mais de uma mensagem? Ficou faltando alguma que você lembra?</li><li>Pendências sem responsável estão sinalizadas, não atribuídas a alguém por suposição.</li></ul></div>
-<h3>2. Prepare a resposta no Outlook</h3>
-<ol class="steps">
-<li>No Outlook, abra o e-mail mais recente desse assunto.</li>
-<li>Clique em <span class="path">Responder</span> e no ícone do <span class="path">Copilot</span> da resposta. Peça, com as suas palavras, uma resposta curta que confirme o que foi decidido e pergunte o que está pendente.</li>
-<li>Revise e deixe como rascunho. Envie depois, se quiser: a resposta é de verdade.</li>
-</ol>
-<p class="note">Sem o Copilot no Outlook? Peça a resposta no Copilot Chat e cole no e-mail.</p>
-<details class="optional-reference"><summary>Para depois · chegar à próxima reunião já sabendo o contexto</summary>
-<p>Antes de uma reunião, o Copilot junta os e-mails, arquivos e conversas anteriores com as mesmas pessoas e entrega um resumo.</p>
-<ol class="steps"><li>No calendário do Outlook, abra a sua próxima reunião.</li><li>Clique em <span class="path">Preparar</span> ou no ícone do <span class="path">Copilot</span> do convite.</li><li>Leia o resumo e abra uma citação para conferir.</li></ol>
-</details>
-<details class="optional-reference"><summary>Para depois · responder no seu jeito de escrever</summary>
-<div class="prompt">
-<div class="prompt-head"><span>Guia do seu estilo</span><button class="copy" type="button">Copiar</button></div>
-<pre>Analise os exemplos de e-mails que forneci e proponha um guia do meu estilo: tom, tamanho, saudação, despedida, expressões que uso e que evito. Não infira características pessoais. Depois redija, sem enviar, uma resposta ao e-mail que eu indicar, usando esse guia. Se faltar o e-mail ou os exemplos, peça esses materiais antes de responder.</pre>
-</div>
-<ol class="steps"><li>Forneça três ou quatro e-mails seus, autorizados, como exemplo.</li><li>Copie o guia revisado para um documento chamado “Meu guia de escrita”.</li><li>Em um novo pedido, selecione esse documento com <kbd>/</kbd> junto com o e-mail a responder.</li><li>Para usar sempre, resuma o guia em <span class="path">Configurações › Personalização › Personalizar o Copilot › Gerenciar</span>. Na Sessão 3, você verá quando vale criar um agente.</li></ol>
-<p class="note">Não projete mensagens privadas para a turma. O suporte a caixas compartilhadas e delegadas depende da versão do Outlook, da licença e das permissões.</p>
 </details>
 </section>
 <section id="depois">
 <h2>Fechamento e prática até quarta</h2>
 <h3>Antes de sair</h3>
 <p>No chat da reunião, escreva uma linha: <strong>o que mais surpreendeu você no jeito como o Copilot funciona, e onde viu isso acontecer.</strong></p>
-<div class="callout goal"><div class="callout-label">O que você leva desta sessão</div><ol><li>O Copilot configurado com a sua instrução personalizada.</li><li>Alertas do Teams só para o que importa.</li><li>O modelo de ata do PMO salvo no seu Teams, e uma tarefa no Planner com responsável e prazo.</li><li>Um jeito rápido de juntar o que está espalhado nos seus e-mails.</li></ol></div>
+<div class="callout"><div class="callout-label">O que você já sabe fazer</div><ol><li>O Copilot te conhece: a sua instrução personalizada vale para todo pedido.</li><li>Você escolhe a fonte com <kbd>/</kbd> e pede que ele diga o que falta.</li><li>As suas reuniões terminam com a ata do PMO, e as tarefas vão para o Planner pelo Copilot.</li><li>Todo dia às 9h, o Copilot diz o que precisa de você, e o resto do Teams fica em silêncio.</li></ol></div>
 <h3>Para testar até quarta</h3>
 <p>Escolha um ou dois, com o seu trabalho real e só com material autorizado:</p>
 <ul>
-<li>Na próxima reunião transcrita, confira a ata que saiu do seu modelo. Transforme uma decisão em tarefa.</li>
-<li>Junte tudo sobre um assunto real seu nos e-mails e confira as citações.</li>
+<li>Leia o seu resumo das 9h e confira uma citação. Ajuste o pedido agendado se faltou ou sobrou algo.</li>
+<li>Na próxima reunião transcrita, confira a ata que saiu do seu modelo e mande as tarefas para o Planner.</li>
 <li>Comece um documento que você já precisaria escrever, selecionando as fontes com <kbd>/</kbd> e pedindo o que falta.</li>
 </ul>
 <p>Traga para a próxima sessão uma dúvida e um exemplo do que funcionou ou não.</p>
 <p class="note">Documentos reais guardados só no Box não aparecem para o Copilot. Para usá-los, coloque uma cópia no OneDrive ou no SharePoint da sua equipe.</p>
 </section>
-<section aria-labelledby="recap-title" class="session-recap"><h2 id="recap-title">Onde estamos e o que vem pela frente</h2><p class="recap-intro">Na próxima sessão, vamos passar das decisões da reunião aos números: preparar planilhas, conferir a análise e transformar os resultados em relatório e apresentação.</p><div class="roadmap"><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 1</div><h3 class="session-title-small"><a href="sessao-1.html">Comece com o Copilot bem configurado</a></h3><ul><li>Entender como a IA funciona</li><li>Ensinar o Copilot sobre você</li><li>Alertas no Teams só para o que importa</li><li>Deixar a ata pronta e transformar a reunião em tarefa</li><li>Juntar o que está espalhado nos e-mails</li></ul><p class="status-tag">Nesta sessão</p></article><article class="roadmap-card current"><div class="session-label">Sessão 2</div><h3 class="session-title-small"><a href="sessao-2.html">Como a IA pensa e como pedir bem</a></h3><ul><li>Entender por que a IA às vezes inventa</li><li>Pedir que o Copilot te entreviste e escreva o pedido</li><li>Limpar dados, achar desvios e montar uma apresentação</li></ul><p class="status-tag">A seguir</p></article><article class="roadmap-card upcoming"><div class="session-label">Sessão 3</div><h3 class="session-title-small"><a href="sessao-3.html">Um assistente para o relatório do mês</a></h3><ul><li>Montar um Notebook e pedir o rascunho do relatório</li><li>Construir e testar um agente</li><li>Transformar ações abertas em tarefas</li></ul><p class="status-tag">Mais adiante</p></article></div></section><nav aria-label="Continuar" class="bottom-nav"><a href="index.html">← Início</a><a href="sessao-2.html">Próxima sessão →</a></nav><footer>Material do curso Teams e IA na prática, preparado pela DC Cruz para uso interno da TNC. Os exemplos usam dados fictícios. Os recursos do Copilot mudam com frequência; a interface pode variar conforme a versão.</footer>
+<section aria-labelledby="recap-title" class="session-recap"><h2 id="recap-title">Onde estamos e o que vem pela frente</h2><p class="recap-intro">Na próxima sessão, vamos passar das decisões da reunião aos números: preparar planilhas, conferir a análise e transformar os resultados em relatório e apresentação.</p><div class="roadmap"><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 1</div><h3 class="session-title-small"><a href="sessao-1.html">Comece com o Copilot bem configurado</a></h3><ul><li>Entender como a IA funciona</li><li>Deixar o Copilot te entrevistar e aprender quem você é</li><li>Escolher a fonte e pedir o que falta</li><li>Da reunião à ata e às tarefas no Planner</li><li>O Teams no piloto automático</li></ul><p class="status-tag">Nesta sessão</p></article><article class="roadmap-card current"><div class="session-label">Sessão 2</div><h3 class="session-title-small"><a href="sessao-2.html">Como a IA pensa e como pedir bem</a></h3><ul><li>Entender por que a IA às vezes inventa</li><li>Pedir que o Copilot te entreviste e escreva o pedido</li><li>Limpar dados, achar desvios e montar uma apresentação</li></ul><p class="status-tag">A seguir</p></article><article class="roadmap-card upcoming"><div class="session-label">Sessão 3</div><h3 class="session-title-small"><a href="sessao-3.html">Um assistente para o relatório do mês</a></h3><ul><li>Montar um Notebook e pedir o rascunho do relatório</li><li>Construir e testar um agente</li><li>Transformar ações abertas em tarefas</li></ul><p class="status-tag">Mais adiante</p></article></div></section><nav aria-label="Continuar" class="bottom-nav"><a href="index.html">← Início</a><a href="sessao-2.html">Próxima sessão →</a></nav><footer>Material do curso Teams e IA na prática, preparado pela DC Cruz para uso interno da TNC. Os exemplos usam dados fictícios. Os recursos do Copilot mudam com frequência; a interface pode variar conforme a versão.</footer>
 </div>
 <span aria-live="polite" class="sr-only" role="status"></span></body></html>

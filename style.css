@@ -131,3 +131,19 @@ body{max-width:1120px;padding-left:32px;padding-right:32px}
 @media print{.exercise-guide,.mental-model{break-inside:avoid}.optional-reference{background:white}}
 
 .app-markers{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 16px}.app-marker{display:inline-flex;align-items:center;gap:7px;font-size:10pt;font-weight:600;color:#444}.app-symbol{display:inline-flex;align-items:center;justify-content:center;width:25px;height:25px;border-radius:5px;font-size:12px;color:white;font-weight:700}
+
+/* Two colours only: blue = paste into Copilot, green = check. Everything else is neutral. */
+.callout,.callout.goal,.callout.tip{border-left-color:#9aa5b1;background:#f6f7f8}
+.callout .callout-label,.goal .callout-label,.tip .callout-label,.exercise-guide .callout-label{color:#444}
+.mental-model{border-top-color:#e1e4e8}
+.exercise-guide{background:#fff;border-color:#dde1e5}
+.exercise-guide dt{color:#555}
+.model-tag{background:#f1f2f4;color:#444}
+.roadmap-card.completed{border-color:#111;background:#fff}
+.roadmap-card.completed .session-label,.roadmap-card.completed .status-tag,.roadmap-check{color:#111}
+.legend{font-size:9.5pt;color:#555;margin-top:10px}
+.legend-item{display:inline-block;font-weight:700;font-size:8.5pt;padding:2px 8px;margin-right:4px;border-left:4px solid}
+.legend-item+.legend-item{margin-left:12px}
+.legend-prompt{border-color:#1a365d;background:#eef3fb;color:#1a365d}
+.legend-check{border-color:#2d6a4f;background:#f0faf4;color:#2d6a4f}
+.tip-line{font-size:10pt;color:#444;border-top:1px dashed #ddd;padding-top:10px;margin-top:18px}
