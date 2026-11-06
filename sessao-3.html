@@ -16,6 +16,7 @@
 <h1>Sessão 3 · Um assistente para o relatório do mês</h1>
 <p class="lede">Todo mês, alguém junta os relatórios dos hubs, escreve o Resumo Estratégico e cobra o que ficou pendente. Hoje você monta um assistente para isso: primeiro desenha o caminho, depois reúne as fontes num Notebook, constrói um agente e testa até confiar. Quatro exercícios, no Copilot e no Planner.</p>
 <nav aria-label="Nesta sessão" class="toc">
+<a href="#agente-o-que">Abertura: o que é um agente</a>
 <a href="#fluxo">Exercício 1 · O caminho do relatório mensal</a>
 <a href="#montar">Exercício 2 · Um Notebook com as fontes do projeto</a>
 <a href="#agente">Exercício 3 · O agente Acompanhamento Mensal</a>
@@ -23,11 +24,30 @@
 <a href="#fechamento">Fechamento e o próximo mês</a>
 </nav>
 <p class="note">9h30–11h · horário de Brasília · 90 minutos <button class="print" type="button">Imprimir / salvar PDF</button></p><p class="interface-note">Os nomes <span class="path">destacados assim</span> são comandos que você encontra na tela. Podem variar um pouco conforme idioma, versão e licença. Se uma opção não aparecer, use a alternativa do exercício. Para achar um arquivo com <kbd>/</kbd>, basta digitar o começo do nome.</p></header>
-<p class="note">Os exemplos usam os arquivos fictícios do Veredas Vivas, na pasta do canal <span class="path">Prática</span>. Quer usar o seu projeto? Siga os mesmos passos com os seus arquivos. Documentos guardados só no Box não aparecem para o Copilot: para usá-los, coloque uma cópia no OneDrive ou no SharePoint da equipe.</p>
+<p class="note">Os exemplos usam os arquivos fictícios do Veredas Vivas, na pasta do canal <span class="path">Prática</span>. Quer usar o seu projeto? Siga os mesmos passos com os seus arquivos: crie uma pasta para eles no OneDrive ou no SharePoint, ou anexe os arquivos ao pedido pelo clipe.</p>
+<section id="agente-o-que">
+<h2>Abertura: o que é um agente</h2>
+<p class="why">Até agora, cada pedido ao Copilot começou do zero: você explica a tarefa, escolhe as fontes e diz como quer a resposta. Um agente guarda tudo isso. Você explica uma vez, e a partir daí qualquer pessoa do time só diz “faça o deste mês”.</p>
+<div class="callout goal"><div class="callout-label">Pense num colega novo com um manual</div>
+<p>Imagine que você entrega a um colega novo uma folha com quatro coisas: <strong>o que ele faz</strong> (o Resumo Estratégico de um hub), <strong>onde consulta</strong> (o procedimento e os resumos dos meses anteriores), <strong>como entrega</strong> (os campos do Smartsheet, nesta ordem) e <strong>o que fazer quando não souber</strong> (avisar, nunca inventar). Um agente é isso: o Copilot com esse manual guardado.</p></div>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th>Pedir ao Copilot</th><th>Usar um agente</th></tr></thead>
+<tbody>
+<tr><td>Instruções</td><td>Você escreve a cada vez</td><td>Escritas uma vez, ficam guardadas</td></tr>
+<tr><td>Fontes</td><td>Você seleciona a cada vez</td><td>Já vêm configuradas</td></tr>
+<tr><td>Resultado</td><td>Muda conforme quem pede e como pede</td><td>Sai sempre no mesmo formato</td></tr>
+<tr><td>Quem usa</td><td>Quem sabe pedir bem</td><td>Qualquer pessoa do time com acesso</td></tr>
+<tr><td>Serve para</td><td>Uma tarefa que aparece uma vez</td><td>Uma tarefa que se repete, sempre do mesmo jeito</td></tr>
+</tbody>
+</table></div>
+<p>Vale criar um agente quando a tarefa se repete e outra pessoa conseguiria fazê-la seguindo o manual. Não vale para uma tarefa única, nem para o que depende de uma decisão: o agente prepara, a pessoa decide.</p>
+<p class="note">O agente desta sessão não age sozinho: não envia e-mails nem altera arquivos. Ele responde quando alguém pede, e a resposta é sempre um rascunho para conferir.</p>
+<p>Hoje você monta um, em ordem: primeiro descobre em que etapa do mês ele ajuda (exercício 1), depois reúne as fontes certas (exercício 2) e, por fim, escreve o manual e testa (exercício 3).</p>
+</section>
 <section id="fluxo">
 <h2>Exercício 1 · O caminho do relatório mensal</h2>
 <p class="why">Antes de montar um assistente, vale saber como o relatório é feito hoje: quem manda o quê, até quando, quem confere e para onde vai. A IA ajuda em algumas etapas, não no processo inteiro. Saber em qual etapa ela ajuda é o que faz um agente ser útil.</p>
-<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Um papel, um Word ou um Loop</dd></div><div><dt>Material</dt><dd>Um relatório que você faz todo mês. Se não tiver, o exemplo abaixo.</dd></div><div><dt>Faça</dt><dd>Monte uma tabela com as etapas e marque onde a IA ajuda.</dd></div><div><dt>Confira</dt><dd>Toda linha tem um nome e uma data.</dd></div><div><dt>Leve adiante</dt><dd>Comece pela linha em que a IA ajuda mais e alguém ainda confere.</dd></div></dl></div>
+<div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Um Word ou um Loop</dd></div><div><dt>Material</dt><dd>Um relatório que você faz todo mês. Se não tiver, o exemplo abaixo.</dd></div><div><dt>Faça</dt><dd>Monte uma tabela com as etapas e marque onde a IA ajuda.</dd></div><div><dt>Confira</dt><dd>Toda linha tem um nome e uma data.</dd></div><div><dt>Leve adiante</dt><dd>Comece pela linha em que a IA ajuda mais e alguém ainda confere.</dd></div></dl></div>
 <h3>Exemplo: o ciclo mensal dos hubs (PMO-04)</h3>
 <div class="table-wrap"><table>
 <thead><tr><th>Quando</th><th>Etapa</th><th>Quem</th><th>A IA ajuda?</th></tr></thead>
@@ -79,7 +99,7 @@
 </section>
 <section id="agente">
 <h2>Exercício 3 · Copilot: o agente Acompanhamento Mensal</h2><div aria-label="Aplicativos deste bloco" class="app-markers"><span class="app-marker"><span aria-hidden="true" class="app-symbol" style="background:#344e63">C</span>Copilot</span></div>
-<p class="why">Um agente é um assistente com uma tarefa só, sempre a mesma: as mesmas regras, as mesmas fontes de consulta e o mesmo formato de resposta. Você configura uma vez e qualquer pessoa do time usa. Este escreve o rascunho do Resumo Estratégico de um hub, a linha do 7º dia útil do exercício 1.</p>
+<p class="why">Agora você monta o manual do colega novo da abertura. Este agente escreve o rascunho do Resumo Estratégico de um hub, a linha do 7º dia útil do exercício 1.</p>
 <div class="exercise-guide"><div class="callout-label">Roteiro</div><dl><div><dt>Onde</dt><dd>Copilot Chat › Novo agente</dd></div><div><dt>Material</dt><dd>O PMO-04, o Resumo Estratégico dos meses anteriores e o relatório mensal de outubro do Hub Chapada</dd></div><div><dt>Faça</dt><dd>Configure o agente e teste três situações: um mês normal, uma pergunta fora do assunto e um mês sem documentos.</dd></div><div><dt>Confira</dt><dd>Cada item do resumo existe no relatório, e o agente diz “não sei” quando não tem base.</dd></div><div><dt>Leve adiante</dt><dd>Só compartilhe um agente depois que ele passar nos três testes.</dd></div></dl></div>
 <h3>1. Configure o agente</h3>
 <ol class="steps">
@@ -166,7 +186,7 @@ Posso dividir uma compra em duas para ficar abaixo da faixa de três orçamentos
 </div>
 </details>
 <details class="optional-reference"><summary>Para depois · avisar o canal quando um relatório chegar</summary>
-<p>Se o seu ambiente permitir, no Teams abra <span class="path">Workflows</span> e escolha um modelo que avisa o canal quando um arquivo novo entra em uma pasta. Use a pasta de treino. O fluxo só enxerga pastas do Teams e do SharePoint, não do Box. O aviso não substitui a conferência: o fluxo avisa, a pessoa confere.</p>
+<p>Se o seu ambiente permitir, no Teams abra <span class="path">Workflows</span> e escolha um modelo que avisa o canal quando um arquivo novo entra em uma pasta. Use a pasta de treino. O fluxo usa pastas do Teams e do SharePoint. O aviso não substitui a conferência: o fluxo avisa, a pessoa confere.</p>
 </details>
 <details class="optional-reference"><summary>Para depois · o que mudou de uma ata para a outra</summary>
 <ol class="steps">
@@ -199,7 +219,7 @@ Posso dividir uma compra em duas para ficar abaixo da faixa de três orçamentos
 <div class="callout-label">Três coisas sobre como a IA funciona</div>
 <ol class="model-list">
 <li><strong>A IA prevê palavras, não verifica fatos.</strong> Ela sabe o que é provável, não o que é verdade. Peça que diga o que falta e confira na origem.</li>
-<li><strong>A IA só enxerga o que você mostra.</strong> Selecione as fontes. O que está só no Box não aparece.</li>
+<li><strong>A IA só enxerga o que você mostra.</strong> Selecione as fontes. O que você não mostrou, ela não usa.</li>
 <li><strong>O pedido faz toda a diferença.</strong> O que você quer, para quem, de qual fonte e o que fazer quando faltar informação.</li></ol>
 <p>E duas regras do trabalho: uma decisão só anda com responsável, prazo e lugar para acompanhar; e alerta só para o que importa.</p></div>
 <h3>O próximo mês</h3>
