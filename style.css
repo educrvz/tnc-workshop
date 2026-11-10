@@ -247,3 +247,7 @@ ol.trail>li>.note{margin-top:8px}
   ol.trail .table-wrap td{border:0;padding:4px 0}
   ol.trail .table-wrap tr:nth-child(even) td{background:none}
 }
+.file-ref-demo{font-size:10pt;color:#444;margin:8px 0 0}
+.file-ref-tail{font-family:'Courier New',monospace;font-size:9.5pt}
+.file-chip{display:inline-flex;align-items:center;gap:5px;font:700 9pt Arial,sans-serif;color:#1f2a37;background:#fff;border:1px solid #b9c3cf;border-radius:14px;padding:1px 9px 1px 5px;vertical-align:1px}
+.file-chip img{width:14px;height:14px}
