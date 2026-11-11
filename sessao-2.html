@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="noindex,nofollow" name="robots"/><link href="style.css?v=20261110b" rel="stylesheet"/><script defer="" src="app.js?v=20261110b"></script><title>Teams e IA na Prática · TNC · Sessão 2</title></head><body class="rail-page"><a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="noindex,nofollow" name="robots"/><link href="style.css?v=20261111a" rel="stylesheet"/><script defer="" src="app.js?v=20261110b"></script><title>Teams e IA na Prática · TNC · Sessão 2</title></head><body class="rail-page"><a class="skip" href="#conteudo">Ir para o conteúdo</a>
 <nav aria-label="Exercícios desta sessão" class="session-rail" id="session-rail"><p class="lbl">Sessão 2 · hoje</p><ol><li><a data-s="abertura" href="#abertura"><span class="dot">0</span><span>Abertura</span></a></li><li><a data-s="anatomia" href="#anatomia"><span class="dot">1</span><span>Um bom prompt</span></a></li><li><a data-s="limpar" href="#limpar"><span class="dot">2</span><span>Limpar a exportação</span></a></li><li><a data-s="desafio" href="#desafio"><span class="dot">3</span><span>Prompt Coach e Analista</span></a></li><li><a data-s="ppt" href="#ppt"><span class="dot">4</span><span>A apresentação</span></a></li><li><a data-s="depois" href="#depois"><span class="dot">+</span><span>Discussão</span></a></li></ol></nav>
 
 <div class="wrap">
@@ -16,7 +16,7 @@
 <li><a href="#abertura"><span class="n soft">0</span><span class="t">Abertura<span class="s">Três coisas sobre a IA, e por que “prompt”</span></span><span class="apps"></span></a></li>
 <li><a href="#anatomia"><span class="n">1</span><span class="t">O que faz um prompt funcionar<span class="s">Um prompt fraco, o Prompt Coach e um prompt bom</span></span><span class="apps"><img alt="Prompt Coach" src="icons/prompt-coach.png"/></span></a></li>
 <li><a href="#limpar"><span class="n">2</span><span class="t">Limpar a exportação de campo<span class="s">Datas, municípios e visitas duplicadas, em um prompt</span></span><span class="apps"><img alt="Excel" src="icons/excel.svg"/></span></a></li>
-<li><a href="#desafio"><span class="n">3</span><span class="t">O Prompt Coach e o Analista<span class="s">Os desvios do orçamento e as quatro armadilhas</span></span><span class="apps"><img alt="Prompt Coach" src="icons/prompt-coach.png"/><img alt="Analista" src="icons/analista.png"/><img alt="Excel" src="icons/excel.svg"/></span></a></li>
+<li><a href="#desafio"><span class="n">3</span><span class="t">O Prompt Coach e o Analista<span class="s">Os desvios do orçamento e os quatro pontos de atenção</span></span><span class="apps"><img alt="Prompt Coach" src="icons/prompt-coach.png"/><img alt="Analista" src="icons/analista.png"/><img alt="Excel" src="icons/excel.svg"/></span></a></li>
 <li><a href="#ppt"><span class="n">4</span><span class="t">A apresentação para quem decide<span class="s">Seis slides a partir das fontes, terminando nas decisões</span></span><span class="apps"><img alt="PowerPoint" src="icons/powerpoint.svg"/></span></a></li>
 <li><a href="#depois"><span class="n soft">+</span><span class="t">Discussão<span class="s">O que funcionou hoje</span></span><span class="apps"></span></a></li>
 </ol></nav>
@@ -53,24 +53,23 @@
 <tr><td>O que você quer e em que formato</td><td>Um resumo em cinco tópicos, com os temas nomeados</td></tr>
 <tr><td>Para quem é e de que período</td><td>O comitê do ICV, sobre outubro</td></tr>
 <tr><td>De qual fonte</td><td>Só o relatório selecionado</td></tr>
-<tr><td>O que fazer quando faltar informação</td><td>Escrever "a definir" e dizer o que não está no relatório</td></tr>
+<tr class="hl"><td>O que fazer quando faltar informação</td><td>Escrever "a definir" e dizer o que não está no relatório</td></tr>
 </tbody></table></div>
+<div class="callout goal"><div class="callout-label">A frase que resolve metade dos problemas</div><p><strong>“Se uma informação não estiver na fonte, diga que não está, em vez de completar.”</strong> Ela dá ao Copilot permissão para não saber. Sem ela, o Copilot tende a completar com uma frase plausível, que às vezes está errada.</p></div>
 <details class="optional-reference"><summary>Um exemplo de prompt bom, para comparar com o do Prompt Coach</summary>
 <div class="prompt"><div class="prompt-head"><span>Prompt bom</span><button class="copy" type="button">Copiar</button></div><pre>Resuma o relatório mensal de outubro do Hub Chapada para o comitê do ICV, em cinco tópicos: avanço físico, execução financeira, riscos, decisões pendentes e próximos passos. Use só o relatório anexado. Se uma decisão não tiver responsável ou prazo, escreva "a definir". Se uma informação não estiver no relatório, diga que não está, em vez de completar.</pre></div>
 </details>
-<div class="callout goal"><div class="callout-label">A frase que resolve metade dos problemas</div><p><strong>“Se uma informação não estiver na fonte, diga que não está, em vez de completar.”</strong> Ela dá ao Copilot permissão para não saber. Sem ela, o Copilot tende a completar com uma frase plausível, que às vezes está errada.</p></div>
 </section>
 
 <section class="exercise" id="limpar">
 <div class="exhead"><span aria-hidden="true" class="big">2</span><span class="ex-apps"><img alt="" aria-hidden="true" src="icons/excel.svg"/>Excel</span><h2><span class="sr-only">Exercício 2: </span>Limpar a exportação de campo</h2></div>
-<p class="why">Toda exportação de formulário chega assim: datas em quatro formatos, “Formosa”, “FORMOSA” e “Formosa - GO” como se fossem lugares diferentes, visitas lançadas duas vezes. Arrumar isso à mão leva uma manhã. Aqui é um prompt.</p>
+<p class="why">Exportações de formulário muitas vezes chegam assim: datas em vários formatos, “Formosa”, “FORMOSA” e “Formosa - GO” como se fossem lugares diferentes, visitas lançadas duas vezes. Arrumar isso à mão pode levar horas. Aqui é um prompt.</p>
 <p class="outcome"><strong>Você sai com</strong>Uma exportação de campo limpa, em uma aba nova, com o total de mudas conferido.</p>
 <ol class="trail">
-<li><span class="st">Baixe a planilha</span>No canal <span class="path">Prática</span>, abra a guia <span class="path">Compartilhado</span> e a pasta de planilhas. Baixe <span class="path">Exportacao_Formulario_Campo_jul-set2026</span>: clique nos três pontos ao lado do arquivo e em <span class="path">Baixar</span>. Abra no Excel.</li>
+<li><span class="st">Baixe a planilha</span>No Teams, abra a equipe <span class="path">Treinamento Teams e IA – PMO Cerrado</span> e o canal <span class="path">Prática</span>. Abra a guia <span class="path">Compartilhado</span> e a pasta de planilhas. Baixe <span class="path">Exportacao_Formulario_Campo_jul-set2026</span>: clique nos três pontos ao lado do arquivo e em <span class="path">Baixar</span>. Abra no Excel.</li>
 <li><span class="st">Olhe antes de pedir</span>Antes de pedir qualquer coisa, olhe a aba: role pelas colunas <span class="path">Data</span> e <span class="path">Município</span>. Selecione a coluna <span class="path">Mudas plantadas</span> e veja a soma na barra de status, embaixo à direita. Anote esse número.</li>
-<li><span class="st">Escolha o modo Plano</span>Abra o Copilot. Embaixo do campo <span class="path">Edite com o Copilot</span>, clique no modo (vem marcado <span class="path">Permitir edição</span>) e veja as três opções:<ul class="levels"><li><span class="path">Permitir edição</span>: o Copilot edita a planilha diretamente.</li><li><span class="path">Plano</span>: ele elabora um plano antes de editar, e só altera depois que você aprova. <strong>Escolha este.</strong></li><li><span class="path">Somente chat</span>: ele responde apenas no chat, sem mexer na planilha. Bom para perguntar sobre os dados.</li></ul>A mesma escolha aparece no Copilot do Word e do PowerPoint.</li>
-<li><span class="st">Peça a limpeza</span>Cole o prompt e envie.
-<div class="prompt"><div class="prompt-head"><span>No Copilot do Excel, no modo Plano</span><button class="copy" type="button">Copiar</button></div><pre>Limpe esta exportação em uma aba nova chamada Limpa, sem mexer na aba original. Mostre o plano antes de alterar.
+<li><span class="st">Peça a limpeza</span>Abra o Copilot no Excel, cole o prompt e envie.
+<div class="prompt"><div class="prompt-head"><span>No Copilot do Excel</span><button class="copy" type="button">Copiar</button></div><pre>Limpe esta exportação em uma aba nova chamada Limpa, sem mexer na aba original. Mostre o plano antes de alterar.
 1. Datas da coluna Data no formato dd/mm/aaaa. As visitas são de julho a setembro de 2026. Se uma data puder ser lida de dois jeitos, não escolha: marque em amarelo e diga quais são as duas leituras.
 2. Municípios padronizados: Alto Paraíso de Goiás, São João d'Aliança, Formosa e Cavalcante.
 3. Sobrevivência sempre em porcentagem.
@@ -79,12 +78,12 @@ No final, some as mudas plantadas e a área, e diga quantas linhas removeu e por
 <li><span class="st">Leia o plano</span>Se o Copilot entendeu errado alguma coluna, corrija ali mesmo. Depois aprove.</li>
 <li class="confira"><span class="st">Confira</span><div class="check"><ul><li>A soma que você anotou no passo 2 deu 25.370 mudas. Depois da limpeza, deu quanto? O projeto informa ao doador <strong>23.500</strong> mudas no trimestre (em <span class="path">Indicadores_Doador_Veredas_Vivas</span>). A diferença eram três visitas lançadas duas vezes.</li><li>Uma das cópias tinha uma observação a mais (“lançado de novo pelo celular”). Outra só mudava a grafia do município. O Copilot contou o que era diferente?</li><li>Datas como <span class="path">9/8/2026</span> podem ser 9 de agosto ou 8 de setembro, e as duas caem no trimestre. Ficaram marcadas? Uma pista que está na própria planilha: o ID da visita traz o mês (<span class="path">V202609…</span> é setembro).</li><li>A aba original continua igual.</li></ul></div></li>
 </ol>
-<p class="keep"><strong>Leve adiante:</strong> use o mesmo prompt na próxima exportação de formulário que chegar para você.</p>
+<p class="keep"><strong>Leve adiante:</strong> nas suas planilhas, você não precisa de um prompt grande. Converse com o Copilot no Excel e peça uma mudança de cada vez, em uma aba nova, conferindo cada passo antes do próximo.</p>
 </section>
 
 <section class="exercise" id="desafio">
 <div class="exhead"><span aria-hidden="true" class="big">3</span><span class="ex-apps"><img alt="" aria-hidden="true" src="icons/prompt-coach.png"/>Prompt Coach <img alt="" aria-hidden="true" src="icons/analista.png"/>Analista <img alt="" aria-hidden="true" src="icons/excel.svg"/>Excel</span><h2><span class="sr-only">Exercício 3: </span>O Prompt Coach escreve, o Analista confere</h2></div>
-<p class="why">Na Sessão 1, o Copilot te entrevistou para escrever a sua instrução. Hoje o Prompt Coach faz isso para um prompt de trabalho: você conta a tarefa em uma frase, ele pergunta o que falta e escreve o prompt. Depois, o Analista, outro agente pronto da Microsoft, faz a mesma análise e mostra cada conta que fez. A tarefa é real e tem quatro armadilhas escondidas na planilha.</p>
+<p class="why">Na Sessão 1, o Copilot te entrevistou para escrever a sua instrução. Hoje o Prompt Coach faz isso para um prompt de trabalho: você conta a tarefa em uma frase, ele pergunta o que falta e escreve o prompt. Depois, o Analista, outro agente pronto da Microsoft, faz a mesma análise e mostra cada conta que fez. A planilha tem quatro pontos em que essa conta costuma dar errado.</p>
 <p class="outcome"><strong>Você sai com</strong>Uma aba de desvios conferida, um prompt que você reaproveita e uma segunda opinião do Analista.</p>
 <div class="callout tip"><div class="callout-label">A tarefa</div><p>O financiador quer saber quais linhas do orçamento passaram de 10% no T3, para mais ou para menos, e por quê. Prepare isso em uma aba nova da planilha.</p></div>
 <ol class="trail">
@@ -92,17 +91,17 @@ No final, some as mudas plantadas e a área, e diga quantas linhas removeu e por
 <li><span class="st">O Prompt Coach</span>No Copilot, abra o <img alt="" aria-hidden="true" class="inline-icon" src="icons/prompt-coach.png"/><span class="path">Prompt Coach</span>, cole a tarefa abaixo e responda às perguntas dele. Respostas curtas bastam.
 <div class="prompt"><div class="prompt-head"><span>No Prompt Coach</span><button class="copy" type="button">Copiar</button></div><pre>Preciso de um prompt para o Copilot no Excel. A tarefa: o financiador quer saber quais linhas do orçamento passaram de 10% no T3, para mais ou para menos, e por quê. A planilha é a Acompanhamento_Fisico_Financeiro_2026, aba Orçamento. Faça as perguntas que faltarem antes de escrever o prompt.</pre></div></li>
 <li><span class="st">Revise o prompt</span>Leia o prompt que ele escreveu. Ele responde às quatro perguntas? Diz o que fazer quando faltar informação? Se faltar alguma coisa, peça que ajuste.</li>
-<li><span class="st">Rode no Excel</span>Volte ao Excel e abra o Copilot no modo <span class="path">Plano</span>. Cole o prompt e envie. Leia o plano, aprove e confira o resultado com as quatro armadilhas abaixo.</li>
+<li><span class="st">Rode no Excel</span>Volte ao Excel e abra o Copilot. Cole o prompt e envie. Leia o plano, aprove e confira o resultado com os quatro pontos abaixo.</li>
 <li><span class="st">Pergunte ao Analista</span>No Copilot, em <span class="path">Fixado</span>, abra o <img alt="" aria-hidden="true" class="inline-icon" src="icons/analista.png"/><span class="path">Analista</span>. Não aparece? Procure em <span class="path">Agentes</span>. Selecione a planilha com <kbd>/</kbd> ou anexe pelo clipe, cole o mesmo prompt e envie. O Analista mostra o raciocínio e cada conta que fez, passo a passo.</li>
-<li><span class="st">Compare</span>O Excel e o Analista chegaram às mesmas linhas? Qual pegou mais armadilhas? Na conta do Analista, confira a de Serviços de terceiros: deu 20% ou 120%?</li>
-<li class="confira"><span class="st">Confira: as quatro armadilhas</span><div class="check"><ul><li><strong>Exatamente 10%.</strong> Equipamentos ficou em -10%. Exatamente 10% não é acima de 10%. Ficou fora da lista?</li><li><strong>Sem justificativa.</strong> Viagens e campo ficou 19% acima do previsto e não tem observação. O Copilot disse que falta justificativa, ou ofereceu um motivo que soa plausível?</li><li><strong>20% ou 120%.</strong> Serviços de terceiros: 84.000 realizados para 70.000 previstos. Clique na célula do desvio e leia a fórmula. É 20% acima do previsto, não 120%.</li><li><strong>Lançado não é pago.</strong> A observação de Serviços de terceiros diz que R$ 83.700 foram lançados antes do pagamento, que só sai depois do Termo de Aceite. O resultado trata esse valor como pago?</li></ul><p><strong>Gabarito:</strong> no T3, passam de 10% Viagens e campo (+19%), Insumos (+16%) e Serviços de terceiros (+20%).</p></div><p class="done-row">Quantas o seu prompt pegou, de 0 a 4? E o Analista? Se um pegou alguma que o outro não pegou, o que faltou no prompt?</p></li>
+<li><span class="st">Compare</span>O Excel e o Analista chegaram às mesmas linhas? Qual pegou mais pontos? Na conta do Analista, confira a de Serviços de terceiros: deu 20% ou 120%?</li>
+<li class="confira"><span class="st">Confira: os quatro pontos</span><div class="check"><ul><li><strong>Exatamente 10%.</strong> Equipamentos ficou em -10%. Exatamente 10% não é acima de 10%. Ficou fora da lista?</li><li><strong>Sem justificativa.</strong> Viagens e campo ficou 19% acima do previsto e não tem observação. O Copilot disse que falta justificativa, ou ofereceu um motivo que soa plausível?</li><li><strong>20% ou 120%.</strong> Serviços de terceiros: 84.000 realizados para 70.000 previstos. Clique na célula do desvio e leia a fórmula. É 20% acima do previsto, não 120%.</li><li><strong>Lançado não é pago.</strong> A observação de Serviços de terceiros diz que R$ 83.700 foram lançados antes do pagamento, que só sai depois do Termo de Aceite. O resultado trata esse valor como pago?</li></ul><p><strong>Gabarito:</strong> no T3, passam de 10% Viagens e campo (+19%), Insumos (+16%) e Serviços de terceiros (+20%).</p></div><p class="done-row">Quantos o seu prompt pegou, de 0 a 4? E o Analista? Se um pegou algum que o outro não pegou, o que faltou no prompt?</p></li>
 </ol>
 <details class="optional-reference"><summary>O nosso prompt · abra só depois de rodar o seu</summary>
 <div class="prompt"><div class="prompt-head"><span>No Copilot do Excel, ou no Analista, com a planilha selecionada</span><button class="copy" type="button">Copiar</button></div><pre>Compare previsto x realizado por linha orçamentária no T3, na aba Orçamento desta planilha, com o desvio em porcentagem: (realizado - previsto) / previsto. Liste os desvios acima de 10%, para mais ou para menos. Exatamente 10% não é acima de 10%.
 Explique cada desvio em uma frase usando apenas a coluna Observações. Se não houver observação, escreva "sem justificativa na planilha".
 Se uma observação disser que um valor foi lançado mas ainda não foi pago, deixe isso claro.</pre></div>
 </details>
-<p class="keep"><strong>Leve adiante:</strong> as mesmas armadilhas aparecem nas suas planilhas de verdade. Quando um número importa, peça uma segunda opinião ao Analista.</p>
+<p class="keep"><strong>Leve adiante:</strong> os mesmos pontos aparecem nas suas planilhas de verdade. Quando um número importa, peça uma segunda opinião ao Analista.</p>
 </section>
 
 <section class="exercise" id="ppt">
@@ -129,8 +128,8 @@ Se uma observação disser que um valor foi lançado mas ainda não foi pago, de
 <p>Antes de fechar, vamos conversar um pouco sobre o que funcionou hoje.</p>
 <div class="callout tip"><div class="callout-label">Para conversar</div>
 <ol>
-<li>Qual pergunta do Prompt Coach mais ajudou? Quantas armadilhas o seu prompt pegou, e quantas o Analista pegou?</li>
-<li>Qual armadilha mais surpreendeu você? Ela aparece nas suas planilhas de verdade?</li>
+<li>Qual pergunta do Prompt Coach mais ajudou? Quantos dos quatro pontos o seu prompt pegou, e quantos o Analista pegou?</li>
+<li>Qual dos quatro pontos mais surpreendeu você? Ela aparece nas suas planilhas de verdade?</li>
 <li>Em que planilha ou apresentação sua você vai usar isso primeiro?</li>
 </ol></div>
 </section>
