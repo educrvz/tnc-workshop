@@ -19,9 +19,9 @@
 <p class="page-lede">Hoje você monta um Notebook e vê, na prática, que ele só sabe o que você dá a ele. Depois, cria o seu próprio agente: ele responde às dúvidas do time sobre o guia do PMO, e você compartilha com um colega. No fim, duas demonstrações: uma skill chamada com @ e um agente que monta o rascunho do relatório para doador.</p>
 <nav aria-label="Nesta sessão"><ol class="session-map" id="session-map">
 <li><a href="#escada"><span class="n soft">0</span><span class="t">Abertura: qual usar?<span class="s">Prompt, workflow, skill ou agente</span></span><span class="apps"></span></a></li>
-<li><a href="#notebook"><span class="n">1</span><span class="t">O Notebook só sabe o que você dá a ele<span class="s">Duas rodadas, a mesma pergunta, respostas diferentes</span></span><span class="apps"><img alt="Copilot" src="icons/copilot.svg"/></span></a></li>
+<li><a href="#notebook"><span class="n">1</span><span class="t">O Notebook só sabe o que você dá a ele<span class="s">Duas rodadas, a mesma pergunta, respostas diferentes, e um Notebook das Sessões 1 e 2</span></span><span class="apps"><img alt="Copilot" src="icons/copilot.svg"/></span></a></li>
 <li><a href="#agentes"><span class="n">2</span><span class="t">Crie o seu agente<span class="s">O agente Guia do Notebook, com base num guia do PMO</span></span><span class="apps"><img alt="Copilot" src="icons/copilot.svg"/></span></a></li>
-<li><a href="#demo"><span class="n soft">•</span><span class="t">Demonstrações: até onde dá para ir<span class="s">Uma skill chamada com @, um agente que monta o rascunho do relatório e um Notebook das Sessões 1 e 2</span></span><span class="apps"><img alt="PowerPoint" src="icons/powerpoint.svg"/><img alt="Word" src="icons/word.svg"/></span></a></li>
+<li><a href="#demo"><span class="n soft">•</span><span class="t">Demonstrações: até onde dá para ir<span class="s">Uma skill chamada com @ e um agente que monta o rascunho do relatório</span></span><span class="apps"><img alt="PowerPoint" src="icons/powerpoint.svg"/><img alt="Word" src="icons/word.svg"/></span></a></li>
 <li><a href="#fechamento"><span class="n soft">+</span><span class="t">Discussão e fechamento<span class="s">O que vocês colocariam num Notebook, e o próximo degrau</span></span><span class="apps"></span></a></li>
 </ol></nav>
 <details class="before-start"><summary>Antes de começar: material e legenda</summary><div class="in">
@@ -69,6 +69,18 @@
 </ul></div></li>
 </ol>
 <p class="keep"><strong>Leve adiante:</strong> um Notebook com tudo do projeto atual responde ao time sem passar pelo PMO.</p>
+<h3>Demonstração: um Notebook feito com as Sessões 1 e 2</h3>
+<p>Na nossa tela, um Notebook que montamos com as transcrições das Sessões 1 e 2. Ele responde só com base no que vimos juntos.</p>
+<details class="optional-reference"><summary>Como montamos este Notebook</summary>
+<ol class="trail">
+<li><span class="st">Baixe as transcrições</span>No <span class="path">Calendário</span> do Teams, abra a reunião da Sessão 1 e clique em <span class="path">Exibir recapitulação</span>. Em <span class="path">Transcrição</span>, baixe o arquivo como <span class="path">.docx</span>. Repita com a Sessão 2.</li>
+<li><span class="st">Crie o Notebook</span>No Copilot, abra <span class="path">Notebooks</span>, crie um Notebook novo e adicione os dois arquivos <span class="path">.docx</span> como referências.</li>
+<li><span class="st">Pergunte</span>Faça uma pergunta de cada vez.
+<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Resuma em 5 tópicos o que aprendemos nas Sessões 1 e 2.</pre></div>
+<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Que dúvidas os participantes levantaram nas duas sessões, e qual foi a resposta para cada uma?</pre></div>
+<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Se eu só puder levar uma prática das duas sessões para amanhã, qual deve ser e por quê?</pre></div></li>
+</ol>
+</details>
 </section>
 
 <section class="exercise" id="agentes">
@@ -118,15 +130,23 @@
 
 <section id="demo">
 <h2>Demonstrações: até onde dá para ir</h2>
-<p class="why">Três demonstrações na nossa tela, sem exercício. Montamos o agente e os Notebooks antes da aula. Abaixo fica como fizemos, para quem quiser repetir depois.</p>
+<p class="why">Duas demonstrações na nossa tela, sem exercício. Montamos tudo antes da aula. Abaixo fica como fizemos, para quem quiser repetir depois.</p>
 <h3>1. Uma skill chamada com @</h3>
-<p>O exemplo da Bruna, passo a passo. A mesma lista aparece no Copilot Chat e no Copilot dentro do Word, do Excel e do PowerPoint.</p>
+<p>O exemplo da Bruna, em duas partes: primeiro no Copilot Chat do Teams, depois dentro do PowerPoint.</p>
+<p><strong>No Copilot Chat</strong></p>
 <ol class="trail">
-<li><span class="st">Abra a lista</span>No Copilot, digite <kbd>@</kbd> na caixa de mensagem e escolha a aba <span class="path">Agents &amp; Skills</span>. Ali estão as skills prontas, como <span class="path">Word (Agent)</span>, <span class="path">PowerPoint (Agent)</span> e <span class="path">Planner Agent</span>, e também os agentes que você criou ou usou, como o Analista e o Guia do Notebook.</li>
-<li><span class="st">Chame a skill no prompt</span>Escolha <span class="path">PowerPoint (Agent)</span> e escreva o resto do prompt na mesma linha. Use <kbd>/</kbd> para indicar o arquivo.
-<div class="prompt"><div class="prompt-head"><span>Depois de @PowerPoint (Agent)</span><button class="copy" type="button">Copiar</button></div><pre>crie uma apresentação de 5 slides para o doador com os resultados do 3º trimestre do Veredas Vivas, com base em /Acompanhamento_Fisico_Financeiro_2026. Comece pelo resultado, depois os números, depois os próximos passos.</pre></div></li>
-<li><span class="st">No PowerPoint, duas de uma vez</span>Abra a apresentação, abra o Copilot e digite <kbd>@</kbd>. Chame uma skill para a narrativa e outra para o visual, no mesmo prompt, como a Bruna fez.</li>
-<li class="confira"><span class="st">Confira</span><div class="check"><p>Compare com o mesmo prompt sem <kbd>@</kbd>. A versão com a skill ficou melhor? Os números batem com a planilha?</p></div></li>
+<li><span class="st">Abra o Copilot Chat</span>No Teams, clique em <span class="path">Copilot</span> na barra lateral e depois em <span class="path">Novo chat</span>.</li>
+<li><span class="st">Abra a lista de skills</span>Na caixa de mensagem, digite <kbd>@</kbd>. Abre uma lista com abas. Clique na aba <span class="path">Agents &amp; Skills</span>: ali estão as skills prontas, como <span class="path">Word (Agent)</span>, <span class="path">PowerPoint (Agent)</span> e <span class="path">Planner Agent</span>, e os agentes que você já usou, como o Analista.</li>
+<li><span class="st">Chame a skill</span>Clique em <span class="path">PowerPoint (Agent)</span>. O nome entra na caixa de mensagem. Logo depois dele, cole o prompt abaixo. Onde está o nome do arquivo, digite <kbd>/</kbd> e escolha <span class="path">Acompanhamento_Fisico_Financeiro_2026</span> na lista. Envie.
+<div class="prompt"><div class="prompt-head"><span>No Copilot Chat, depois de @PowerPoint (Agent)</span><button class="copy" type="button">Copiar</button></div><pre>crie uma apresentação de 5 slides para o doador com os resultados do 3º trimestre do Veredas Vivas, com base em /Acompanhamento_Fisico_Financeiro_2026. Comece pelo resultado, depois os números, depois os próximos passos.</pre></div></li>
+<li><span class="st">Abra a apresentação</span>O Copilot responde com um arquivo de PowerPoint. Clique no arquivo para abrir no PowerPoint.</li>
+</ol>
+<p><strong>Dentro do PowerPoint</strong></p>
+<ol class="trail">
+<li><span class="st">Abra o Copilot do PowerPoint</span>Na apresentação que abriu, na guia <span class="path">Página Inicial</span>, clique em <span class="path">Copilot</span>. O painel do Copilot abre à direita.</li>
+<li><span class="st">Chame duas skills de uma vez</span>Na caixa do painel, digite <kbd>@</kbd> e escolha a skill de narrativa. Digite <kbd>@</kbd> de novo e escolha a de visual. Depois das duas, cole o prompt e envie.
+<div class="prompt"><div class="prompt-head"><span>No Copilot do PowerPoint, depois das duas skills</span><button class="copy" type="button">Copiar</button></div><pre>melhore a narrativa desta apresentação para um doador e deixe o visual mais limpo e consistente.</pre></div></li>
+<li class="confira"><span class="st">Confira</span><div class="check"><p>A apresentação ficou melhor do que com um prompt sem <kbd>@</kbd>? Os números continuam batendo com a planilha?</p></div></li>
 </ol>
 <h3>2. Um agente que monta o rascunho do relatório para doador</h3>
 <p>É o próximo degrau do que você fez no exercício 2. O agente “Relatório para Doador” guarda o guia do PMO e conduz a pessoa do começo ao fim: diz que documentos juntar, monta o Notebook com a instrução certa, testa se ele está pronto e entrega o roteiro em que o Notebook entrevista você antes de escrever. No fim, o Copilot no Word preenche o modelo da FHV com o rascunho.</p>
@@ -242,18 +262,6 @@ Regras: use apenas o guia e os procedimentos do Conhecimento. Não escreva o rel
 </ol>
 <p><strong>Repare:</strong> o agente conduziu, o Notebook escreveu, o Word montou o documento. Você decidiu o que só você sabia e conferiu o resultado. O que sai daqui é um rascunho: revise antes de mandar ao doador.</p>
 <p class="keep"><strong>Leve adiante:</strong> o próximo relatório para doador começa no agente: troque o projeto, o doador e o modelo.</p>
-</details>
-<h3>3. Um Notebook feito com as Sessões 1 e 2</h3>
-<p>Para fechar, um Notebook feito com as transcrições das Sessões 1 e 2. Ele responde com base no que vimos juntos.</p>
-<details class="optional-reference"><summary>Como montamos este Notebook</summary>
-<ol class="trail">
-<li><span class="st">Baixe as transcrições</span>No <span class="path">Calendário</span> do Teams, abra a reunião da Sessão 1 e clique em <span class="path">Exibir recapitulação</span>. Em <span class="path">Transcrição</span>, baixe o arquivo como <span class="path">.docx</span>. Repita com a Sessão 2.</li>
-<li><span class="st">Crie o Notebook</span>No Copilot, abra <span class="path">Notebooks</span>, crie um Notebook novo e adicione os dois arquivos <span class="path">.docx</span> como referências.</li>
-<li><span class="st">Pergunte</span>Faça uma pergunta de cada vez.
-<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Resuma em 5 tópicos o que aprendemos nas Sessões 1 e 2.</pre></div>
-<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Que dúvidas os participantes levantaram nas duas sessões, e qual foi a resposta para cada uma?</pre></div>
-<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Se eu só puder levar uma prática das duas sessões para amanhã, qual deve ser e por quê?</pre></div></li>
-</ol>
 </details>
 </section>
 
