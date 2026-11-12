@@ -4,9 +4,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="noindex,nofollow" name="robots"/><link href="style.css?v=20261113" rel="stylesheet"/><script defer="" src="app.js?v=20261113"></script><title>Teams e IA na Prática · TNC · Sessão 3</title></head>
+<meta content="noindex,nofollow" name="robots"/><link href="style.css?v=20261113b" rel="stylesheet"/><script defer="" src="app.js?v=20261113b"></script><title>Teams e IA na Prática · TNC · Sessão 3</title></head>
 <body class="rail-page"><a class="skip" href="#conteudo">Ir para o conteúdo</a>
-<nav aria-label="Exercícios desta sessão" class="session-rail" id="session-rail"><p class="lbl">Sessão 3 · hoje</p><ol><li><a data-s="escada" href="#escada"><span class="dot">0</span><span>A escada</span></a></li><li><a data-s="notebook" href="#notebook"><span class="dot">1</span><span>O Notebook</span></a></li><li><a data-s="agentes" href="#agentes"><span class="dot">2</span><span>O seu agente</span></a></li><li><a data-s="demo" href="#demo"><span class="dot">•</span><span>Demonstrações</span></a></li><li><a data-s="fechamento" href="#fechamento"><span class="dot">+</span><span>Discussão</span></a></li></ol><p class="help">Travou? É só avisar ou levantar a mão ✋.</p></nav>
+<nav aria-label="Exercícios desta sessão" class="session-rail" id="session-rail"><p class="lbl">Sessão 3 · hoje</p><ol><li><a data-s="escada" href="#escada"><span class="dot">0</span><span>Qual usar?</span></a></li><li><a data-s="notebook" href="#notebook"><span class="dot">1</span><span>O Notebook</span></a></li><li><a data-s="agentes" href="#agentes"><span class="dot">2</span><span>O seu agente</span></a></li><li><a data-s="demo" href="#demo"><span class="dot">•</span><span>Demonstrações</span></a></li><li><a data-s="fechamento" href="#fechamento"><span class="dot">+</span><span>Discussão</span></a></li></ol><p class="help">Travou? É só avisar ou levantar a mão ✋.</p></nav>
 
 <div class="wrap">
 <div class="top">
@@ -18,7 +18,7 @@
 <h1 class="page-title">Sessão 3 · Notebooks e agentes: do pronto ao seu</h1>
 <p class="page-lede">Hoje você monta um Notebook e vê, na prática, que ele só sabe o que você dá a ele. Depois, cria o seu próprio agente: ele responde às dúvidas do time sobre o guia do PMO, e você compartilha com um colega. No fim, duas demonstrações: uma skill chamada com @ e um agente que monta o rascunho do relatório para doador.</p>
 <nav aria-label="Nesta sessão"><ol class="session-map" id="session-map">
-<li><a href="#escada"><span class="n soft">0</span><span class="t">Abertura: a escada<span class="s">Do que vem pronto ao que você cria</span></span><span class="apps"></span></a></li>
+<li><a href="#escada"><span class="n soft">0</span><span class="t">Abertura: qual usar?<span class="s">Prompt, workflow, skill ou agente</span></span><span class="apps"></span></a></li>
 <li><a href="#notebook"><span class="n">1</span><span class="t">O Notebook só sabe o que você dá a ele<span class="s">Duas rodadas, a mesma pergunta, respostas diferentes</span></span><span class="apps"><img alt="Copilot" src="icons/copilot.svg"/></span></a></li>
 <li><a href="#agentes"><span class="n">2</span><span class="t">Crie o seu agente<span class="s">O agente Guia do Notebook, com base num guia do PMO</span></span><span class="apps"><img alt="Copilot" src="icons/copilot.svg"/></span></a></li>
 <li><a href="#demo"><span class="n soft">•</span><span class="t">Demonstrações: até onde dá para ir<span class="s">Uma skill chamada com @, um agente que monta o rascunho do relatório e um Notebook das Sessões 1 e 2</span></span><span class="apps"><img alt="PowerPoint" src="icons/powerpoint.svg"/><img alt="Word" src="icons/word.svg"/></span></a></li>
@@ -32,22 +32,15 @@
 </header>
 
 <section id="escada">
-<h2>Abertura: a escada</h2>
-<p class="why">Tudo o que vimos no Copilot sobe em três degraus: fazer do jeito padrão, usar o que já vem pronto e criar o seu.</p>
-<div class="table-wrap"><table class="ladder stairs">
-<thead><tr><th><span class="sr-only">Área</span></th><th><div class="step s1"><span class="k">1</span>Do jeito padrão</div></th><th><div class="step s2"><span class="k">2</span>Usar o que vem pronto</div></th><th><div class="step s3"><span class="k">3</span>Criar o seu</div></th></tr></thead>
-<tbody>
-<tr><td><strong>Prompts</strong></td><td>Escrever um prompt</td><td>Melhorar com o Prompt Coach</td><td>Agendar um prompt para rodar sozinho</td></tr>
-<tr><td><strong>Workflows</strong></td><td>Fazer a tarefa à mão, sem workflow</td><td>Usar um modelo pronto, como na Sessão 1</td><td>Criar o seu, adaptado ou do zero</td></tr>
-<tr><td><strong>Skills</strong></td><td>Pedir tudo ao Copilot, sem chamar uma skill</td><td>Chamar uma skill pronta com @, como a Bruna mostrou no PowerPoint</td><td>Criar a sua, no Cowork, quando a TNC liberar</td></tr>
-<tr class="today"><td><strong>Agentes</strong></td><td>Conversar com o Copilot, sem agente</td><td>Usar um agente da Microsoft, como o Analista na Sessão 2</td><td>Criar o seu agente <span class="where-tag">Hoje</span></td></tr>
-</tbody></table></div>
-<p>Nas Sessões 1 e 2 vocês subiram os degraus dos prompts e dos workflows, e usaram agentes prontos. Hoje vocês sobem o último degrau dos agentes, e o Notebook é a ponte.</p>
-<div class="callout goal"><div class="callout-label">Um agente é um guia que conversa</div>
-<p>Um agente é o Copilot com um guia guardado e quatro coisas definidas: <strong>o que ele faz</strong>, <strong>onde consulta</strong>, <strong>como responde</strong> e <strong>o que faz quando não sabe</strong>. Você explica uma vez, e qualquer pessoa do time pode usar. O agente responde quando alguém pergunta, e a resposta é sempre um rascunho para conferir.</p></div>
-<div class="callout goal"><div class="callout-label">E as skills?</div>
-<p>Uma skill é uma especialidade que você chama no meio do prompt com <kbd>@</kbd>, como quem menciona um colega. Ela faz uma coisa específica, e faz melhor do que o Copilot sozinho. A diferença para o agente: o agente é uma conversa à parte; a skill entra na conversa em que você já está, e dá para chamar mais de uma no mesmo prompt.</p>
-<p>Na Sessão 2, a Bruna mostrou isso no PowerPoint: digitou <kbd>@</kbd>, chamou uma skill para melhorar a narrativa e outra para o visual, as duas no mesmo prompt. Peça para ela mostrar de novo na próxima reunião do time.</p></div>
+<h2>Abertura: qual usar?</h2>
+<p class="why">Cada ferramenta serve para um tipo de trabalho. Quanto mais à direita, mais esforço para montar, e mais ela faz por você.</p>
+<div class="tool-cards">
+<article class="tool-card"><h3>Prompt</h3><p class="lbl">Use para</p><p class="use">Uma tarefa pontual</p><p class="lbl">Exemplo</p><p class="ex">“Resuma este e-mail”</p><div class="effort" aria-label="Esforço 1 de 4"><span class="on"></span><span class=""></span><span class=""></span><span class=""></span><small>Esforço para montar</small></div></article>
+<article class="tool-card"><h3>Workflow</h3><p class="lbl">Use para</p><p class="use">Algo que roda sozinho, num horário ou quando algo acontece</p><p class="lbl">Exemplo</p><p class="ex">Toda manhã, as prioridades do dia, como na Sessão 1</p><div class="effort" aria-label="Esforço 2 de 4"><span class="on"></span><span class="on"></span><span class=""></span><span class=""></span><small>Esforço para montar</small></div></article>
+<article class="tool-card"><h3>Skill</h3><p class="lbl">Use para</p><p class="use">Um processo que se repete, chamado com @ no meio do prompt</p><p class="lbl">Exemplo</p><p class="ex">Melhorar a narrativa de uma apresentação, como a Bruna mostrou no PowerPoint</p><div class="effort" aria-label="Esforço 3 de 4"><span class="on"></span><span class="on"></span><span class="on"></span><span class=""></span><small>Esforço para montar</small></div></article>
+<article class="tool-card today"><h3>Agente</h3><p class="lbl">Use para</p><p class="use">Um papel contínuo: um guia que conversa com o time</p><p class="lbl">Exemplo</p><p class="ex">O Guia do Notebook, que você cria hoje</p><div class="effort" aria-label="Esforço 4 de 4"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><small>Esforço para montar</small></div></article>
+</div>
+<p>Nas Sessões 1 e 2 vocês usaram prompts, workflows e agentes prontos. Hoje vocês criam o seu agente. O Notebook não é um degrau: é onde ficam as fontes, e hoje ele é a ponte para o agente.</p>
 </section>
 
 <section class="exercise" id="notebook">
@@ -274,7 +267,7 @@ Regras: use apenas o guia e os procedimentos do Conhecimento. Não escreva o rel
 <li>De tudo o que vimos nas três sessões, o que vocês mais querem começar a usar?</li>
 </ol></div>
 <div class="callout dica"><div class="callout-label"><span aria-hidden="true">💡</span> Dica para levar</div><p>Marquem uma conversa recorrente no Teams, por exemplo 30 minutos a cada duas semanas, para o time trocar o que cada um está fazendo com IA: o que funcionou, o que precisou corrigir e que prompt, Notebook ou agente vale a pena compartilhar.</p></div>
-<h3>A escada continua</h3>
+<h3>Para continuar</h3>
 <p>Em três sessões de 1h30, a gente só arranhou a superfície. Cada uma destas áreas dá para aprofundar muito:</p>
 <div class="table-wrap"><table class="ladder">
 <thead><tr><th></th><th>O que vimos</th><th>O próximo degrau</th></tr></thead>
@@ -285,7 +278,7 @@ Regras: use apenas o guia e os procedimentos do Conhecimento. Não escreva o rel
 <tr><td><strong>Notebooks</strong></td><td>Um Notebook do projeto</td><td>Notebooks compartilhados por todo o PMO</td></tr>
 </tbody></table></div>
 </section>
-<section aria-labelledby="recap-title" class="session-recap"><h2 id="recap-title">Onde estamos e o que aprendemos</h2><div class="roadmap"><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 1</div><h3 class="session-title-small"><a href="sessao-1.html">Comece com o Copilot bem configurado</a></h3><ul><li>Entender como a IA funciona</li><li>Deixar o Copilot te entrevistar e aprender quem você é</li><li>Escolher a fonte e pedir o que falta</li><li>Da reunião à ata e às tarefas no Planner</li><li>O Teams no piloto automático</li></ul><p class="status-tag">Já percorremos</p></article><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 2</div><h3 class="session-title-small"><a href="sessao-2.html">Como a IA pensa e como escrever bons prompts</a></h3><ul><li>Entender por que a IA às vezes inventa</li><li>Escrever prompts com o Prompt Coach</li><li>Conferir os números com o Analista</li><li>Limpar dados, achar desvios e montar uma apresentação</li></ul><p class="status-tag">Já percorremos</p></article><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 3</div><h3 class="session-title-small"><a href="sessao-3.html">Notebooks e agentes: do pronto ao seu</a></h3><ul><li>Subir a escada: do pronto ao seu</li><li>Um Notebook que só sabe o que você dá a ele</li><li>Criar o seu agente</li><li>Compartilhar o agente com o time</li><li>Chamar uma skill com @</li><li>Ver um agente montar o rascunho do relatório para doador</li></ul><p class="status-tag">Nesta sessão</p></article></div></section><section aria-labelledby="contato-title" id="contato">
+<section aria-labelledby="recap-title" class="session-recap"><h2 id="recap-title">Onde estamos e o que aprendemos</h2><div class="roadmap"><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 1</div><h3 class="session-title-small"><a href="sessao-1.html">Comece com o Copilot bem configurado</a></h3><ul><li>Entender como a IA funciona</li><li>Deixar o Copilot te entrevistar e aprender quem você é</li><li>Escolher a fonte e pedir o que falta</li><li>Da reunião à ata e às tarefas no Planner</li><li>O Teams no piloto automático</li></ul><p class="status-tag">Já percorremos</p></article><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 2</div><h3 class="session-title-small"><a href="sessao-2.html">Como a IA pensa e como escrever bons prompts</a></h3><ul><li>Entender por que a IA às vezes inventa</li><li>Escrever prompts com o Prompt Coach</li><li>Conferir os números com o Analista</li><li>Limpar dados, achar desvios e montar uma apresentação</li></ul><p class="status-tag">Já percorremos</p></article><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 3</div><h3 class="session-title-small"><a href="sessao-3.html">Notebooks e agentes: do pronto ao seu</a></h3><ul><li>Prompt, workflow, skill ou agente: qual usar</li><li>Um Notebook que só sabe o que você dá a ele</li><li>Criar o seu agente</li><li>Compartilhar o agente com o time</li><li>Chamar uma skill com @</li><li>Ver um agente montar o rascunho do relatório para doador</li></ul><p class="status-tag">Nesta sessão</p></article></div></section><section aria-labelledby="contato-title" id="contato">
 <h2 id="contato-title">Obrigado, e conte com a gente</h2>
 <p>Esperamos que vocês tenham gostado das sessões e que levem daqui algo útil para o dia a dia. Nos próximos dias, vamos mandar uma pesquisa rápida sobre o treinamento: a opinião de vocês ajuda a melhorar as próximas turmas.</p>
 <p>Ficou uma dúvida, travou num prompt ou quer ideias para um agente novo? Escreva para a gente. Respondemos sempre que possível.</p>
