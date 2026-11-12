@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="noindex,nofollow" name="robots"/><link href="style.css?v=20261110b" rel="stylesheet"/><script defer="" src="app.js?v=20261110b"></script><title>Teams e IA na Prática · TNC · Sessão 3</title></head>
+<meta content="noindex,nofollow" name="robots"/><link href="style.css?v=20261111b" rel="stylesheet"/><script defer="" src="app.js?v=20261111b"></script><title>Teams e IA na Prática · TNC · Sessão 3</title></head>
 <body class="rail-page"><a class="skip" href="#conteudo">Ir para o conteúdo</a>
 <nav aria-label="Exercícios desta sessão" class="session-rail" id="session-rail"><p class="lbl">Sessão 3 · hoje</p><ol><li><a data-s="agente-o-que" href="#agente-o-que"><span class="dot">0</span><span>O que é um agente</span></a></li><li><a data-s="guia" href="#guia"><span class="dot">1</span><span>O guia vira agente</span></a></li><li><a data-s="montar" href="#montar"><span class="dot">2</span><span>O relatório com o agente</span></a></li><li><a data-s="fechamento" href="#fechamento"><span class="dot">+</span><span>Discussão</span></a></li></ol></nav>
 
@@ -15,8 +15,8 @@
 </div>
 <header id="conteudo">
 <p class="meta-line">Quinta, 12/11 · 9h30–11h (Brasília) · 90 minutos <button class="print" type="button">Imprimir / salvar PDF</button></p>
-<h1 class="page-title">Sessão 3 · Agentes: do guia do PMO ao relatório pronto</h1>
-<p class="page-lede">Hoje você aprende três coisas que se usam juntas: criar um agente a partir de um guia do PMO, montar um Notebook com as fontes certas e usar os dois, com o Word, para entregar um relatório pronto para o doador. No fim, o agente fica compartilhado para o time de campo usar sozinho.</p>
+<h1 class="page-title">Sessão 3 · Agentes: do guia do PMO ao rascunho do relatório</h1>
+<p class="page-lede">Hoje você vai transformar um guia do PMO em um agente e compartilhar com um colega. Depois, vai usar esse agente para montar, com um Notebook e o Word, o rascunho do relatório do trimestre para o doador. Você confere e decide; o agente conduz.</p>
 <nav aria-label="Nesta sessão"><ol class="session-map" id="session-map">
 <li><a href="#agente-o-que"><span class="n soft">0</span><span class="t">Abertura: o que é um agente<span class="s">Um guia que conversa</span></span><span class="apps"></span></a></li>
 <li><a href="#guia"><span class="n">1</span><span class="t">O guia do PMO vira um agente<span class="s">Um agente que conduz o time de campo no relatório para doador</span></span><span class="apps"><img alt="Copilot" src="icons/copilot.svg"/></span></a></li>
@@ -31,7 +31,7 @@
 </header>
 <section id="agente-o-que">
 <h2>Abertura: o que é um agente</h2>
-<p class="why">Na Sessão 1 você criou um agente simples: um prompt que roda sozinho toda manhã. Hoje você cria um agente completo: ele guarda um guia do PMO, conversa com quem usa e pode ser compartilhado com o time. Fora dos agentes, cada prompt ao Copilot começa do zero: você explica a tarefa, escolhe as fontes e diz como quer a resposta. Um agente guarda tudo isso. Você explica uma vez, e a partir daí qualquer pessoa do time só diz “faça o deste mês”.</p>
+<p class="why">Na Sessão 1 você agendou um prompt para rodar sozinho toda manhã. Isso é uma automação. Hoje você cria um agente: ele guarda um guia do PMO, conversa com quem usa e pode ser compartilhado com o time. Fora dos agentes, cada prompt ao Copilot começa do zero: você explica a tarefa, escolhe as fontes e diz como quer a resposta. Um agente guarda tudo isso. Você explica uma vez, e a partir daí qualquer pessoa do time só diz “faça o deste mês”.</p>
 <div class="callout goal"><div class="callout-label">Um agente é um guia que conversa</div>
 <p>Hoje, quem precisa seguir um guia do PMO lê o documento e faz sozinho. Um agente é o Copilot com esse guia guardado e quatro coisas definidas: <strong>o que ele faz</strong> (conduzir a montagem do relatório para doador), <strong>onde consulta</strong> (o guia e as regras do PMO), <strong>como conduz</strong> (em etapas, uma de cada vez) e <strong>o que faz quando não sabe</strong> (avisa, nunca inventa).</p></div>
 <div class="table-wrap"><table>
@@ -45,15 +45,15 @@
 </tbody>
 </table></div>
 <p>Vale criar um agente quando a tarefa se repete e outra pessoa conseguiria fazê-la seguindo o manual. Não vale para uma tarefa única, nem para o que depende de uma decisão: o agente prepara, a pessoa decide.</p>
-<p class="note">O agente simples roda sozinho num horário. O agente de hoje responde quando alguém pede: não envia e-mails nem altera arquivos, e a resposta é sempre um rascunho para conferir.</p>
+<p class="note">O prompt agendado roda sozinho num horário. O agente de hoje responde quando alguém pede: não envia e-mails nem altera arquivos, e a resposta é sempre um rascunho para conferir.</p>
 <p>Hoje você faz isso em dois passos: primeiro transforma o guia do PMO num agente (exercício 1); depois usa esse agente para montar o relatório do trimestre (exercício 2).</p>
 </section>
 
 <section class="exercise" id="guia">
 <div class="exhead"><span aria-hidden="true" class="big">1</span><span class="ex-apps"><img alt="" aria-hidden="true" src="icons/copilot.svg"/>Copilot</span><h2><span class="sr-only">Exercício 1: </span>O guia do PMO vira um agente</h2></div>
-<p class="why">O PMO já escreveu um guia de como montar um relatório para doador com um Notebook: que fontes juntar, que instrução colar, como testar se o Notebook está pronto e o que revisar. Hoje esse guia é um documento que alguém precisa ler e seguir sozinho. Aqui ele vira um agente que conduz a pessoa, passo a passo, até o relatório pronto no modelo do doador. O PMO monta uma vez, e qualquer pessoa do time de campo faz o relatório sem precisar do PMO ao lado. No exercício 2, você usa esse agente no relatório do trimestre.</p>
+<p class="why">O PMO já escreveu um guia de como montar um relatório para doador com um Notebook: que fontes juntar, que instrução colar, como testar se o Notebook está pronto e o que revisar. Hoje esse guia é um documento que alguém precisa ler e seguir sozinho. Aqui ele vira um agente que conduz a pessoa, passo a passo, até o rascunho do relatório no modelo do doador. O PMO monta uma vez, e qualquer pessoa do time de campo faz o relatório sem precisar do PMO ao lado. No exercício 2, você usa esse agente no relatório do trimestre.</p>
 <p class="outcome"><strong>Você sai com</strong>Um agente que conduz o time de campo na montagem de um relatório para doador, seguindo o guia do PMO, testado e compartilhado com um colega.</p>
-<p class="note">O guia é o <span class="path">Guia Notebook_Relatorios Doadores</span>, da pasta de guias e modelos do PMO. Tem outro guia do PMO, para outro produto? O exercício funciona igual: troque o guia e o nome do produto.</p>
+<p class="note">O guia é o <span class="path">Guia Notebook_Relatorios Doadores</span>, da pasta de guias e modelos do PMO. Tem outro guia do PMO, para outra tarefa? O exercício funciona igual: troque o guia e o nome da tarefa.</p>
 <ol class="trail">
 <li><span class="st">Crie o agente</span>No Copilot Chat, clique em <span class="path">Novo agente</span>. Se aparecer uma conversa pedindo que você descreva o agente, ignore: preencha os campos diretamente, como nos passos abaixo.</li>
 <li><span class="st">Nome e descrição</span>Dê o nome “Relatório para Doador” e, logo abaixo do nome, cole a descrição.
@@ -115,7 +115,8 @@ Regras: use apenas o guia e os procedimentos do Conhecimento. Não escreva o rel
 <tr><td>Que documentos juntar</td><td>Vou fazer um relatório para doador. Que documentos eu preciso juntar antes de começar?</td></tr>
 <tr><td>Doador sem modelo</td><td>O doador não mandou modelo de relatório. Como eu monto a estrutura?</td></tr>
 </tbody></table></div></li>
-<li><span class="st">Compartilhe com um colega</span>Um agente só vale a pena quando outras pessoas usam. Veja onde fica o compartilhamento e teste com um colega da turma.
+<li><span class="st">Salve o agente</span>No canto superior direito, clique em <span class="path">Criar</span>. É isso que salva o agente: sem esse passo, não dá para compartilhar.</li>
+<li><span class="st">Compartilhe com um colega</span>Um agente rende mais quando o time usa: todo mundo segue o mesmo guia, do mesmo jeito, sem precisar do PMO ao lado. Veja onde fica o compartilhamento e teste com um colega da turma.
 <ol class="sub">
 <li>Na barra lateral do Copilot, abra <span class="path">Agentes</span>. Passe o mouse sobre o seu agente, clique nos três pontos <span class="path">⋯</span> ao lado do nome e escolha <span class="path">Compartilhar agente</span>.</li>
 <li>Repare na chave de compartilhamento com toda a organização. É ela que libera o agente para todo o time de campo de uma vez.</li>
@@ -131,16 +132,25 @@ Regras: use apenas o guia e os procedimentos do Conhecimento. Não escreva o rel
 <section class="exercise" id="montar">
 <div class="exhead"><span aria-hidden="true" class="big">2</span><span class="ex-apps"><img alt="" aria-hidden="true" src="icons/copilot.svg"/>Copilot <img alt="" aria-hidden="true" src="icons/word.svg"/>Word</span><h2><span class="sr-only">Exercício 2: </span>O relatório do trimestre, com o agente</h2></div>
 <p class="why">Agora você usa o agente como alguém do time de campo usaria. Ele conduz: diz que arquivos juntar, como montar o Notebook, testa se o Notebook está pronto e entrega o roteiro que faz o Notebook entrevistar você antes de escrever. No fim, o Word preenche o modelo da FHV. Um Notebook é um espaço do Copilot com um conjunto fechado de arquivos: ele responde só com o que está ali.</p>
-<p class="outcome"><strong>Você sai com</strong>O relatório do 3º trimestre do Veredas Vivas no modelo da FHV, em Word, montado com o agente.</p>
-<p class="note">Não terminou o exercício 1? Peça a um colega que terminou: ele adiciona você em <span class="path">Agentes › ⋯ › Compartilhar agente</span> e manda o link de chat.</p>
+<p class="outcome"><strong>Você sai com</strong>O rascunho do relatório do 3º trimestre do Veredas Vivas no modelo da FHV, em Word, para você revisar.</p>
+<p class="note">Você vai alternar entre o agente, o Notebook e o Word. Cada passo começa dizendo onde você está. Deixe o agente e o Notebook abertos em duas abas. Não terminou o exercício 1? Peça a um colega que terminou: ele adiciona você em <span class="path">Agentes › ⋯ › Compartilhar agente</span> e manda o link.</p>
 <ol class="trail">
-<li><span class="st">Comece com o agente</span>Abra o agente “Relatório para Doador” e escreva: “Preciso fazer o relatório do 3º trimestre de 2026 do Veredas Vivas para a Fundação Horizonte Verde. Existe modelo: Modelo_Relatorio_Trimestral_FHV.”</li>
-<li><span class="st">Siga o agente</span>Ele conduz o resto: que arquivos juntar, como montar o Notebook, a instrução, o teste de prontidão e o roteiro em que o Notebook entrevista você antes de escrever. Responda às perguntas e vá colando no Notebook o que ele entregar.
-<p class="note"><strong>Dica:</strong> a instrução do Notebook não vai no chat. Clique nos três pontos <span class="path">⋯</span>, no canto superior direito do Notebook, e escolha <span class="path">Instruções</span>.</p>
-<p>O agente diz que tipos de arquivo juntar. Para este relatório, são estes:</p>
-<div class="table-wrap"><table><thead><tr><th>O que o Notebook precisa</th><th>Arquivos</th></tr></thead><tbody><tr><td><strong>Compromissos e regras</strong><br/>O que o projeto se comprometeu a entregar, as regras do PMO e o modelo do relatório. Sem isso, o Notebook não sabe o que era esperado.</td><td><span class="path">Acordo_de_Doacao_FHV-2025-017_Veredas_Vivas</span><br/><span class="path">Modelo_Relatorio_Trimestral_FHV</span><br/><span class="path">PMO-01_Relatorios_para_Financiadores</span></td></tr><tr><td><strong>Histórico</strong><br/>O que foi decidido nas reuniões. Sem isso, o relatório pode contradizer o que o time já combinou.</td><td><span class="path">Ata_Reuniao_Mensal_Setembro_2026</span></td></tr><tr><td><strong>Evidências do período</strong><br/>O que de fato aconteceu: medições e números. Cada frase do relatório precisa vir daqui.</td><td><span class="path">Relatorio_Medicao_01_Cercas_Planalto_Set2026</span><br/><span class="path">Acompanhamento_Fisico_Financeiro_2026</span><br/><span class="path">Indicadores_Doador_Veredas_Vivas</span></td></tr></tbody></table></div>
+<li><span class="st"><span class="where-tag">No agente</span>Comece o relatório</span>Abra o agente “Relatório para Doador”, cole o prompt e envie.
+<div class="prompt"><div class="prompt-head"><span>No agente Relatório para Doador</span><button class="copy" type="button">Copiar</button></div><pre>Preciso fazer o relatório do 3º trimestre de 2026 do Veredas Vivas para a Fundação Horizonte Verde. Existe modelo: Modelo_Relatorio_Trimestral_FHV.</pre></div></li>
+<li><span class="st"><span class="where-tag">No agente</span>Responda e veja a lista de arquivos</span>Responda às perguntas do agente, uma de cada vez. Ele diz que tipos de arquivo juntar. Para este relatório, são estes:
+<div class="table-wrap"><table><thead><tr><th>O que o Notebook precisa</th><th>Arquivos</th></tr></thead><tbody><tr><td><strong>Compromissos e regras</strong><br/>O que o projeto se comprometeu a entregar, as regras do PMO e o modelo do relatório. Sem isso, o Notebook não sabe o que era esperado.</td><td><span class="path">Acordo_de_Doacao_FHV-2025-017_Veredas_Vivas</span><br/><span class="path">Modelo_Relatorio_Trimestral_FHV</span><br/><span class="path">PMO-01_Relatorios_para_Financiadores</span></td></tr><tr><td><strong>Histórico</strong><br/>O que foi decidido nas reuniões. Sem isso, o relatório pode contradizer o que o time já combinou.</td><td><span class="path">Ata_Reuniao_Mensal_Setembro_2026</span></td></tr><tr><td><strong>Evidências do período</strong><br/>O que de fato aconteceu: medições e números. Cada frase do relatório precisa vir daqui.</td><td><span class="path">Relatorio_Medicao_01_Cercas_Planalto_Set2026</span><br/><span class="path">Acompanhamento_Fisico_Financeiro_2026</span><br/><span class="path">Indicadores_Doador_Veredas_Vivas</span></td></tr></tbody></table></div></li>
+<li><span class="st"><span class="where-tag">No Notebook</span>Crie o Notebook e adicione os arquivos</span>Em outra aba, no Copilot, abra <span class="path">Notebooks › Novo Notebook</span> e dê um nome, por exemplo “Veredas Vivas · Relatório T3”. Em <span class="path">Adicionar referências</span>, adicione os 7 arquivos da tabela, procurando cada um pelo começo do nome.
 <p class="note">Atenção: na pasta de planilhas há também <span class="path">Indicadores_Doador_Veredas_Vivas_v1</span>. Não adicione: é a versão antiga, com números diferentes. Uma versão antiga misturada às fontes faz o Notebook responder com dois números para a mesma coisa.</p></li>
-<li><span class="st">O Word preenche o modelo</span>O Notebook entrega o texto, não o documento. Copie o rascunho inteiro. Na pasta do canal <span class="path">Prática</span>, baixe o <span class="path">Modelo_Relatorio_Trimestral_FHV</span> e abra no Word. Abra o <span class="path">Copilot</span> no Word, escreva “Preencha este modelo com este rascunho:” e cole o rascunho logo abaixo. Veja o Word preencher o modelo, seção por seção.</li>
+<li><span class="st"><span class="where-tag">No agente → Notebook</span>Cole a instrução</span>Volte ao agente e diga que o Notebook está pronto. Ele entrega a instrução padrão. Copie e, no Notebook, cole em <span class="path">⋯ › Instruções</span>, nos três pontos do canto superior direito. Não cole no chat do Notebook.</li>
+<li><span class="st"><span class="where-tag">Agente ↔ Notebook</span>Faça o teste de prontidão</span>O agente entrega um prompt de teste. Cole no chat do Notebook e envie. Copie a resposta do Notebook, cole no agente e veja o que ele diz para ajustar. Só siga quando o agente disser que o Notebook está pronto.</li>
+<li><span class="st"><span class="where-tag">No agente → Notebook</span>Cole o roteiro e converse</span>O agente entrega o roteiro de redação, já com o projeto, o doador e o período. Copie e cole no chat do Notebook. O Notebook faz um diagnóstico, quatro perguntas e propõe a estrutura. Responda, aprove a estrutura, e ele escreve o rascunho.</li>
+<li><span class="st"><span class="where-tag">No Word</span>O Word preenche o modelo</span>
+<ol class="sub">
+<li>No Notebook, copie o rascunho inteiro com o botão <span class="path">Copiar</span>, embaixo da resposta.</li>
+<li>Na pasta do canal <span class="path">Prática</span>, baixe o <span class="path">Modelo_Relatorio_Trimestral_FHV</span> e abra no Word.</li>
+<li>Abra o <span class="path">Copilot</span> no Word, cole o prompt abaixo e, logo embaixo dele, cole o rascunho. Envie.</li>
+</ol>
+<div class="prompt"><div class="prompt-head"><span>No Copilot do Word, com o rascunho colado logo abaixo</span><button class="copy" type="button">Copiar</button></div><pre>Preencha este modelo com o rascunho abaixo. Mantenha as seções e a ordem do modelo e as fontes entre parênteses. Onde o rascunho marcar [PENDENTE], mantenha a marcação.</pre></div></li>
 <li class="confira"><span class="st">Confira o documento</span><div class="check"><ul>
 <li>A cerca aparece como medida, mas sem aceite? O PMO-01 diz que só é entrega com o Termo de Aceite assinado.</li>
 <li>O atraso do 3º viveiro em Cavalcante está nos desafios? A ata de setembro registra o risco, mas o cronograma da planilha ainda diz “No prazo”. O diagnóstico pegou essa diferença?</li>
@@ -150,7 +160,7 @@ Regras: use apenas o guia e os procedimentos do Conhecimento. Não escreva o rel
 <li>No Word, as seções do modelo continuam na ordem original, e as fontes entre parênteses continuam lá?</li>
 </ul></div></li>
 </ol>
-<p><strong>Repare:</strong> o agente conduziu, o Notebook escreveu, o Word montou o documento. Você decidiu o que só você sabia e conferiu o resultado.</p>
+<p><strong>Repare:</strong> o agente conduziu, o Notebook escreveu, o Word montou o documento. Você decidiu o que só você sabia e conferiu o resultado. O que sai daqui é um rascunho: revise antes de mandar ao doador.</p>
 <p class="keep"><strong>Leve adiante:</strong> o próximo relatório para doador começa no agente: troque o projeto, o doador e o modelo.</p>
 </section>
 
@@ -192,7 +202,8 @@ Regras: use apenas o guia e os procedimentos do Conhecimento. Não escreva o rel
 <li><strong>Mês sem documentos:</strong> peça o Resumo do Hub Chapada de 11/2026, sem indicar nenhum arquivo. O agente deve avisar que falta o material, não inventar.</li>
 </ul></div>
 <p>Falhou em algum? Ajuste a instrução que deveria ter evitado o erro e rode o mesmo teste de novo. É assim que um agente fica confiável.</p></li>
-<li><span class="st">Compartilhe com o time</span>Um agente só vale a pena quando outras pessoas usam. Teste agora com o colega ao lado.
+<li><span class="st">Salve o agente</span>No canto superior direito, clique em <span class="path">Criar</span>. Sem esse passo, não dá para compartilhar.</li>
+<li><span class="st">Compartilhe com o time</span>Um agente rende mais quando o time usa: todo mundo faz o Resumo do mesmo jeito. Teste com um colega.
 <ol class="sub">
 <li>No agente, clique em <span class="path">Compartilhar</span>.</li>
 <li>Adicione o colega ao lado com a permissão de quem só conversa com o agente, sem editar. Para editar, a pessoa precisa ser adicionada como proprietária.</li>
@@ -218,7 +229,7 @@ Regras: use apenas o guia e os procedimentos do Conhecimento. Não escreva o rel
 <li>De tudo o que vimos nas três sessões, o que você mais quer começar a usar?</li>
 </ol></div>
 </section>
-<section aria-labelledby="recap-title" class="session-recap"><h2 id="recap-title">Onde estamos e o que aprendemos</h2><div class="roadmap"><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 1</div><h3 class="session-title-small"><a href="sessao-1.html">Comece com o Copilot bem configurado</a></h3><ul><li>Entender como a IA funciona</li><li>Deixar o Copilot te entrevistar e aprender quem você é</li><li>Escolher a fonte e pedir o que falta</li><li>Da reunião à ata e às tarefas no Planner</li><li>O Teams no piloto automático</li></ul><p class="status-tag">Já percorremos</p></article><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 2</div><h3 class="session-title-small"><a href="sessao-2.html">Como a IA pensa e como escrever bons prompts</a></h3><ul><li>Entender por que a IA às vezes inventa</li><li>Escrever prompts com o Prompt Coach</li><li>Conferir os números com o Analista</li><li>Limpar dados, achar desvios e montar uma apresentação</li></ul><p class="status-tag">Já percorremos</p></article><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 3</div><h3 class="session-title-small"><a href="sessao-3.html">Agentes: do guia do PMO ao relatório pronto</a></h3><ul><li>Criar um agente a partir de um guia do PMO</li><li>Compartilhar o agente com o time</li><li>Montar um Notebook com as fontes certas</li><li>Usar agente, Notebook e Word juntos para entregar um relatório pronto</li></ul><p class="status-tag">Nesta sessão</p></article></div></section><section aria-labelledby="contato-title" id="contato">
+<section aria-labelledby="recap-title" class="session-recap"><h2 id="recap-title">Onde estamos e o que aprendemos</h2><div class="roadmap"><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 1</div><h3 class="session-title-small"><a href="sessao-1.html">Comece com o Copilot bem configurado</a></h3><ul><li>Entender como a IA funciona</li><li>Deixar o Copilot te entrevistar e aprender quem você é</li><li>Escolher a fonte e pedir o que falta</li><li>Da reunião à ata e às tarefas no Planner</li><li>O Teams no piloto automático</li></ul><p class="status-tag">Já percorremos</p></article><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 2</div><h3 class="session-title-small"><a href="sessao-2.html">Como a IA pensa e como escrever bons prompts</a></h3><ul><li>Entender por que a IA às vezes inventa</li><li>Escrever prompts com o Prompt Coach</li><li>Conferir os números com o Analista</li><li>Limpar dados, achar desvios e montar uma apresentação</li></ul><p class="status-tag">Já percorremos</p></article><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 3</div><h3 class="session-title-small"><a href="sessao-3.html">Agentes: do guia do PMO ao rascunho do relatório</a></h3><ul><li>Criar um agente a partir de um guia do PMO</li><li>Compartilhar o agente com o time</li><li>Montar um Notebook com as fontes certas</li><li>Usar agente, Notebook e Word juntos para montar o rascunho do relatório</li></ul><p class="status-tag">Nesta sessão</p></article></div></section><section aria-labelledby="contato-title" id="contato">
 <h2 id="contato-title">Obrigado, e conte com a gente</h2>
 <p>Esperamos que vocês tenham gostado das sessões e que levem daqui algo útil para o dia a dia. Nos próximos dias, vamos mandar uma pesquisa rápida sobre o treinamento: a opinião de vocês ajuda a melhorar as próximas turmas.</p>
 <p>Ficou uma dúvida, travou num prompt ou quer ideias para um agente novo? Escreva para a gente. Respondemos sempre que possível.</p>
