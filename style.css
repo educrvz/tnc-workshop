@@ -258,3 +258,12 @@ tr.hl td:first-child{box-shadow:inset 4px 0 0 #B8860B}
 .where-tag{display:inline-block;font-size:8.5pt;font-weight:700;color:#1f2a37;background:#eef1f5;border:1px solid #d5dbe3;border-radius:10px;padding:0 8px;margin-right:8px;vertical-align:1px}
 .ladder td:first-child{white-space:nowrap}
 section.exercise h3{margin-top:30px}
+.page-lede{max-width:none}
+.callout.dica{border-left-color:#d97706;background:#fff8e6}
+.callout.dica .callout-label{color:#92400e}
+.stairs thead th{background:transparent;vertical-align:bottom;padding:0 4px 0 0;border:0}
+.stairs .step{background:#1f2a37;color:#fff;font-weight:700;padding:10px 12px;border-radius:6px 6px 0 0;display:flex;align-items:flex-start;gap:8px}
+.stairs .step .k{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#fff;color:#1f2a37;font-size:9.5pt;flex:none}
+.stairs .s1{min-height:44px;background:#5b6b7d}.stairs .s2{min-height:76px;background:#3a4a5c}.stairs .s3{min-height:108px}
+.stairs tr.today td{background:#f0faf4}
+@media (max-width:600px){.stairs .s1,.stairs .s2,.stairs .s3{min-height:0}}
