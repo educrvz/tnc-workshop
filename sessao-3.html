@@ -16,11 +16,11 @@
 <header id="conteudo">
 <p class="meta-line">Terça, 17/11 · 9h30–11h (Brasília) · 90 minutos <button class="print" type="button">Imprimir / salvar PDF</button></p>
 <h1 class="page-title">Sessão 3 · Notebooks e agentes: do pronto ao seu</h1>
-<p class="page-lede">Hoje você junta os arquivos de um projeto num Notebook e pede a ele o rascunho do relatório para doador, no modelo do doador. Depois, a partir do relatório, chama com @ o agente do PowerPoint e as skills dele para montar a apresentação. Por fim, cria o seu próprio agente, que responde às dúvidas do time com base num guia do PMO, e compartilha com um colega.</p>
+<p class="page-lede">Hoje você junta os arquivos de um projeto num Notebook e pede a ele o rascunho do relatório para doador, no modelo do doador. Depois, explora os agentes e skills disponíveis com @. Se der tempo, transforma o relatório em apresentação. Por fim, cria o seu próprio agente, que responde às dúvidas do time com base num guia do PMO, e compartilha com um colega.</p>
 <nav aria-label="Nesta sessão"><ol class="session-map" id="session-map">
 <li><a href="#escada"><span class="n soft">0</span><span class="t">Abertura: qual usar?<span class="s">Prompt, workflow, skill ou agente</span></span><span class="apps"></span></a></li>
 <li><a href="#notebook"><span class="n">1</span><span class="t">Do Notebook ao rascunho do relatório<span class="s">Os arquivos do projeto num Notebook e o relatório no modelo da FHV</span></span><span class="apps"><img alt="Copilot" src="icons/copilot.svg"/><img alt="Word" src="icons/word.svg"/></span></a></li>
-<li><a href="#skill"><span class="n">2</span><span class="t">Chame agentes e skills com @<span class="s">Do relatório à apresentação para o doador</span></span><span class="apps"><img alt="Word" src="icons/word.svg"/><img alt="PowerPoint" src="icons/powerpoint.svg"/></span></a></li>
+<li><a href="#skill"><span class="n">2</span><span class="t">Chame agentes e skills com @<span class="s">Explore o @; apresentação se der tempo</span></span><span class="apps"><img alt="Word" src="icons/word.svg"/><img alt="PowerPoint" src="icons/powerpoint.svg"/></span></a></li>
 <li><a href="#agentes"><span class="n">3</span><span class="t">Crie o seu agente<span class="s">O agente Guia do Notebook, com base num guia do PMO</span></span><span class="apps"><img alt="Copilot" src="icons/copilot.svg"/></span></a></li>
 <li><a href="#fechamento"><span class="n soft">+</span><span class="t">Fechamento e um presente<span class="s">O Notebook das nossas sessões, para vocês</span></span><span class="apps"></span></a></li>
 </ol></nav>
@@ -73,13 +73,9 @@
 </ul></div></li>
 <li><span class="st"><span class="where-tag">No Notebook</span>Peça o rascunho do relatório</span>Agora o Notebook já tem tudo: os números, o que foi decidido e o modelo do doador. Cole e envie.
 <div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Escreva o rascunho do relatório do 3º trimestre de 2026 do Veredas Vivas para a Fundação Horizonte Verde. Siga as seções e a ordem do Modelo_Relatorio_Trimestral_FHV e as regras do PMO-01. Use apenas as referências deste Notebook. Indique entre parênteses a fonte de cada número. Onde faltar informação, escreva [PENDENTE] em vez de supor.</pre></div></li>
-<li><span class="st"><span class="where-tag">No Word</span>O Word preenche o modelo</span>O Notebook entrega o texto. O documento, quem monta é o Word.
-<ol class="sub">
-<li>No Notebook, copie o rascunho inteiro com o botão <span class="path">Copiar</span>, embaixo da resposta.</li>
-<li>Na <a href="https://dccrvz.sharepoint.com/sites/TreinamentoTeamseIAPMOCerrado/Documentos%20Compartilhados/Pr%C3%A1tica/07_Notebook%20Veredas%20Vivas%20T3" rel="noopener" target="_blank">pasta do exercício</a>, baixe o <span class="path">Modelo_Relatorio_Trimestral_FHV</span> e abra no Word. Salve no seu OneDrive com o nome <span class="path">Relatorio_T3_Veredas_Vivas</span>: no exercício 2, o Copilot precisa achar este arquivo.</li>
-<li>Na sua cópia, abra o <span class="path">Copilot</span>, cole o prompt abaixo e, logo embaixo dele, cole o rascunho. Envie.</li>
-</ol>
-<div class="prompt"><div class="prompt-head"><span>No Copilot do Word, com o rascunho colado logo abaixo</span><button class="copy" type="button">Copiar</button></div><pre>Preencha este modelo com o rascunho abaixo. Mantenha as seções e a ordem do modelo e as fontes entre parênteses. Onde o rascunho marcar [PENDENTE], mantenha a marcação.</pre></div></li>
+<li><span class="st"><span class="where-tag">No Notebook</span>Exporte para Word</span>Ao final da resposta com o rascunho, clique nos três pontos <span class="path">⋯ › Exportar para › Word</span>. Abra o arquivo gerado e salve no seu OneDrive como <span class="path">Relatorio_T3_Veredas_Vivas</span>.
+<p class="note">O texto segue as seções pedidas no prompt. Confira o documento exportado: a exportação não garante o layout exato do modelo do doador.</p>
+<details class="optional-reference"><summary>Se a opção de exportar não aparecer</summary><p>Copie a resposta inteira, cole num documento do Word e salve no OneDrive com o mesmo nome.</p></details></li>
 <li class="confira"><span class="st">Confira o documento</span><div class="check"><ul>
 <li>A cerca aparece como medida, mas sem aceite?</li>
 <li>O risco de atraso do 3º viveiro, em Cavalcante, está nos desafios?</li>
@@ -97,32 +93,35 @@
 
 <section class="exercise" id="skill">
 <div class="exhead"><span aria-hidden="true" class="big">2</span><span class="ex-apps"><img alt="" aria-hidden="true" src="icons/word.svg"/><img alt="" aria-hidden="true" src="icons/powerpoint.svg"/>Word · PowerPoint</span><h2><span class="sr-only">Exercício 2: </span>Chame agentes e skills com @</h2></div>
-<p class="why">Com <kbd>@</kbd> no meio do prompt, você chama um agente ou uma skill: um processo pronto que faz uma tarefa específica. Aqui você parte do relatório do exercício 1 e transforma em apresentação para o doador, como no exemplo da Bruna.</p>
-<p class="outcome"><strong>Você sai com</strong>Uma apresentação para o doador feita a partir do seu relatório, revisada com as skills do PowerPoint.</p>
-<p><strong>A partir do relatório</strong></p>
+<p class="why">Com <kbd>@</kbd>, você pode chamar agentes e skills disponíveis no seu Copilot. Vamos explorar a lista; a apresentação fica como extensão, se der tempo.</p>
+<p class="outcome"><strong>Você sai com</strong>O caminho para encontrar e chamar os agentes e skills disponíveis na sua conta.</p>
 <ol class="trail">
-<li><span class="st"><span class="where-tag">No Word</span>Abra o Copilot no relatório</span>Abra o <span class="path">Relatorio_T3_Veredas_Vivas</span> do exercício 1 e abra o <span class="path">Copilot</span>. O painel abre à direita.</li>
-<li><span class="st">Abra a lista com @</span>Na caixa do Copilot, digite <kbd>@</kbd>. Aparece a lista de agentes e skills, como <span class="path">PowerPoint (Agent)</span> e <span class="path">Word (Agent)</span>.
-<p class="note">Não apareceu a lista no Word? Faça este passo e o próximo no Copilot Chat do Teams: clique em <span class="path">Copilot › Novo chat</span>, digite <kbd>@</kbd> e abra a aba <span class="path">Agents &amp; Skills</span>.</p></li>
-<li><span class="st">Chame o agente do PowerPoint</span>Clique em <span class="path">PowerPoint (Agent)</span>. O nome entra na caixa. Logo depois dele, cole o prompt abaixo. Onde está o nome do relatório, digite <kbd>/</kbd> e escolha <span class="path">Relatorio_T3_Veredas_Vivas</span>. No fim do prompt, digite <kbd>/</kbd> de novo e escolha uma apresentação recente do seu time, para o Copilot usar o visual dela. Envie.
+<li><span class="st"><span class="where-tag">No Word</span>Experimente o @</span>Com o relatório aberto, abra o Copilot e digite <kbd>@</kbd>. Veja quais agentes e skills aparecem. A disponibilidade varia entre aplicativos e contas.</li>
+<li><span class="st"><span class="where-tag">No Teams</span>Se não funcionar no aplicativo, tente no Teams</span>Abra <span class="path">Copilot › Novo chat</span>, digite <kbd>@</kbd> e procure a aba <span class="path">Agents &amp; Skills</span>. Escolha um agente disponível e veja o nome entrar na caixa do prompt. Se a lista também não aparecer, acompanhe a demonstração e siga para o exercício 3.</li>
+</ol>
+<details class="optional-reference"><summary>Se der tempo: do relatório à apresentação e às skills do PowerPoint</summary>
+<p>A geração pode levar alguns minutos. Podemos iniciar na nossa tela e seguir para o exercício 3 enquanto a apresentação fica pronta.</p>
+<ol class="trail">
+<li><span class="st">Chame o agente do PowerPoint</span>No Copilot onde o <kbd>@</kbd> funcionou, selecione <span class="path">PowerPoint (Agent)</span>, se disponível. O nome entra na caixa. Logo depois dele, cole o prompt abaixo. Onde está o nome do relatório, digite <kbd>/</kbd> e escolha <span class="path">Relatorio_T3_Veredas_Vivas</span>. No fim do prompt, digite <kbd>/</kbd> de novo e escolha uma apresentação recente do seu time, para o Copilot usar o visual dela. Envie.
 <div class="prompt"><div class="prompt-head"><span>Depois de @PowerPoint (Agent)</span><button class="copy" type="button">Copiar</button></div><pre>crie uma apresentação de 5 slides para o doador com os resultados do 3º trimestre do Veredas Vivas, com base em /Relatorio_T3_Veredas_Vivas. Comece pelo resultado, depois os números, depois os próximos passos. Use o visual e o layout desta apresentação:</pre></div></li>
 <li><span class="st">Abra a apresentação</span>O Copilot responde com um arquivo de PowerPoint. Clique no arquivo para abrir no PowerPoint.</li>
 </ol>
 <p><strong>Dentro do PowerPoint</strong></p>
 <ol class="trail">
 <li><span class="st">Abra o Copilot do PowerPoint</span>Na apresentação que abriu, abra o Copilot, como na Sessão 2. O painel do Copilot abre à direita.</li>
-<li><span class="st">Veja as skills do PowerPoint</span>Na caixa do painel, digite <kbd>@</kbd>. Aparecem as skills do próprio PowerPoint:
+<li><span class="st">Veja as skills do PowerPoint</span>Na caixa do painel, digite <kbd>@</kbd>. Se disponíveis, explore as skills do PowerPoint:
 <ul class="levels">
 <li><span class="path">Review this presentation</span>: revisa a apresentação e melhora a narrativa.</li>
 <li><span class="path">Visualize this slide</span>: transforma um slide cheio de texto em visual.</li>
 <li><span class="path">Prepare for questions</span>: prevê as perguntas e dúvidas da plateia.</li>
 <li><span class="path">Create interactive slide</span>: cria um slide interativo para explicar algo complexo.</li>
-</ul>Os nomes podem aparecer em português, conforme o idioma do seu Office.</li>
-<li><span class="st">Chame duas skills de uma vez</span>Escolha <span class="path">Review this presentation</span>. Digite <kbd>@</kbd> de novo e escolha <span class="path">Visualize this slide</span>. Depois das duas, cole o prompt e envie.
+</ul>Os nomes podem aparecer em português. Se a lista não aparecer, pule esta parte: as skills do PowerPoint podem não estar disponíveis no Copilot do Teams.</li>
+<li><span class="st">Chame duas skills de uma vez</span>Se as duas skills estiverem disponíveis, escolha <span class="path">Review this presentation</span>. Digite <kbd>@</kbd> de novo e escolha <span class="path">Visualize this slide</span>. Depois das duas, cole o prompt e envie.
 <div class="prompt"><div class="prompt-head"><span>No Copilot do PowerPoint, depois das duas skills</span><button class="copy" type="button">Copiar</button></div><pre>melhore a narrativa desta apresentação para um doador e deixe o visual mais limpo e consistente.</pre></div></li>
 <li class="confira"><span class="st">Confira</span><div class="check"><p>A apresentação ficou melhor do que com um prompt sem <kbd>@</kbd>? Os números continuam batendo com o relatório e com a planilha? O que estava [PENDENTE] no relatório não virou afirmação nos slides?</p></div></li>
 </ol>
-<p class="keep"><strong>Leve adiante:</strong> o mesmo relatório vira apresentação, resumo ou e-mail ao doador sem começar do zero. Digite <kbd>@</kbd> e veja que agentes e skills o seu Office já tem.</p>
+</details>
+<p class="keep"><strong>Leve adiante:</strong> o mesmo relatório vira apresentação, resumo ou e-mail ao doador sem começar do zero. Experimente <kbd>@</kbd> para descobrir o que está disponível no seu Copilot.</p>
 </section>
 
 <section class="exercise" id="agentes">
@@ -181,7 +180,7 @@
 <li>De tudo o que vimos nas três sessões, o que vocês mais querem começar a usar?</li>
 </ol></div>
 <div class="callout dica"><div class="callout-label"><span aria-hidden="true">💡</span> Dica para levar</div><p>Marquem uma conversa recorrente no Teams, por exemplo 30 minutos a cada duas semanas, para o time trocar o que cada um está fazendo com IA: o que funcionou, o que precisou corrigir e que prompt, Notebook ou agente vale a pena compartilhar.</p></div>
-<h3>Para continuar</h3>
+<details class="optional-reference"><summary>Para continuar depois do curso</summary>
 <p>Em três sessões de 1h30, a gente só arranhou a superfície. Cada uma destas áreas dá para aprofundar muito:</p>
 <div class="table-wrap"><table class="ladder">
 <thead><tr><th></th><th>O que vimos</th><th>Para aprofundar</th></tr></thead>
@@ -190,7 +189,7 @@
 <tr><td><strong>Agentes</strong></td><td>Agentes prontos, chamados com @, e um agente seu que responde dúvidas</td><td>Agentes que executam ações sozinhos</td></tr>
 <tr><td><strong>Skills</strong></td><td>Skills prontas, chamadas com @</td><td>Criar as suas no Cowork, por exemplo para o Resumo Estratégico do mês</td></tr>
 <tr><td><strong>Notebooks</strong></td><td>Um Notebook do projeto que escreve o rascunho do relatório</td><td>Notebooks compartilhados por todo o PMO</td></tr>
-</tbody></table></div>
+</tbody></table></div></details>
 </section>
 <section aria-labelledby="recap-title" class="session-recap"><h2 id="recap-title">Onde estamos e o que aprendemos</h2><div class="roadmap"><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 1</div><h3 class="session-title-small"><a href="sessao-1.html">Comece com o Copilot bem configurado</a></h3><ul><li>Entender como a IA funciona</li><li>Deixar o Copilot te entrevistar e aprender quem você é</li><li>Escolher a fonte e pedir o que falta</li><li>Da reunião à ata e às tarefas no Planner</li><li>O Teams no piloto automático</li></ul><p class="status-tag">Já percorremos</p></article><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 2</div><h3 class="session-title-small"><a href="sessao-2.html">Como a IA pensa e como escrever bons prompts</a></h3><ul><li>Entender por que a IA às vezes inventa</li><li>Escrever prompts com o Prompt Coach</li><li>Conferir os números com o Analista</li><li>Limpar dados, achar desvios e montar uma apresentação</li></ul><p class="status-tag">Já percorremos</p></article><article class="roadmap-card completed"><span aria-hidden="true" class="roadmap-check">✓</span><div class="session-label">Sessão 3</div><h3 class="session-title-small"><a href="sessao-3.html">Notebooks e agentes: do pronto ao seu</a></h3><ul><li>Prompt, workflow, skill ou agente: qual usar</li><li>Um Notebook com os arquivos do projeto</li><li>O rascunho do relatório no modelo do doador</li><li>Chamar agentes e skills com @</li><li>Criar o seu agente e compartilhar com o time</li></ul><p class="status-tag">Nesta sessão</p></article></div></section><section aria-labelledby="contato-title" id="contato">
 <h2 id="contato-title">Obrigado, e conte com a gente</h2>
