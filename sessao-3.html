@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="noindex,nofollow" name="robots"/><link href="style.css?v=20261113b" rel="stylesheet"/><script defer="" src="app.js?v=20261113b"></script><title>Teams e IA na Prática · TNC · Sessão 3</title></head>
+<meta content="noindex,nofollow" name="robots"/><link href="style.css?v=20261116c" rel="stylesheet"/><script defer="" src="app.js?v=20261113b"></script><title>Teams e IA na Prática · TNC · Sessão 3</title></head>
 <body class="rail-page"><a class="skip" href="#conteudo">Ir para o conteúdo</a>
 <nav aria-label="Exercícios desta sessão" class="session-rail" id="session-rail"><p class="lbl">Sessão 3 · hoje</p><ol><li><a data-s="escada" href="#escada"><span class="dot">0</span><span>Qual usar?</span></a></li><li><a data-s="notebook" href="#notebook"><span class="dot">1</span><span>Notebook e relatório</span></a></li><li><a data-s="skill" href="#skill"><span class="dot">2</span><span>Agentes e skills com @</span></a></li><li><a data-s="agentes" href="#agentes"><span class="dot">3</span><span>O seu agente</span></a></li><li><a data-s="fechamento" href="#fechamento"><span class="dot">+</span><span>Fechamento</span></a></li></ol></nav>
 
@@ -19,10 +19,10 @@
 <p class="page-lede">Hoje você junta os arquivos de um projeto num Notebook e pede a ele o rascunho do relatório para doador, no modelo do doador. Depois, explora os agentes e skills disponíveis com @. Se der tempo, transforma o relatório em apresentação. Por fim, cria o seu próprio agente, que responde às dúvidas do time com base num guia do PMO, e compartilha com um colega.</p>
 <nav aria-label="Nesta sessão"><ol class="session-map" id="session-map">
 <li><a href="#escada"><span class="n soft">0</span><span class="t">Abertura: qual usar?<span class="s">Prompt, workflow, skill ou agente</span></span><span class="apps"></span></a></li>
-<li><a href="#notebook"><span class="n">1</span><span class="t">Do Notebook ao rascunho do relatório<span class="s">Os arquivos do projeto num Notebook e o relatório no modelo da FHV</span></span><span class="apps"><img alt="Copilot" src="icons/copilot.svg"/><img alt="Word" src="icons/word.svg"/></span></a></li>
+<li><a href="#notebook"><span class="n">1</span><span class="t">Do Notebook ao rascunho do relatório<span class="s">Os arquivos do projeto num Notebook e o relatório no modelo da FHV</span></span><span class="apps"><img alt="Notebook" src="icons/notebook.svg"/><img alt="Word" src="icons/word.svg"/></span></a></li>
 <li><a href="#skill"><span class="n">2</span><span class="t">Chame agentes e skills com @<span class="s">Explore o @; apresentação se der tempo</span></span><span class="apps"><img alt="Word" src="icons/word.svg"/><img alt="PowerPoint" src="icons/powerpoint.svg"/></span></a></li>
 <li><a href="#agentes"><span class="n">3</span><span class="t">Crie o seu agente<span class="s">O agente Guia do Notebook, com base num guia do PMO</span></span><span class="apps"><img alt="Copilot" src="icons/copilot.svg"/></span></a></li>
-<li><a href="#fechamento"><span class="n soft">+</span><span class="t">Fechamento e um presente<span class="s">O Notebook das nossas sessões, para vocês</span></span><span class="apps"></span></a></li>
+<li><a href="#fechamento"><span class="n soft">+</span><span class="t">Fechamento e Notebook do curso<span class="s">O Notebook das nossas sessões, para vocês</span></span><span class="apps"></span></a></li>
 </ol></nav>
 <details class="before-start"><summary>Antes de começar: material e legenda</summary><div class="in">
 <p>Os exemplos usam os arquivos fictícios do Veredas Vivas, na pasta do canal <span class="path">Prática</span>. Quer usar o seu projeto? Siga os mesmos passos com os seus arquivos: crie uma pasta para eles no OneDrive ou no SharePoint, ou anexe os arquivos ao prompt pelo clipe.</p>
@@ -44,12 +44,12 @@
 </section>
 
 <section class="exercise" id="notebook">
-<div class="exhead"><span aria-hidden="true" class="big">1</span><span class="ex-apps"><img alt="" aria-hidden="true" src="icons/copilot.svg"/>Copilot · Notebooks · Word</span><h2><span class="sr-only">Exercício 1: </span>Do Notebook ao rascunho do relatório</h2></div>
+<div class="exhead"><span aria-hidden="true" class="big">1</span><span class="ex-apps"><img alt="" aria-hidden="true" src="icons/notebook.svg"/>Notebook → <img alt="" aria-hidden="true" src="icons/word.svg"/>Word</span><h2><span class="sr-only">Exercício 1: </span>Do Notebook ao rascunho do relatório</h2></div>
 <p class="why">Um Notebook é um espaço do Copilot com um conjunto fechado de arquivos: ele responde só com o que está ali. Funciona como a pasta do projeto, só que você conversa com ela. Aqui você junta os arquivos do Veredas Vivas num Notebook, confere que ele responde com base neles e, no fim, pede o rascunho do relatório do trimestre no modelo da FHV.</p>
 <p class="outcome"><strong>Você sai com</strong>Um Notebook do Veredas Vivas e o rascunho do relatório do 3º trimestre no modelo da FHV, em Word, para revisar.</p>
 <ol class="trail">
-<li><span class="st"><span class="where-tag">No Notebook</span>Crie o Notebook</span>No Copilot, abra <span class="path">Notebooks › Novo Notebook</span> e dê o nome “Veredas Vivas · Relatório T3”.</li>
-<li><span class="st"><span class="where-tag">No Notebook</span>Adicione a pasta do exercício</span>Para ganhar tempo, reunimos cópias dos 7 arquivos numa pasta exclusiva para este exercício: <a href="https://dccrvz.sharepoint.com/sites/TreinamentoTeamseIAPMOCerrado/Documentos%20Compartilhados/Pr%C3%A1tica/07_Notebook%20Veredas%20Vivas%20T3" rel="noopener" target="_blank">07_Notebook Veredas Vivas T3</a>, no canal <span class="path">Prática</span>.
+<li><span class="st"><span class="where-tag"><img class="step-icon" alt="" aria-hidden="true" src="icons/notebook.svg"/>No Notebook</span>Crie o Notebook</span>No Copilot, abra <span class="path">Notebooks › Novo Notebook</span> e dê o nome “Veredas Vivas · Relatório T3”.</li>
+<li><span class="st"><span class="where-tag"><img class="step-icon" alt="" aria-hidden="true" src="icons/notebook.svg"/>No Notebook</span>Adicione a pasta do exercício</span>Para ganhar tempo, reunimos cópias dos 7 arquivos numa pasta exclusiva para este exercício: <a href="https://dccrvz.sharepoint.com/sites/TreinamentoTeamseIAPMOCerrado/Documentos%20Compartilhados/Pr%C3%A1tica/07_Notebook%20Veredas%20Vivas%20T3" rel="noopener" target="_blank">07_Notebook Veredas Vivas T3</a>, no canal <span class="path">Prática</span>.
 <ol class="sub">
 <li>Abra a pasta pelo link acima e confira os arquivos.</li>
 <li>No Notebook, abra <span class="path">Adicionar referências</span>. Procure <span class="path">07_Notebook Veredas Vivas T3</span> e selecione a pasta. Se preferir, use a opção de adicionar um link e cole o endereço da pasta abaixo.</li>
@@ -61,19 +61,18 @@
 <p>Em <span class="path">Adicionar referências</span>, selecione os arquivos individualmente. Se a busca não encontrar as cópias novas, abra a pasta do exercício, baixe os arquivos e use a opção de carregar arquivos no Notebook.</p>
 <div class="table-wrap"><table><thead><tr><th>O que o Notebook precisa</th><th>Arquivos</th></tr></thead><tbody><tr><td><strong>Compromissos e regras</strong><br/>O que o projeto se comprometeu a entregar, as regras do PMO e o modelo do relatório. Sem isso, o Notebook não sabe o que era esperado.</td><td><span class="path">Acordo_de_Doacao_FHV-2025-017_Veredas_Vivas</span><br/><span class="path">Modelo_Relatorio_Trimestral_FHV</span><br/><span class="path">PMO-01_Relatorios_para_Financiadores</span></td></tr><tr><td><strong>Histórico</strong><br/>O que foi decidido nas reuniões. Sem isso, o relatório pode contradizer o que o time já combinou.</td><td><span class="path">Ata_Reuniao_Mensal_Setembro_2026</span></td></tr><tr><td><strong>Evidências do período</strong><br/>O que de fato aconteceu: medições e números. Cada frase do relatório precisa vir daqui.</td><td><span class="path">Relatorio_Medicao_01_Cercas_Planalto_Set2026</span><br/><span class="path">Acompanhamento_Fisico_Financeiro_2026</span><br/><span class="path">Indicadores_Doador_Veredas_Vivas</span></td></tr></tbody></table></div>
 <p class="note">Atenção: na pasta de planilhas há também <span class="path">Indicadores_Doador_Veredas_Vivas_v1</span>. Não adicione: é a versão antiga, com números diferentes. Uma versão antiga misturada às fontes faz o Notebook responder com dois números para a mesma coisa.</p></details></li>
-<li><span class="st"><span class="where-tag">No Notebook</span>Faça algumas perguntas</span>No chat do Notebook, cole e envie, uma pergunta de cada vez. Embaixo de cada resposta, veja de que arquivo ela veio.
-<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Quais linhas do orçamento passaram de 10% no T3, para mais ou para menos?</pre></div>
-<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>O 3º viveiro, em Cavalcante, está no prazo?</pre></div>
-<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>A cerca do Planalto já conta como entrega?</pre></div></li>
-<li class="confira"><span class="st">Confira</span><div class="check"><ul>
-<li>Na primeira pergunta, apareceram Serviços de terceiros (+20%), Viagens e campo (+19%) e Insumos (+16%)?</li>
-<li>No viveiro, ele juntou o cronograma da planilha, que diz “No prazo”, com o risco registrado na ata de setembro?</li>
-<li>Na cerca, ele lembrou que o PMO-01 só conta como entrega com o Termo de Aceite assinado?</li>
-<li>Escolha um número de uma resposta e encontre-o no arquivo de origem.</li>
-</ul></div></li>
-<li><span class="st"><span class="where-tag">No Notebook</span>Peça o rascunho do relatório</span>Agora o Notebook já tem tudo: os números, o que foi decidido e o modelo do doador. Cole e envie.
-<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Escreva o rascunho do relatório do 3º trimestre de 2026 do Veredas Vivas para a Fundação Horizonte Verde. Siga as seções e a ordem do Modelo_Relatorio_Trimestral_FHV e as regras do PMO-01. Use apenas as referências deste Notebook. Indique entre parênteses a fonte de cada número. Onde faltar informação, escreva [PENDENTE] em vez de supor.</pre></div></li>
-<li><span class="st"><span class="where-tag">No Notebook</span>Exporte para Word</span>Ao final da resposta com o rascunho, clique nos três pontos <span class="path">⋯ › Exportar para › Word</span>. Abra o arquivo gerado e salve no seu OneDrive como <span class="path">Relatorio_T3_Veredas_Vivas</span>.
+<li><span class="st"><span class="where-tag"><img class="step-icon" alt="" aria-hidden="true" src="icons/notebook.svg"/>No Notebook</span>Faça uma pergunta e confira a fonte</span>Cole a pergunta abaixo. Escolha um número da resposta e encontre-o no arquivo de origem.
+<div class="prompt"><div class="prompt-head"><span><img class="step-icon" alt="" aria-hidden="true" src="icons/notebook.svg"/>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Quais linhas do orçamento passaram de 10% no T3, para mais ou para menos?</pre></div>
+<div class="check"><p><strong>Confira:</strong> apareceram Serviços de terceiros (+20%), Viagens e campo (+19%) e Insumos (+16%)?</p></div>
+<details class="optional-reference"><summary>Na nossa tela ou para quem terminar antes: mais duas perguntas</summary>
+<div class="prompt"><div class="prompt-head"><span><img class="step-icon" alt="" aria-hidden="true" src="icons/notebook.svg"/>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>O 3º viveiro, em Cavalcante, está no prazo?</pre></div>
+<p>Confira se ele juntou o cronograma da planilha, que diz “No prazo”, com o risco registrado na ata de setembro.</p>
+<div class="prompt"><div class="prompt-head"><span><img class="step-icon" alt="" aria-hidden="true" src="icons/notebook.svg"/>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>A cerca do Planalto já conta como entrega?</pre></div>
+<p>Confira se ele lembrou que o PMO-01 só conta como entrega com o Termo de Aceite assinado.</p>
+</details></li>
+<li><span class="st"><span class="where-tag"><img class="step-icon" alt="" aria-hidden="true" src="icons/notebook.svg"/>No Notebook</span>Peça o rascunho do relatório</span>Agora o Notebook já tem tudo: os números, o que foi decidido e o modelo do doador. Cole e envie.
+<div class="prompt"><div class="prompt-head"><span><img class="step-icon" alt="" aria-hidden="true" src="icons/notebook.svg"/>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Escreva o rascunho do relatório do 3º trimestre de 2026 do Veredas Vivas para a Fundação Horizonte Verde. Siga as seções e a ordem do Modelo_Relatorio_Trimestral_FHV e as regras do PMO-01. Use apenas as referências deste Notebook. Indique entre parênteses a fonte de cada número. Onde faltar informação, escreva [PENDENTE] em vez de supor.</pre></div></li>
+<li><span class="st"><span class="where-tag"><img class="step-icon" alt="" aria-hidden="true" src="icons/notebook.svg"/>No Notebook → <img class="step-icon" alt="" aria-hidden="true" src="icons/word.svg"/>Word</span>Exporte para Word</span>Ao final da resposta com o rascunho, clique nos três pontos <span class="path">⋯ › Exportar para › Word</span>. Abra o arquivo gerado e salve no seu OneDrive como <span class="path">Relatorio_T3_Veredas_Vivas</span>.
 <p class="note">O texto segue as seções pedidas no prompt. Confira o documento exportado: a exportação não garante o layout exato do modelo do doador.</p>
 <details class="optional-reference"><summary>Se a opção de exportar não aparecer</summary><p>Copie a resposta inteira, cole num documento do Word e salve no OneDrive com o mesmo nome.</p></details></li>
 <li class="confira"><span class="st">Confira o documento</span><div class="check"><ul>
@@ -95,8 +94,9 @@
 <div class="exhead"><span aria-hidden="true" class="big">2</span><span class="ex-apps"><img alt="" aria-hidden="true" src="icons/word.svg"/><img alt="" aria-hidden="true" src="icons/powerpoint.svg"/>Word · PowerPoint</span><h2><span class="sr-only">Exercício 2: </span>Chame agentes e skills com @</h2></div>
 <p class="why">Com <kbd>@</kbd>, você pode chamar agentes e skills disponíveis no seu Copilot. Vamos explorar a lista; a apresentação fica como extensão, se der tempo.</p>
 <p class="outcome"><strong>Você sai com</strong>O caminho para encontrar e chamar os agentes e skills disponíveis na sua conta.</p>
+<p class="note"><strong>Até 5 minutos:</strong> tente no aplicativo e, se não funcionar, uma vez no Teams. Depois, acompanhe a demonstração ou siga para o exercício 3.</p>
 <ol class="trail">
-<li><span class="st"><span class="where-tag">No Word</span>Experimente o @</span>Com o relatório aberto, abra o Copilot e digite <kbd>@</kbd>. Veja quais agentes e skills aparecem. A disponibilidade varia entre aplicativos e contas.</li>
+<li><span class="st"><span class="where-tag"><img class="step-icon" alt="" aria-hidden="true" src="icons/word.svg"/>No Word</span>Experimente o @</span>Com o relatório aberto, abra o Copilot e digite <kbd>@</kbd>. Veja quais agentes e skills aparecem. A disponibilidade varia entre aplicativos e contas.</li>
 <li><span class="st"><span class="where-tag">No Teams</span>Se não funcionar no aplicativo, tente no Teams</span>Abra <span class="path">Copilot › Novo chat</span>, digite <kbd>@</kbd> e procure a aba <span class="path">Agents &amp; Skills</span>. Escolha um agente disponível e veja o nome entrar na caixa do prompt. Se a lista também não aparecer, acompanhe a demonstração e siga para o exercício 3.</li>
 </ol>
 <details class="optional-reference"><summary>Se der tempo: do relatório à apresentação e às skills do PowerPoint</summary>
@@ -134,14 +134,16 @@
 <li><span class="st">Nome e descrição</span>Dê o nome “Guia do Notebook” e, logo abaixo do nome, cole a descrição.
 <div class="prompt"><div class="prompt-head"><span>Descrição</span><button class="copy" type="button">Copiar</button></div><pre>Responde dúvidas sobre como montar um Notebook para relatório de doador, seguindo o guia do PMO.</pre></div></li>
 <li><span class="st">Peça as instruções ao Copilot</span>Em outra aba, abra o Copilot Chat, cole o prompt abaixo e envie. Leia o que ele escreveu: as instruções respondem às quatro perguntas? O que o agente faz e para quem, onde ele consulta, como ele responde e o que ele faz quando não sabe. Se estiver bom, copie e cole em <span class="path">Instruções</span>.
-<div class="prompt"><div class="prompt-head"><span>No Copilot Chat</span><button class="copy" type="button">Copiar</button></div><pre>Escreva as instruções de um agente do Copilot com esta descrição: "Responde dúvidas sobre como montar um Notebook para relatório de doador, seguindo o guia do PMO." As instruções devem dizer o que o agente faz e para quem, onde ele consulta, como ele responde e o que ele faz quando não sabe. Ele responde com base no guia carregado no Conhecimento. Quando usar informação da internet, ele avisa e cita a fonte. Escreva em tópicos curtos, prontos para colar.</pre></div></li>
+<div class="prompt"><div class="prompt-head"><span>No Copilot Chat</span><button class="copy" type="button">Copiar</button></div><pre>Escreva as instruções de um agente do Copilot com esta descrição: "Responde dúvidas sobre como montar um Notebook para relatório de doador, seguindo o guia do PMO." As instruções devem dizer o que o agente faz e para quem, onde ele consulta, como ele responde e o que ele faz quando não sabe. Ele responde com base no guia carregado no Conhecimento. Quando usar informação da internet, ele avisa e cita a fonte. Escreva em tópicos curtos, prontos para colar.</pre></div><details class="optional-reference"><summary>Se travar: instruções prontas para adaptar</summary>
+<div class="prompt"><div class="prompt-head"><span>No campo Instruções do agente</span><button class="copy" type="button">Copiar</button></div><pre>- Ajude o time do PMO a montar um Notebook para relatório de doador.
+- Consulte o guia carregado no Conhecimento e indique a seção usada.
+- Responda em português, com passos curtos e claros.
+- Quando faltar informação no guia, diga isso e peça o detalhe necessário. Não invente procedimentos.
+- Se usar a internet, diferencie essa informação das regras do guia e cite a fonte.</pre></div></details></li>
 <li><span class="st">Conhecimento</span>Por último, o arquivo. Na pasta <a href="https://dccrvz.sharepoint.com/sites/TreinamentoTeamseIAPMOCerrado/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FTreinamentoTeamseIAPMOCerrado%2FDocumentos%20Compartilhados%2FPr%C3%A1tica%2F06%5FAgente%20Relat%C3%B3rio%20para%20Doador" rel="noopener" target="_blank">06_Agente Relatório para Doador</a>, baixe <span class="path">Guia Notebook_Relatorios Doadores</span>. Em <span class="path">Conhecimento</span>, carregue esse arquivo, e só ele.</li>
 <li><span class="st">Salve o agente</span>No canto superior direito, clique em <span class="path">Criar</span>. É isso que salva o agente: sem esse passo, não dá para compartilhar.</li>
-<li><span class="st">Teste</span>Abra o agente e faça as duas perguntas, uma de cada vez.
-<div class="prompt"><div class="prompt-head"><span>No seu agente</span><button class="copy" type="button">Copiar</button></div><pre>Quais documentos eu preciso juntar para o relatório trimestral?</pre></div>
-<div class="prompt"><div class="prompt-head"><span>No seu agente</span><button class="copy" type="button">Copiar</button></div><pre>Onde coloco as instruções do Notebook?</pre></div></li>
-<li><span class="st">Pergunte algo fora do guia</span>Pergunte algo que o guia não cobre.
-<div class="prompt"><div class="prompt-head"><span>No seu agente</span><button class="copy" type="button">Copiar</button></div><pre>Qual o prazo do edital do Fundo Amazônia?</pre></div></li>
+<li><span class="st">Teste uma resposta</span>Abra o agente, faça a pergunta abaixo e confira a resposta no guia.
+<div class="prompt"><div class="prompt-head"><span>No seu agente</span><button class="copy" type="button">Copiar</button></div><pre>Quais documentos eu preciso juntar para o relatório trimestral?</pre></div></li>
 <li><span class="st">Compartilhe com um colega</span>Um agente rende mais quando o time usa: todo mundo segue o mesmo guia, do mesmo jeito, sem precisar do PMO ao lado.
 <ol class="sub">
 <li>Na barra lateral do Copilot, abra <span class="path">Agentes</span>. Passe o mouse sobre o seu agente, clique nos três pontos <span class="path">⋯</span> ao lado do nome e escolha <span class="path">Compartilhar agente</span>.</li>
@@ -150,17 +152,22 @@
 <li>O colega abre o link e faz uma pergunta ao seu agente.</li>
 </ol></li>
 <li class="confira"><span class="st">Confira</span><div class="check"><ul>
-<li>As respostas do teste vieram do guia? Encontre uma delas no arquivo.</li>
-<li>Na pergunta sobre o Fundo Amazônia, de onde veio a resposta? Olhe as fontes embaixo dela: são sites da internet, não o guia. Antes de usar, confira no site.</li>
+<li>A resposta do teste veio do guia? Encontre a informação no arquivo.</li>
 <li>O colega conseguiu abrir o agente e receber uma resposta?</li>
 </ul></div></li>
 </ol>
+<details class="optional-reference"><summary>Se der tempo: outra pergunta e os limites do guia</summary>
+<div class="prompt"><div class="prompt-head"><span>No seu agente</span><button class="copy" type="button">Copiar</button></div><pre>Onde coloco as instruções do Notebook?</pre></div>
+<p>Depois, pergunte algo fora do guia:</p>
+<div class="prompt"><div class="prompt-head"><span>No seu agente</span><button class="copy" type="button">Copiar</button></div><pre>Qual o prazo do edital do Fundo Amazônia?</pre></div>
+<p>Ele reconheceu que a informação não está no guia? Se usou a internet, identificou a fonte? Confira qual edital e ano a resposta considera; se a pergunta estiver ambígua, ele deve pedir mais detalhes.</p>
+</details>
 <p class="keep"><strong>Leve adiante:</strong> todo guia do PMO que alguém precisa ler e seguir sozinho pode virar um agente assim, por exemplo um procedimento de prestação de contas ou de compras. Quando o guia mudar, atualize o arquivo no Conhecimento, e o agente passa a seguir a versão nova.</p>
 </section>
 
 <section id="fechamento">
-<h2>Fechamento e um presente</h2>
-<h3>O Notebook das nossas sessões</h3>
+<h2>Fechamento e Notebook do curso</h2>
+<h3><img class="step-icon" alt="" aria-hidden="true" src="icons/notebook.svg"/>O Notebook das nossas sessões</h3>
 <p>Das nossas chamadas, baixamos as transcrições e colocamos num Notebook. Agora ele responde, com base no que foi dito, a qualquer pergunta sobre o que vimos juntos. Lembra que falamos de algo, mas não lembra bem o quê? Pergunte ao Notebook. Vamos colocar a Sessão 3 lá dentro e compartilhar com vocês.</p>
 <p>É o mesmo que vocês podem fazer com o time: um Notebook com o conteúdo de vocês responde às dúvidas de todos, sem que cada pergunta chegue ao PMO.</p>
 <details class="optional-reference"><summary>Como montamos este Notebook</summary>
@@ -168,9 +175,9 @@
 <li><span class="st">Baixe as transcrições</span>No <span class="path">Calendário</span> do Teams, abra a reunião da Sessão 1 e clique em <span class="path">Exibir recapitulação</span>. Em <span class="path">Transcrição</span>, baixe o arquivo como <span class="path">.docx</span>. Repita com a Sessão 2.</li>
 <li><span class="st">Crie o Notebook</span>No Copilot, abra <span class="path">Notebooks</span>, crie um Notebook novo e adicione os dois arquivos <span class="path">.docx</span> como referências.</li>
 <li><span class="st">Pergunte</span>Faça uma pergunta de cada vez.
-<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Resuma em 5 tópicos o que aprendemos nas Sessões 1 e 2.</pre></div>
-<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Que dúvidas os participantes levantaram nas duas sessões, e qual foi a resposta para cada uma?</pre></div>
-<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Se eu só puder levar uma prática das duas sessões para amanhã, qual deve ser e por quê?</pre></div></li>
+<div class="prompt"><div class="prompt-head"><span><img class="step-icon" alt="" aria-hidden="true" src="icons/notebook.svg"/>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Resuma em 5 tópicos o que aprendemos nas Sessões 1 e 2.</pre></div>
+<div class="prompt"><div class="prompt-head"><span><img class="step-icon" alt="" aria-hidden="true" src="icons/notebook.svg"/>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Que dúvidas os participantes levantaram nas duas sessões, e qual foi a resposta para cada uma?</pre></div>
+<div class="prompt"><div class="prompt-head"><span><img class="step-icon" alt="" aria-hidden="true" src="icons/notebook.svg"/>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Se eu só puder levar uma prática das duas sessões para amanhã, qual deve ser e por quê?</pre></div></li>
 </ol>
 </details>
 <div class="callout tip"><div class="callout-label">Para conversar</div>

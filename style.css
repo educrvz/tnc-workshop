@@ -280,3 +280,6 @@ section.exercise h3{margin-top:30px}
 .effort small{grid-column:1/-1;font-size:8pt;color:#6b7785;margin-top:3px}
 @media (max-width:900px){.tool-cards{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:520px){.tool-cards{grid-template-columns:1fr}}
+
+/* Icons identify the app used at each step. */
+.step-icon{width:16px;height:16px;object-fit:contain;vertical-align:middle;margin-right:5px}
