@@ -19,7 +19,7 @@
 <p class="page-lede">Hoje você monta um Notebook e vê, na prática, que ele só sabe o que você dá a ele. Depois, cria o seu próprio agente: ele responde às dúvidas do time sobre o guia do PMO, e você compartilha com um colega. No fim, duas demonstrações: uma skill chamada com @ e um agente que monta o rascunho do relatório para doador.</p>
 <nav aria-label="Nesta sessão"><ol class="session-map" id="session-map">
 <li><a href="#escada"><span class="n soft">0</span><span class="t">Abertura: qual usar?<span class="s">Prompt, workflow, skill ou agente</span></span><span class="apps"></span></a></li>
-<li><a href="#notebook"><span class="n">1</span><span class="t">O Notebook só sabe o que você dá a ele<span class="s">Duas rodadas, a mesma pergunta, respostas diferentes, e um Notebook das Sessões 1 e 2</span></span><span class="apps"><img alt="Copilot" src="icons/copilot.svg"/></span></a></li>
+<li><a href="#notebook"><span class="n">1</span><span class="t">O Notebook só sabe o que você dá a ele<span class="s">Duas rodadas, as mesmas perguntas, respostas diferentes</span></span><span class="apps"><img alt="Copilot" src="icons/copilot.svg"/></span></a></li>
 <li><a href="#agentes"><span class="n">2</span><span class="t">Crie o seu agente<span class="s">O agente Guia do Notebook, com base num guia do PMO</span></span><span class="apps"><img alt="Copilot" src="icons/copilot.svg"/></span></a></li>
 <li><a href="#demo"><span class="n soft">•</span><span class="t">Demonstrações: até onde dá para ir<span class="s">Uma skill chamada com @ e um agente que monta o rascunho do relatório</span></span><span class="apps"><img alt="PowerPoint" src="icons/powerpoint.svg"/><img alt="Word" src="icons/word.svg"/></span></a></li>
 <li><a href="#fechamento"><span class="n soft">+</span><span class="t">Discussão e fechamento<span class="s">O que vocês colocariam num Notebook, e o que vem depois</span></span><span class="apps"></span></a></li>
@@ -45,42 +45,26 @@
 
 <section class="exercise" id="notebook">
 <div class="exhead"><span aria-hidden="true" class="big">1</span><span class="ex-apps"><img alt="" aria-hidden="true" src="icons/copilot.svg"/>Copilot · Notebooks</span><h2><span class="sr-only">Exercício 1: </span>O Notebook só sabe o que você dá a ele</h2></div>
-<p class="why">Um Notebook é um espaço do Copilot com um conjunto fechado de arquivos: ele responde só com o que está ali. Aqui você faz a mesma pergunta duas vezes. Entre uma e outra, só muda o que o Notebook tem para ler.</p>
+<p class="why">Um Notebook é um espaço do Copilot com um conjunto fechado de arquivos: ele responde só com o que está ali. Aqui você faz as mesmas perguntas duas vezes. Entre uma e outra, só muda o que o Notebook tem para ler.</p>
 <p class="outcome"><strong>Você sai com</strong>Um Notebook do Veredas Vivas e a prova, na tela, de que a resposta muda quando as fontes mudam.</p>
 <ol class="trail">
 <li><span class="st">Crie o Notebook</span>No Copilot, abra <span class="path">Notebooks › Novo Notebook</span> e dê o nome “Veredas Vivas — teste”. Em <span class="path">Adicionar referências</span>, adicione só dois arquivos: <span class="path">Acompanhamento_Fisico_Financeiro_2026</span> e <span class="path">Indicadores_Doador_Veredas_Vivas</span>.</li>
-<li><span class="st">Veja onde fica a instrução</span>No Notebook, clique nos três pontos <span class="path">⋯</span>, no canto superior direito, e escolha <span class="path">Instruções</span>. O que você escreve ali vale para todas as respostas do Notebook. Cole esta instrução e salve.
-<div class="prompt"><div class="prompt-head"><span>Em ⋯ › Instruções</span><button class="copy" type="button">Copiar</button></div><pre>Cite a fonte de cada número entre parênteses e termine sempre com "O que ainda não sabemos".</pre></div></li>
 <li><span class="st">Rodada 1, pergunta 1</span>No chat do Notebook, cole e envie.
 <div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Quais linhas do orçamento passaram de 10% no T3, para mais ou para menos?</pre></div></li>
-<li><span class="st">Rodada 1, pergunta 2</span>Agora pergunte sobre o cronograma. Guarde a resposta.
-<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>O 3º viveiro, em Cavalcante, está no prazo?</pre></div></li>
-<li><span class="st">Rodada 2: dê mais uma fonte</span>Em <span class="path">Adicionar referências</span>, adicione <span class="path">Ata_Reuniao_Mensal_Setembro_2026</span>.</li>
-<li><span class="st">Repita a pergunta 2</span>Cole a mesma pergunta sobre o 3º viveiro e envie. Compare com a resposta da rodada 1.
-<details class="optional-reference"><summary>Se der tempo: mais uma fonte, mais uma pergunta</summary>
-<p>Adicione <span class="path">Relatorio_Medicao_01_Cercas_Planalto_Set2026</span> e pergunte:</p>
-<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>A cerca do Planalto já conta como entrega?</pre></div>
-</details></li>
+<li><span class="st">Rodada 1, perguntas 2 e 3</span>Agora pergunte sobre o cronograma e sobre a cerca, uma de cada vez. Guarde as respostas.
+<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>O 3º viveiro, em Cavalcante, está no prazo?</pre></div>
+<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>A cerca do Planalto já conta como entrega?</pre></div></li>
+<li><span class="st">Rodada 2: dê mais duas fontes</span>Em <span class="path">Adicionar referências</span>, adicione <span class="path">Ata_Reuniao_Mensal_Setembro_2026</span> e <span class="path">Relatorio_Medicao_01_Cercas_Planalto_Set2026</span>.</li>
+<li><span class="st">Repita as perguntas 2 e 3</span>Cole as mesmas duas perguntas, uma de cada vez, e compare com as respostas da rodada 1.</li>
 <li class="confira"><span class="st">Confira</span><div class="check"><ul>
-<li>Na pergunta 1, apareceram Serviços de terceiros (+20%), Viagens e campo (+19%) e Insumos (+16%), com a fonte entre parênteses?</li>
+<li>Na pergunta 1, apareceram Serviços de terceiros (+20%), Viagens e campo (+19%) e Insumos (+16%)?</li>
 <li>Na rodada 1, o Notebook disse que o 3º viveiro está no prazo? É o que diz a aba Cronograma da planilha.</li>
-<li>Na rodada 2, ele apontou o risco registrado na ata de setembro e a diferença com o cronograma? A resposta mudou porque as fontes mudaram.</li>
+<li>Na rodada 2, ele apontou o risco registrado na ata de setembro e a diferença com o cronograma?</li>
+<li>E a cerca: a resposta da rodada 2 trouxe o que diz o relatório de medição? Se a resposta mudou, foi porque as fontes mudaram.</li>
 <li>Escolha um número da resposta e encontre-o na fonte.</li>
 </ul></div></li>
 </ol>
 <p class="keep"><strong>Leve adiante:</strong> um Notebook com tudo do projeto atual responde ao time sem passar pelo PMO.</p>
-<h3>Demonstração: um Notebook feito com as Sessões 1 e 2</h3>
-<p>Na nossa tela, um Notebook que montamos com as transcrições das Sessões 1 e 2. Ele responde só com base no que vimos juntos.</p>
-<details class="optional-reference"><summary>Como montamos este Notebook</summary>
-<ol class="trail">
-<li><span class="st">Baixe as transcrições</span>No <span class="path">Calendário</span> do Teams, abra a reunião da Sessão 1 e clique em <span class="path">Exibir recapitulação</span>. Em <span class="path">Transcrição</span>, baixe o arquivo como <span class="path">.docx</span>. Repita com a Sessão 2.</li>
-<li><span class="st">Crie o Notebook</span>No Copilot, abra <span class="path">Notebooks</span>, crie um Notebook novo e adicione os dois arquivos <span class="path">.docx</span> como referências.</li>
-<li><span class="st">Pergunte</span>Faça uma pergunta de cada vez.
-<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Resuma em 5 tópicos o que aprendemos nas Sessões 1 e 2.</pre></div>
-<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Que dúvidas os participantes levantaram nas duas sessões, e qual foi a resposta para cada uma?</pre></div>
-<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Se eu só puder levar uma prática das duas sessões para amanhã, qual deve ser e por quê?</pre></div></li>
-</ol>
-</details>
 </section>
 
 <section class="exercise" id="agentes">
@@ -274,6 +258,18 @@ Regras: use apenas o guia e os procedimentos do Conhecimento. Não escreva o rel
 
 <section id="fechamento">
 <h2>Discussão e fechamento</h2>
+<h3>O Notebook das sessões</h3>
+<p>Montamos um Notebook com as transcrições das Sessões 1 e 2. Ele responde só com base no que vimos juntos. Vamos colocar a Sessão 3 lá dentro e compartilhar com vocês.</p>
+<details class="optional-reference"><summary>Como montamos este Notebook</summary>
+<ol class="trail">
+<li><span class="st">Baixe as transcrições</span>No <span class="path">Calendário</span> do Teams, abra a reunião da Sessão 1 e clique em <span class="path">Exibir recapitulação</span>. Em <span class="path">Transcrição</span>, baixe o arquivo como <span class="path">.docx</span>. Repita com a Sessão 2.</li>
+<li><span class="st">Crie o Notebook</span>No Copilot, abra <span class="path">Notebooks</span>, crie um Notebook novo e adicione os dois arquivos <span class="path">.docx</span> como referências.</li>
+<li><span class="st">Pergunte</span>Faça uma pergunta de cada vez.
+<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Resuma em 5 tópicos o que aprendemos nas Sessões 1 e 2.</pre></div>
+<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Que dúvidas os participantes levantaram nas duas sessões, e qual foi a resposta para cada uma?</pre></div>
+<div class="prompt"><div class="prompt-head"><span>No Notebook</span><button class="copy" type="button">Copiar</button></div><pre>Se eu só puder levar uma prática das duas sessões para amanhã, qual deve ser e por quê?</pre></div></li>
+</ol>
+</details>
 <div class="callout tip"><div class="callout-label">Para conversar</div>
 <ol>
 <li>O que vocês colocariam num Notebook assim?</li>
