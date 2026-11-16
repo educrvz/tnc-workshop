@@ -70,31 +70,20 @@
 <section class="exercise" id="agentes">
 <div class="exhead"><span aria-hidden="true" class="big">2</span><span class="ex-apps"><img alt="" aria-hidden="true" src="icons/copilot.svg"/>Copilot · Novo agente</span><h2><span class="sr-only">Exercício 2: </span>Crie o seu agente</h2></div>
 <p class="why">Na Sessão 2 você usou agentes prontos da Microsoft, como o Analista. Hoje você cria o seu: um agente que responde às dúvidas do time sobre como montar um Notebook para relatório de doador, com base no guia do PMO.</p>
-<p class="outcome"><strong>Você sai com</strong>O seu agente “Guia do Notebook”, com instruções escritas por você, testado e compartilhado com um colega.</p>
+<p class="outcome"><strong>Você sai com</strong>O seu agente “Guia do Notebook”, com instruções revisadas por você, testado e compartilhado com um colega.</p>
 
 <ol class="trail">
 <li><span class="st">Crie o agente</span>No Copilot Chat, clique em <span class="path">Novo agente</span>. Se aparecer uma conversa pedindo que você descreva o agente, ignore: preencha os campos diretamente, como nos passos abaixo.</li>
 <li><span class="st">Nome e descrição</span>Dê o nome “Guia do Notebook” e, logo abaixo do nome, cole a descrição.
 <div class="prompt"><div class="prompt-head"><span>Descrição</span><button class="copy" type="button">Copiar</button></div><pre>Responde dúvidas sobre como montar um Notebook para relatório de doador, seguindo o guia do PMO.</pre></div></li>
-<li><span class="st">Escreva as instruções</span>Em <span class="path">Instruções</span>, escreva quatro linhas, uma para cada pergunta:
-<ul class="levels">
-<li><strong>O que o agente faz e para quem?</strong></li>
-<li><strong>Onde ele consulta?</strong></li>
-<li><strong>Como ele responde?</strong></li>
-<li><strong>O que ele faz quando não sabe?</strong></li>
-</ul>
-<details class="optional-reference"><summary>Travou? Veja um exemplo</summary>
-<div class="prompt"><div class="prompt-head"><span>Exemplo de instruções</span><button class="copy" type="button">Copiar</button></div><pre>1. Você ajuda o time de campo a montar um Notebook para relatório de doador.
-2. Responda só com base no guia do Conhecimento.
-3. Responda em passos curtos, em linguagem simples.
-4. Se o guia não cobrir a pergunta, diga que não sabe e sugira falar com o PMO.</pre></div>
-</details></li>
+<li><span class="st">Peça as instruções ao Copilot</span>Em outra aba, abra o Copilot Chat, cole o prompt abaixo e envie. Leia o que ele escreveu: as instruções respondem às quatro perguntas? O que o agente faz e para quem, onde ele consulta, como ele responde e o que ele faz quando não sabe. Se estiver bom, copie e cole em <span class="path">Instruções</span>.
+<div class="prompt"><div class="prompt-head"><span>No Copilot Chat</span><button class="copy" type="button">Copiar</button></div><pre>Escreva as instruções de um agente do Copilot com esta descrição: "Responde dúvidas sobre como montar um Notebook para relatório de doador, seguindo o guia do PMO." As instruções devem dizer o que o agente faz e para quem, onde ele consulta, como ele responde e o que ele faz quando não sabe. Ele responde com base no guia carregado no Conhecimento. Quando usar informação da internet, ele avisa e cita a fonte. Escreva em tópicos curtos, prontos para colar.</pre></div></li>
 <li><span class="st">Conhecimento</span>Por último, o arquivo. Na pasta <a href="https://dccrvz.sharepoint.com/sites/TreinamentoTeamseIAPMOCerrado/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FTreinamentoTeamseIAPMOCerrado%2FDocumentos%20Compartilhados%2FPr%C3%A1tica%2F06%5FAgente%20Relat%C3%B3rio%20para%20Doador" rel="noopener" target="_blank">06_Agente Relatório para Doador</a>, baixe <span class="path">Guia Notebook_Relatorios Doadores</span>. Em <span class="path">Conhecimento</span>, carregue esse arquivo, e só ele.</li>
 <li><span class="st">Salve o agente</span>No canto superior direito, clique em <span class="path">Criar</span>. É isso que salva o agente: sem esse passo, não dá para compartilhar.</li>
 <li><span class="st">Teste</span>Abra o agente e faça as duas perguntas, uma de cada vez.
 <div class="prompt"><div class="prompt-head"><span>No seu agente</span><button class="copy" type="button">Copiar</button></div><pre>Quais documentos eu preciso juntar para o relatório trimestral?</pre></div>
-<div class="prompt"><div class="prompt-head"><span>No seu agente</span><button class="copy" type="button">Copiar</button></div><pre>Onde colo a instrução no Notebook?</pre></div></li>
-<li><span class="st">Tente quebrar o agente</span>Pergunte algo que o guia não cobre.
+<div class="prompt"><div class="prompt-head"><span>No seu agente</span><button class="copy" type="button">Copiar</button></div><pre>Onde coloco as instruções do Notebook?</pre></div></li>
+<li><span class="st">Pergunte algo fora do guia</span>Pergunte algo que o guia não cobre.
 <div class="prompt"><div class="prompt-head"><span>No seu agente</span><button class="copy" type="button">Copiar</button></div><pre>Qual o prazo do edital do Fundo Amazônia?</pre></div></li>
 <li><span class="st">Compartilhe com um colega</span>Um agente rende mais quando o time usa: todo mundo segue o mesmo guia, do mesmo jeito, sem precisar do PMO ao lado.
 <ol class="sub">
@@ -105,7 +94,7 @@
 </ol></li>
 <li class="confira"><span class="st">Confira</span><div class="check"><ul>
 <li>As respostas do teste vieram do guia? Encontre uma delas no arquivo.</li>
-<li>Na pergunta sobre o Fundo Amazônia, o agente disse que não sabe e sugeriu falar com o PMO, em vez de inventar um prazo? Se inventou, ajuste a linha 4 das instruções e pergunte de novo.</li>
+<li>Na pergunta sobre o Fundo Amazônia, de onde veio a resposta? Olhe as fontes embaixo dela: são sites da internet, não o guia. Antes de usar, confira no site.</li>
 <li>O colega conseguiu abrir o agente e receber uma resposta?</li>
 </ul></div></li>
 </ol>
